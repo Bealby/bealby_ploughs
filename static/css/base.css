@@ -3,9 +3,33 @@ html {
 }
 
 body {
-    background: url('/media/plough.png') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 4.625rem);
-    color: #555;
-    font-family: 'Lato';
+    color: black;
+    height: calc(100vh - 164px);
+    background: rgb(224, 201, 166);
+    font-family: "Merriweather", serif;
+}
+
+.header-container {
+    margin-top: 5rem;
+}
+
+.header_font {
+    font-family: "Merriweather", serif;
+    font-size: 2.2rem;
+    letter-spacing: 2.5px;
+}
+
+.nav_font {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+}
+
+.nav_margins a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.carousel_height img {
+    max-height: 500px;
 }
