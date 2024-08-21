@@ -5,7 +5,7 @@ html {
 body {
     color: black;
     height: calc(100vh - 164px);
-    background: rgb(224, 201, 166);
+    background: #E2E2DB;
     font-family: "Merriweather", serif;
 }
 
