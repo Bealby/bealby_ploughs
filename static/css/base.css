@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
     height: 100%;
 }
@@ -5,24 +7,23 @@ html {
 body {
     color: black;
     height: calc(100vh - 164px);
-    background: #E2E2DB;
-    font-family: "Merriweather", serif;
+    background: #FFFFFF;
+    font-family: "Noticia Text", serif;
 }
 
 .header-container {
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 
-.header_font {
-    font-family: "Merriweather", serif;
-    font-size: 2.2rem;
-    letter-spacing: 2.5px;
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1.5rem;
 }
 
 .nav_font {
-    font-family: "Merriweather", serif;
-    font-size: 1rem;
-    letter-spacing: 2.5px;
+    font-family: "Noticia Text", serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nav_margins a {
