@@ -19,9 +19,9 @@ body {
     --bs-navbar-nav-link-padding-x: 1.5rem;
 }
 
-.nav_font {
+.nav-link {
     font-family: "Noticia Text", serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     font-style: normal;
 }
@@ -34,6 +34,8 @@ body {
 .section-font p {
     font-size: 15px;
     font-weight: 400;
+    letter-spacing: 0.5px;
+    word-spacing: 10px;
 }
 
 /* headlines with lines */
@@ -52,7 +54,7 @@ body {
     position: absolute;
     top: 50%;
     border-bottom: 2px solid;
-    width: 1800px;
+    max-width: 1500px;
     /* half of limiter*/
     margin: 0 20px;
     color: rgba(239, 125, 25, 0.3);
@@ -72,5 +74,5 @@ body {
 }
 
 .carousel_height img {
-    max-height: 500px;
+    max-height: 600px;
 }
