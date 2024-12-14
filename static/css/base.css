@@ -67,6 +67,7 @@ body {
 
 .section-gutter {
     --bs-gutter-x: 26.5rem;
+    margin-top: 3rem;
 }
 
 .carousel_height img {
