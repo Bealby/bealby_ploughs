@@ -12,7 +12,7 @@ body {
 }
 
 .header-container {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .navbar {
@@ -29,6 +29,44 @@ body {
 .nav_margins a {
     margin-right: 1rem;
     margin-left: 1rem;
+}
+
+.section-font p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* headlines with lines */
+.decorated {
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorated>span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated>span:before, .decorated>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 1800px;
+    /* half of limiter*/
+    margin: 0 20px;
+}
+
+.decorated>span:before {
+    right: 100%;
+}
+
+.decorated>span:after {
+    left: 100%;
+}
+
+.section-gutter {
+    --bs-gutter-x: 26.5rem;
 }
 
 .carousel_height img {
