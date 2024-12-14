@@ -15,6 +15,8 @@ body {
     margin-top: 3rem;
 }
 
+/* Navbar */
+
 .navbar {
     --bs-navbar-nav-link-padding-x: 1.5rem;
 }
@@ -31,6 +33,8 @@ body {
     margin-left: 1rem;
 }
 
+/* Sections */
+
 .section-font p {
     font-size: 15px;
     font-weight: 400;
@@ -39,6 +43,7 @@ body {
 }
 
 /* headlines with lines */
+
 .decorated {
     overflow: hidden;
     text-align: center;
@@ -54,7 +59,7 @@ body {
     position: absolute;
     top: 50%;
     border-bottom: 2px solid;
-    max-width: 1500px;
+    width: 1800px;
     /* half of limiter*/
     margin: 0 20px;
     color: rgba(239, 125, 25, 0.3);
@@ -68,11 +73,15 @@ body {
     left: 100%;
 }
 
+/* Secions_gutter */
+
 .section-gutter {
     --bs-gutter-x: 26.5rem;
     margin-top: 3rem;
 }
 
+/* Carousel */
+
 .carousel_height img {
-    max-height: 600px;
+    max-height: 550px;
 }
