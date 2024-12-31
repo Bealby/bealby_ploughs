@@ -19,6 +19,7 @@ body {
 
 .navbar {
     --bs-navbar-nav-link-padding-x: 1.5rem;
+    background-color: #ffffff !important;
 }
 
 .nav-link {
@@ -26,11 +27,6 @@ body {
     font-size: 22px;
     font-weight: 400;
     font-style: normal;
-}
-
-.nav_margins a {
-    margin-right: 1rem;
-    margin-left: 1rem;
 }
 
 /* Sections */
