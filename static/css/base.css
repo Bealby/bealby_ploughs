@@ -76,7 +76,7 @@ body {
 /* Secions_gutter */
 
 .section-gutter {
-    --bs-gutter-x: 26.5rem;
+    --bs-gutter-x: 3rem;
     margin-top: 3rem;
 }
 

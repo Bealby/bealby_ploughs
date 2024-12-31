@@ -40,10 +40,11 @@
 
 <body>
 
-    <header class="container-fluid fixed-top">
-        <!--Nav-->
-        {% include 'includes/nav.html' %}
-    </header>
+    <!--Desktop Nav-->
+    {% include 'includes/desktop-nav.html' %}
+
+    <!--Mobile Nav-->
+    {% include 'includes/mobile-nav.html' %}
 
 
     {% if messages %}
@@ -58,6 +59,7 @@
     {% endblock %}
 
     {% block postloadjs %}
+    <script src="{% static 'js/mobile-nav.js' %}"></script>
     {% endblock %}
 
 </body>
