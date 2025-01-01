@@ -75,9 +75,3 @@ body {
     --bs-gutter-x: 3rem;
     margin-top: 3rem;
 }
-
-/* Carousel */
-
-.carousel_height img {
-    max-height: 600px;
-}
