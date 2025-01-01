@@ -29,6 +29,22 @@ body {
     font-style: normal;
 }
 
+/*---Navbar Overlay for mobile---*/
+
+.menu-icon {
+    color: #222222 !important;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+
+/* logo */
+
+.logo_desktop img{
+    max-width: 40%;
+}
+
+
 /* Sections */
 
 .section-font p {
