@@ -92,6 +92,93 @@ body {
     margin-top: 3rem;
 }
 
+/*---Navbar Overlay for mobile---*/
+
+.menu-icon {
+    color: rgb(255, 255, 255, 1) !important;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .menu-container {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgb(0, 0, 0, 1);
+    overflow: hidden;
+  }
+  
+  .menu-content {
+    position: relative;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu-content a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Rammetto One", cursive;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, 1);
+  }
+  
+  .menu-content-sub {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Rammetto One", cursive;
+    font-size: 1rem !important;
+    color: rgb(255, 255, 255, 1);
+  }
+  
+  .menu-content-intro {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    font-family: roboto, sans-serif;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .menu-content-intro-links a {
+    padding: 9px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .menu-content a:hover {
+    background-color: rgb(128, 0, 0, 1);
+  }
+  
+  .menu-content-intro-links a:hover {
+    background-color: rgb(128, 0, 0, 1);
+  }
+  
+  .menu-container .closebtn {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    font-size: 50px;
+    color: rgb(255, 255, 255, 1);
+    z-index: 1;
+    cursor: pointer;
+  }
+
 /*---NAVBAR MEDIA QUERIES---*/
 
 /*---Nav text/ logo smaller for better viewing at 1700---*/
