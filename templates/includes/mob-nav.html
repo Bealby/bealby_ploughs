@@ -1,32 +1,21 @@
 {% load static %}
-<div class="container-fluid d-md-none mt-3 mb-0">
-    <div class="row text-center">
-        <div class="col">
-            <a href=""><img src="{% static 'images/logo/logo_grey.png' %}" class="img-fluid"
-                    alt="Bealby Plough Logo" /></a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid d-md-none">
-    <div class="row menu-icon text-center">
-        <div class="col">
-            <span onclick="openMenu()"><i class="fas fa-bars"></i></span>
-        </div>
-    </div>
-</div>
-<div class="menu-container" id="navbar">
-    <span class="closebtn" onclick="closeMenu()">&times;</span>
-    <div class="menu-content">
-        <div class="header-logo mb-2">
-            <img src="" height=150 alt="Ignite Theatre Logo" />
-        </div>
-        <a href="" class="text-uppercase">Home</a>
-        <a href="" class="text-uppercase">About</a>
-        <span onclick="openMenuGallery()"><a class="text-uppercase">Gallery&nbsp;<i
-                    class="fa-solid fa-chevron-right"></i></a></span>
-        <span onclick="openMenuCast()"><a class="text-uppercase">Cast&nbsp;<i
-                    class="fa-solid fa-chevron-right"></i></a></span>
-        <a href="" class="text-uppercase">Contact</a>
-        <a href="" class="text-uppercase">Tickets</a>
-    </div>
+
+<!---Navbar Mobile-->
+<div class="d-md-none">
+    <img src="{% static 'images/logo/logo_grey.png' %}" class="img-fluid"
+                    alt="Bealby Plough Logo" />
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler mx-auto">
+        <span class="menu-toggler-line"></span>
+        <span class="menu-toggler-line"></span>
+        <span class="menu-toggler-line"></span>
+    </label>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a class="menu-link" href="">Home</a></li>
+            <li><a class="menu-link" href="">About</a></li>
+            <li><a class="menu-link" href="">Portfolio</a></li>
+        </ul>
+    </nav>
 </div>
