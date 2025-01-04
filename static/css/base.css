@@ -15,7 +15,7 @@ body {
     margin-top: 8rem;
 }
 
-/* Navbar */
+/*---Navbar---*/
 
 .navbar {
     --bs-navbar-nav-link-padding-x: 1.5rem;
@@ -29,7 +29,17 @@ body {
     font-style: normal;
 }
 
-/* Logo */
+/*---Navbar Dropdown---*/
+
+.dropdown-menu-links {
+  background-color: #ffffff;
+  border: none;
+  margin-left:10px;
+  padding-top:0px;
+  margin-top:0px !important;
+}
+
+/*---Logo---*/
 
 .logo_desktop img{
     width: 300px;
@@ -45,7 +55,7 @@ body {
   }
 
 
-/* Sections */
+/*---Sections---*/
 
 .section-font p {
     font-size: 15px;
@@ -54,7 +64,7 @@ body {
     word-spacing: 10px;
 }
 
-/* headlines with lines */
+/*---headlines with lines---*/
 
 .decorated {
     overflow: hidden;
@@ -85,7 +95,7 @@ body {
     left: 100%;
 }
 
-/* Secions_gutter */
+/*---Secions_gutter---*/
 
 .section-gutter {
     --bs-gutter-x: 3rem;
