@@ -116,12 +116,6 @@ li {
   text-decoration: none !important;
 }
 
-.sidebar ul {
-  list-style: none;
-  margin-bottom: 7rem;
-  margin-right: 1rem;
-}
-
 /*--- Mobile Nav - Cross Icon ---*/
 
 .input-toggler {
@@ -154,7 +148,6 @@ li {
 
 .input-toggler:checked~.menu-toggler .menu-toggler-line {
   top: 5px;
-  translateY: 100px;
   transform: rotate(45deg);
 }
 
@@ -164,7 +157,6 @@ li {
 
 .input-toggler:checked~.menu-toggler .menu-toggler-line:nth-child(3) {
   top: -5px;
-  translateY: 10;
   transform: rotate(135deg);
 }
 
@@ -182,13 +174,22 @@ li {
   z-index: 1;
 }
 
-.mob_nav_mt{
+.mob_nav{
   margin-top:10rem;
+  text-align:center;
+}
+
+.accordion-button{
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-size: 30px;
+  width: 65%;
+  margin-left: 4rem;
 }
 
 .menu-link {
   color: #222222;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 15vmin;
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
@@ -196,10 +197,30 @@ li {
   font-weight:400;
 }
 
+.menu-link-home{
+  margin-right: 5.8rem;
+}
+
+.menu-link-contact{
+  margin-right: 4.3rem;
+}
+
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
   color: rgba(239, 125, 25) !important;
+}
+
+.accordion-body{
+  text-align: left;
+}
+
+.accordion-collapse{
+  margin-left: 4rem;
+}
+
+.accordion-item{
+  border: none;
 }
 
 .input-toggler:checked~.sidebar {
