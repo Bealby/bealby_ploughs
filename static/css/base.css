@@ -296,3 +296,11 @@ li {
       margin-top: 0rem;
   }
 }
+
+/*---Remove gutter MT for better viewing for mobile---*/
+@media (max-width: 767px) {
+.section-gutter {
+  margin-top: 0rem;
+}
+}
+
