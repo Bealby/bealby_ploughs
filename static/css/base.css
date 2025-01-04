@@ -104,6 +104,9 @@ body {
 
 /*--- MOBILE NAV ---*/
 
+
+/*--- Mobile Nav - Content ---*/
+
 .sidebar ul,
 li {
   list-style: none;
@@ -165,28 +168,6 @@ li {
   transform: rotate(135deg);
 }
 
-.nav {
-  width: 100%;
-  height: 100%;
-  background: rgb(10, 25, 47, 1);
-}
-
-.nav ul {
-  width: 100%;
-}
-
-.nav ul li {
-  width: 100%;
-  text-align: center;
-}
-
-.nav ul li a {
-  display: inline-block;
-  font-size: 36px;
-  color: rgb(100, 255, 218, 1);
-  text-transform: uppercase;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -194,7 +175,6 @@ li {
   width: 100%;
   background: #ffffff;
   opacity: 0.5;
-  display: flex;
   justify-content: center;
   align-items: center;
   transform: translateX(-100%);
@@ -202,18 +182,24 @@ li {
   z-index: 1;
 }
 
+.mob_nav_mt{
+  margin-top:10rem;
+}
+
 .menu-link {
-  color: rgb(100, 255, 218, 1);
-  font-size: 10vmin;
+  color: #222222;
+  font-size: 35px;
   line-height: 15vmin;
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
+  font-family: "Noticia Text", serif;
+  font-weight:400;
 }
 
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
-  color: rgb(58, 70, 88, 1) !important;
+  color: rgba(239, 125, 25) !important;
 }
 
 .input-toggler:checked~.sidebar {
