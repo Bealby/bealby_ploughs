@@ -160,6 +160,8 @@ li {
   transform: rotate(135deg);
 }
 
+/*--- Mobile Nav - Sidebar ---*/
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -179,13 +181,7 @@ li {
   text-align:center;
 }
 
-.accordion-button{
-  font-family: "Noticia Text", serif;
-  font-weight: 400;
-  font-size: 30px;
-  width: 65%;
-  margin-left: 4rem;
-}
+/*--- Mobile Nav - Menu Link ---*/
 
 .menu-link {
   color: #222222;
@@ -197,26 +193,49 @@ li {
   font-weight:400;
 }
 
-.menu-link-home{
-  margin-right: 5.8rem;
-}
-
-.menu-link-contact{
-  margin-right: 4.3rem;
-}
-
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
   color: rgba(239, 125, 25) !important;
 }
 
-.accordion-body{
-  text-align: left;
+.menu-link-home{
+  margin-right: 4.5rem;
 }
 
-.accordion-collapse{
-  margin-left: 4rem;
+.menu-link-contact{
+  margin-right: 3.1rem;
+}
+
+/*--- Mobile Nav - Accordion ---*/
+
+.accordion{
+  margin: 0 auto;
+  width: min-content;
+}
+
+.accordion-button{
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+  margin-left: 10px;
+}
+
+.accordion-body{
+  text-align: left;
+  margin: 0 auto;
 }
 
 .accordion-item{
