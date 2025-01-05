@@ -160,6 +160,11 @@ li {
   transform: rotate(135deg);
 }
 
+.input-toggler:checked~.sidebar {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 /*--- Mobile Nav - Sidebar ---*/
 
 .sidebar {
@@ -242,10 +247,12 @@ li {
   border: none;
 }
 
-.input-toggler:checked~.sidebar {
-  transform: translateX(0%);
-  opacity: 1;
+.accordion-body:hover,
+.accordion-body:focus,
+.accordion-body:active {
+  color: rgba(239, 125, 25) !important;
 }
+
 
 /*---NAVBAR MEDIA QUERIES---*/
 
