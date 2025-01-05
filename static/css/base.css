@@ -45,7 +45,6 @@ body {
     width: 300px;
 }
 
-
 /*---Navbar Overlay for mobile---*/
 
 .menu-icon {
@@ -57,12 +56,13 @@ body {
 
 /*---Sections---*/
 
-.section-font p {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    word-spacing: 10px;
+.section-content p{
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: justify;
 }
+
 
 /*---headlines with lines---*/
 
@@ -98,7 +98,7 @@ body {
 /*---Secions_gutter---*/
 
 .section-gutter {
-    --bs-gutter-x: 3rem;
+    --bs-gutter-x: 30rem;
     margin-top: 3rem;
 }
 
