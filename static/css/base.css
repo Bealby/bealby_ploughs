@@ -29,6 +29,39 @@ body {
   font-style: normal;
 }
 
+/*--- Nav Desktop Hover ---*/
+
+.topnav {
+  margin-right: 15rem;
+}
+
+.topnav a {
+  color: rgb(100, 255, 218, 1);
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 20px;
+  border-bottom: 3px solid rgb(100, 255, 218, 1) transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid rgb(100, 255, 218, 1);
+}
+
+.topnav a.active {
+  border-bottom: 3px solid rgb(100, 255, 218, 1);
+}
+
+.nav-text:hover {
+  color: rgb(100, 255, 218, 1) !important;
+  font-weight: bold;
+}
+
+.nav-text.active {
+  color: rgb(100, 255, 218, 1) !important;
+  font-weight: bold;
+}
+
 /*---Navbar Dropdown---*/
 
 .dropdown-menu-links {
@@ -43,14 +76,6 @@ body {
 
 .logo_desktop img {
   width: 300px;
-}
-
-/*---Navbar Overlay for mobile---*/
-
-.menu-icon {
-  color: #222222 !important;
-  font-size: 40px;
-  cursor: pointer;
 }
 
 /*---Sections---*/
@@ -224,6 +249,14 @@ li {
 .mob_nav {
   margin-top: 10rem;
   text-align: center;
+}
+
+/*---Navbar Overlay for mobile---*/
+
+.menu-icon {
+  color: #222222 !important;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 /*--- Mobile Nav - Menu Link ---*/
