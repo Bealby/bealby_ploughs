@@ -76,7 +76,6 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
   transform-origin: center;
-  -webkit-backface-visibility: hidden;
 }
 
 .zoom:hover .story-image {
@@ -85,6 +84,17 @@ body {
 
 .zoom {
   overflow: hidden;
+}
+
+/*---Links---*/
+
+.text-links {
+  text-decoration: none !important;
+  color: #222222
+}
+
+.text-links:hover {
+  color: #222222
 }
 
 /*---headlines with lines---*/
