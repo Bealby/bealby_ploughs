@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    color: #222222;
-    height: calc(100vh - 164px);
-    background: #FFFFFF;
-    font-family: "Noticia Text", serif;
+  color: #222222;
+  height: calc(100vh - 164px);
+  background: #ffffff;
+  font-family: "Noticia Text", serif;
 }
 
 .header-container {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 /*---Navbar---*/
 
 .navbar {
-    --bs-navbar-nav-link-padding-x: 1.5rem;
-    background-color: #ffffff !important;
+  --bs-navbar-nav-link-padding-x: 1.5rem;
+  background-color: #ffffff !important;
 }
 
 .nav-link {
-    font-family: "Noticia Text", serif;
-    font-size: 26px;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Noticia Text", serif;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /*---Navbar Dropdown---*/
@@ -34,25 +34,24 @@ body {
 .dropdown-menu-links {
   background-color: #ffffff;
   border: none;
-  margin-left:10px;
-  padding-top:0px;
-  margin-top:0px !important;
+  margin-left: 10px;
+  padding-top: 0px;
+  margin-top: 0px !important;
 }
 
 /*---Logo---*/
 
-.logo_desktop img{
-    width: 300px;
+.logo_desktop img {
+  width: 300px;
 }
 
 /*---Navbar Overlay for mobile---*/
 
 .menu-icon {
-    color: #222222 !important;
-    font-size: 40px;
-    cursor: pointer;
-  }
-
+  color: #222222 !important;
+  font-size: 40px;
+  cursor: pointer;
+}
 
 /*---Sections---*/
 
@@ -73,9 +72,9 @@ body {
 
 /*---Section Image Zoom---*/
 
-.story-image{
+.story-image {
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   transform-origin: center;
   -webkit-backface-visibility: hidden;
 }
@@ -85,49 +84,49 @@ body {
 }
 
 .zoom {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /*---headlines with lines---*/
 
 .decorated {
-    overflow: hidden;
-    text-align: center;
+  overflow: hidden;
+  text-align: center;
 }
 
-.decorated>span {
-    position: relative;
-    display: inline-block;
+.decorated > span {
+  position: relative;
+  display: inline-block;
 }
 
-.decorated>span:before, .decorated>span:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 2px solid;
-    width: 1800px;
-    /* half of limiter*/
-    margin: 0 20px;
-    color: rgba(239, 125, 25, 0.3);
+.decorated > span:before,
+.decorated > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid;
+  width: 1800px;
+  /* half of limiter*/
+  margin: 0 20px;
+  color: rgba(239, 125, 25, 0.3);
 }
 
-.decorated>span:before {
-    right: 100%;
+.decorated > span:before {
+  right: 100%;
 }
 
-.decorated>span:after {
-    left: 100%;
+.decorated > span:after {
+  left: 100%;
 }
 
 /*---Secions_gutter---*/
 
 .section-gutter {
-    --bs-gutter-x: 30rem;
-    margin-top: 5rem;
+  --bs-gutter-x: 30rem;
+  margin-top: 5rem;
 }
 
 /*--- MOBILE NAV ---*/
-
 
 /*--- Mobile Nav - Content ---*/
 
@@ -149,8 +148,8 @@ li {
 .menu-toggler {
   position: absolute;
   margin: 0 auto;
-  right:0;
-  top:0;
+  right: 0;
+  top: 0;
   width: 80px;
   height: 102px;
   z-index: 100;
@@ -167,24 +166,24 @@ li {
   background: #222222;
   margin: 0 0 10px 0px;
   position: relative;
-  transition: all .40s ease-out;
+  transition: all 0.4s ease-out;
 }
 
-.input-toggler:checked~.menu-toggler .menu-toggler-line {
+.input-toggler:checked ~ .menu-toggler .menu-toggler-line {
   top: 5px;
   transform: rotate(45deg);
 }
 
-.input-toggler:checked~.menu-toggler .menu-toggler-line:nth-child(2) {
+.input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(2) {
   display: none;
 }
 
-.input-toggler:checked~.menu-toggler .menu-toggler-line:nth-child(3) {
+.input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(3) {
   top: -5px;
   transform: rotate(135deg);
 }
 
-.input-toggler:checked~.sidebar {
+.input-toggler:checked ~ .sidebar {
   transform: translateX(0%);
   opacity: 1;
 }
@@ -201,13 +200,13 @@ li {
   justify-content: center;
   align-items: center;
   transform: translateX(-100%);
-  transition: all .40s ease-out;
+  transition: all 0.4s ease-out;
   z-index: 1;
 }
 
-.mob_nav{
-  margin-top:10rem;
-  text-align:center;
+.mob_nav {
+  margin-top: 10rem;
+  text-align: center;
 }
 
 /*--- Mobile Nav - Menu Link ---*/
@@ -216,10 +215,10 @@ li {
   color: #222222;
   font-size: 30px;
   line-height: 15vmin;
-  -webkit-transition: all .25s ease-out;
-  transition: all .25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   font-family: "Noticia Text", serif;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .menu-link:hover,
@@ -228,22 +227,22 @@ li {
   color: rgba(239, 125, 25) !important;
 }
 
-.menu-link-home{
+.menu-link-home {
   margin-right: 4.5rem;
 }
 
-.menu-link-contact{
+.menu-link-contact {
   margin-right: 3.1rem;
 }
 
 /*--- Mobile Nav - Accordion ---*/
 
-.accordion{
+.accordion {
   margin: 0 auto;
   width: min-content;
 }
 
-.accordion-button{
+.accordion-button {
   font-family: "Noticia Text", serif;
   font-weight: 400;
   font-size: 30px;
@@ -262,12 +261,12 @@ li {
   margin-left: 10px;
 }
 
-.accordion-body{
+.accordion-body {
   text-align: left;
   margin: 0 auto;
 }
 
-.accordion-item{
+.accordion-item {
   border: none;
 }
 
@@ -277,97 +276,94 @@ li {
   color: rgba(239, 125, 25) !important;
 }
 
-
 /*---NAVBAR MEDIA QUERIES---*/
 
 /*---Nav text/ logo smaller for better viewing at 1700---*/
 @media (max-width: 1700px) {
-    .nav-link {
-        font-size: 24px;
-        font-weight: 400;
-    }
-    .logo_desktop img{
-        width: 250px;
-    }
+  .nav-link {
+    font-size: 24px;
+    font-weight: 400;
   }
-
-/*---Nav text/ logo smaller for better viewing at 1200---*/
-@media (max-width: 1200px) {
-    .nav-link {
-        font-size: 22px;
-        font-weight: 400;
-    }
-    .logo_desktop img{
-        width: 200px;
-    }
-  }
-
-/*---Nav text/ logo smaller for better viewing at 992---*/
-@media (max-width: 992px) {
-    .nav-link {
-        font-size: 20px;
-        font-weight: 200;
-    }
-    .logo_desktop img{
-        width: 150px;
-    }
-  }
-
-/*---Nav text/ logo smaller for better viewing at 850---*/
-@media (max-width: 850px) {
-    .nav-link {
-        font-size: 18px;
-        font-weight: 200;
-    }
-    .logo_desktop img{
-        width: 150px;
-    }
-  }
-
-/*---Nav text/ logo smaller for better viewing at 850---*/
-@media (max-width: 767px) {
-  .logo_desktop img{
-      width: 200px;
-      margin-left:20px;
-      margin-top: 5px;
+  .logo_desktop img {
+    width: 250px;
   }
 }
 
+/*---Nav text/ logo smaller for better viewing at 1200---*/
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .logo_desktop img {
+    width: 200px;
+  }
+}
 
-  /*---CAROUSEL ADJUSTMENT PAGE HEADER---*/
+/*---Nav text/ logo smaller for better viewing at 992---*/
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .logo_desktop img {
+    width: 150px;
+  }
+}
+
+/*---Nav text/ logo smaller for better viewing at 850---*/
+@media (max-width: 850px) {
+  .nav-link {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .logo_desktop img {
+    width: 150px;
+  }
+}
+
+/*---Nav text/ logo smaller for better viewing at 850---*/
+@media (max-width: 767px) {
+  .logo_desktop img {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+/*---CAROUSEL ADJUSTMENT PAGE HEADER---*/
 
 /*---Carousel page header MT for full view of carousel image at 1700---*/
 @media (max-width: 1700px) {
-    .header-container {
-        margin-top: 7rem;
-    }
+  .header-container {
+    margin-top: 7rem;
+  }
 }
 
 /*---Carousel page header MT for full view of carousel image at 1200---*/
 @media (max-width: 1200px) {
-    .header-container {
-        margin-top: 5.8rem;
-    }
+  .header-container {
+    margin-top: 5.8rem;
+  }
 }
 
 /*---Carousel page header MT for full view of carousel image at 992---*/
 @media (max-width: 992px) {
-    .header-container {
-        margin-top: 4.7rem;
-    }
+  .header-container {
+    margin-top: 4.7rem;
+  }
 }
 
 /*---Carousel page header MT 0 for better viewing on mobile---*/
 @media (max-width: 767px) {
   .header-container {
-      margin-top: 0rem;
+    margin-top: 0rem;
   }
 }
 
 /*---Remove gutter MT for better viewing for mobile---*/
 @media (max-width: 767px) {
-.section-gutter {
-  margin-top: 0rem;
+  .section-gutter {
+    margin-top: 0rem;
+  }
 }
-}
-
