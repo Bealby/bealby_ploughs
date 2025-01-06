@@ -56,13 +56,37 @@ body {
 
 /*---Sections---*/
 
-.section-content p{
+.section-content {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.5px;
   text-align: justify;
 }
 
+.section-title {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left !important;
+}
+
+/*---IMAGES---*/
+
+/*---Section Image Zoom---*/
+
+.story-image{
+  cursor: pointer;
+  transition: all .5s ease;
+  transform-origin: center;
+  -webkit-backface-visibility: hidden;
+}
+
+.zoom:hover .story-image {
+  transform: scale(1.2);
+}
+
+.zoom {
+    overflow: hidden;
+}
 
 /*---headlines with lines---*/
 
@@ -99,7 +123,7 @@ body {
 
 .section-gutter {
     --bs-gutter-x: 30rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 /*--- MOBILE NAV ---*/
