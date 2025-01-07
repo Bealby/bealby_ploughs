@@ -1,7 +1,7 @@
 {% load static %}
 <div class="container-fluid fixed-top d-none d-md-block">
   <div class="row">
-    <nav class="navbar navbar-expand-md topnav">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a href="{% url 'home' %}" class="logo_desktop"
           ><img
@@ -11,10 +11,10 @@
         /></a>
         <div id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
+            <li class="nav-item topnav">
               <a class="nav-link nav-text" href="{% url 'home' %}">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown topnav">
               <a
                 href="{% url 'articles' %}"
                 class="nav-link nav-text dropdown-toggle"
@@ -28,15 +28,13 @@
               <ul
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                </li>
+              ><li class="topnav">
                   <a class="dropdown-item" href="{% url 'articles' %}">The Thoroton Society</a>
                 </li>
-                <li>
+                <li class="topnav">
                   <a class="dropdown-item" href="#">Workshop Anecdotes</a>
                 </li>
-                <li>
+                <li class="topnav">
                   <a class="dropdown-item" href="#">Family Recollections</a>
                 </li>
               </ul>
@@ -55,9 +53,9 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Invoice Journals</a></li>
-                <li><a class="dropdown-item" href="#">Brook House</a></li>
-                <li><a class="dropdown-item" href="#">Family Tree</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Invoice Journals</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Brook House</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Family Tree</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -74,12 +72,12 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Ploughs</a></li>
-                <li><a class="dropdown-item" href="#">Workshop Tools</a></li>
-                <li><a class="dropdown-item" href="#">Bealbys</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Ploughs</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Workshop Tools</a></li>
+                <li class="topnav"><a class="dropdown-item" href="#">Bealbys</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item topnav">
               <a class="nav-link nav-text" href="{% url 'contact' %}"
                 >Contact</a
               >
