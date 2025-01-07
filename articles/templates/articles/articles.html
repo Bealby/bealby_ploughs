@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<!---Stories--->
+<div class="container-fluid section-gutter">
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="decorated"><span>Articles</span></h4>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-lg-4 text-center">
+            <a href=""><div class="zoom">
+            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+             </div></a>
+            <a href="" class="text-links"><p class="section-title mt-2">The Thoroton Society&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        </div>
+        <div class="col-lg-4 text-center">
+            <a href=""><div class="zoom">
+            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            </div></a>
+        <a href="" class="text-links"><p class="section-title mt-2">Workshop Anecdotes&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        </div>
+        <div class="col-lg-4 text-center">
+            <a href=""><div class="zoom">
+            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+             </div></a>
+            <a href="" class="text-links"><p class="section-title mt-2">Family Recollections&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}v
