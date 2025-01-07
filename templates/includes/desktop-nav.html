@@ -1,9 +1,9 @@
 {% load static %}
 <div class="container-fluid fixed-top d-none d-md-block">
   <div class="row">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md topnav">
       <div class="container-fluid">
-        <a href="" class="logo_desktop"
+        <a href="{% url 'home' %}" class="logo_desktop"
           ><img
             src="{% static 'images/logo/logo_grey.png' %}"
             class="img-fluid"
@@ -12,11 +12,11 @@
         <div id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link nav-text" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link nav-text dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -29,9 +29,9 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-              <li>
-                <a class="dropdown-item" href="#">The Thoroton Society</a>
-              </li>
+                <li>
+                  <a class="dropdown-item" href="#">The Thoroton Society</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Workshop Anecdotes</a>
                 </li>
@@ -42,7 +42,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link nav-text dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -62,7 +62,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link nav-text dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -81,7 +81,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link nav-text" href="#"
                 >Contact</a
               >
             </li>
@@ -91,3 +91,20 @@
     </nav>
   </div>
 </div>
+
+<!---The code below searches for the href of the active page
+    in the list elements < a >. Then adds the class "active"
+    with addClass('active') to the active pages < a > so that
+    you can now call it via CSS. Put this code in the head of
+    your html file. -->
+
+<script>
+  $(function () {
+    $("a").each(function () {
+      if ($(this).prop("href") == window.location.href) {
+        $(this).addClass("active");
+        $(this).parents("li").addClass("active");
+      }
+    });
+  });
+</script>
