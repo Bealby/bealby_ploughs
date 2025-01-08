@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 html {
-  height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   color: #222222;
-  height: calc(100vh - 164px);
   background: #ffffff;
   font-family: "Noticia Text", serif;
 }
@@ -312,6 +312,40 @@ li {
 .accordion-body:active {
   color: rgba(239, 125, 25) !important;
 }
+
+/*---Footer---*/
+
+.footernav {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#footer-copyright p {
+  margin-bottom: 0rem !important;
+  text-align: center;
+  font-size: 0.6rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.footer-links a {
+  color: rgb(100, 255, 218, 1);
+  font-size: 1.3rem;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
 
 /*---NAVBAR MEDIA QUERIES---*/
 
