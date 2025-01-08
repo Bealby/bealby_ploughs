@@ -59,6 +59,10 @@ body {
   margin-top: 0px !important;
 }
 
+.navbar-desktop{
+  margin-right: 10rem;
+}
+
 /*---Logo---*/
 
 .logo_desktop img {
