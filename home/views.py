@@ -1,8 +1,14 @@
 from django.shortcuts import render
+from .models import HomeAbout
 
-# Create your views here.
 
 def index(request):
-    '''A view to return the index page'''
-    
-    return render(request, 'home/index.html')
+    ''' A view to return index page'''
+
+    home_about = HomeAbout.objects.all()
+
+    context = {
+        'home_about': home_about,
+    }
+
+    return render(request, 'home/index.html', context)

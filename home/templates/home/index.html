@@ -57,20 +57,14 @@
             <h4 class="decorated"><span>About</span></h4>
         </div>
     </div>
+    {% for home_about in home_about %}
     <div class="row mb-3">
         <div class="col-lg-12 section-content">
-            <p>The Bealby plough making business was started by George Bealby in
-                1821.
-                It was a thriving business, supplying ploughs and providing plough
-                maintenance to a wide geography of customers ranging from Kings
-                Lynn (75m) to Sheffield (56m)
-                The business premises, built in 1858, is situated at Brook House, North
-                Collingham; the last property as you leave the village on the Besthorpe
-                Road. The property, including the workshop, remains in family
-                ownership, and currently houses the Cat Asylum Brewery.
+            <p>{{ home_about.text_1 }}
             </p>
         </div>
     </div>
+    {% endfor %}
     <div class="row mb-3">
         <div class="col-lg-6 text-center">
             <img src="{% static 'images/about/plough.png' %}" class="img-fluid" alt="Plough">
@@ -82,17 +76,17 @@
         </div>
     </div>
     <div class="row"></div>
-    <div class="col-lg-12 section-content">
-        <p> The Bealby family were relatively wealthy. Brook House is a grand, stand
-            alone, three storey house, having both a white and red wine cellar. Two
-            large Clam shells straddle the front door, dating back to the late 19 th
-            century. They also owned property in the village (ref1).
-            The Workshop consisted of a bellows driven forge, which was
-            surrounded by twelve artisan bench positions, each having their own set
-            of tools.
-            Shoeing horses was also a main part of the trade.
-        </p>
-    </div>
+        <div class="col-lg-12 section-content">
+            <p> The Bealby family were relatively wealthy. Brook House is a grand, stand
+                alone, three storey house, having both a white and red wine cellar. Two
+                large Clam shells straddle the front door, dating back to the late 19 th
+                century. They also owned property in the village (ref1).
+                The Workshop consisted of a bellows driven forge, which was
+                surrounded by twelve artisan bench positions, each having their own set
+                of tools.
+                Shoeing horses was also a main part of the trade.
+            </p>
+        </div>
     </div>
 </div>
 
