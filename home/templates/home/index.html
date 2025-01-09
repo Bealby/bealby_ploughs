@@ -67,24 +67,17 @@
     {% endfor %}
     <div class="row mb-3">
         <div class="col-lg-6 text-center">
-            <img src="{% static 'images/about/plough.png' %}" class="img-fluid" alt="Plough">
-            <p class="section-title mt-2"><i>Workshop Anecdotes</i></p>
+            <img src="{{ home_about.image_1 }}" class="img-fluid" alt="Plough">
+            <p class="section-title mt-2"><i>{{ home_about.image_1_description }}</i></p>
         </div>
         <div class="col-lg-6 text-center">
-            <img src="{% static 'images/about/brook_house.png' %}" class="img-fluid" alt="Brook House">
-            <p class="section-title mt-2"><i>Workshop Anecdotes</i></p>
+            <img src="{{ home_about.image_2 }}" class="img-fluid" alt="Brook House">
+            <p class="section-title mt-2"><i>{{ home_about.image_2_description }}</i></p>
         </div>
     </div>
     <div class="row"></div>
         <div class="col-lg-12 section-content">
-            <p> The Bealby family were relatively wealthy. Brook House is a grand, stand
-                alone, three storey house, having both a white and red wine cellar. Two
-                large Clam shells straddle the front door, dating back to the late 19 th
-                century. They also owned property in the village (ref1).
-                The Workshop consisted of a bellows driven forge, which was
-                surrounded by twelve artisan bench positions, each having their own set
-                of tools.
-                Shoeing horses was also a main part of the trade.
+            <p> {{ home_about.text_2 }}
             </p>
         </div>
     </div>

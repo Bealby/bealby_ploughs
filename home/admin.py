@@ -6,7 +6,9 @@ class HomeAboutAdmin(admin.ModelAdmin):
     list_display = (
         'text_1',
         'image_1',
+        'image_1_description',
         'image_2',
+        'image_1_description',
         'text_2',
     )
 
