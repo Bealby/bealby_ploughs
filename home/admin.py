@@ -16,9 +16,9 @@ class HomeAboutAdmin(admin.ModelAdmin):
 
 class HomeArticlesAdmin(admin.ModelAdmin):
     list_display = (
+        'article_title_1',
         'article_image_1',
         'article_image_1_description',
-        'article_title_1',
         'article_image_2',
         'article_image_2_description',
         'article_title_2',

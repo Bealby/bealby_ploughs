@@ -36,5 +36,5 @@ class HomeArticles(models.Model):
     article_title_3 = models.CharField(max_length=254, null=True, blank=True)
 
     
-    def __repr__(self):
-        return self.image_1
+    def __str__(self):
+        return self.article_title_1
