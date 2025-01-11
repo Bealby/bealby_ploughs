@@ -16,7 +16,7 @@
             </li>
             <li class="nav-item dropdown topnav">
               <a
-                href="{% url 'articles' %}"
+                href=""
                 class="nav-link nav-text dropdown-toggle"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -29,13 +29,13 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               ><li class="topnav">
-                  <a class="dropdown-item" href="{% url 'articles' %}">The Thoroton Society</a>
+                  <a class="dropdown-item" href="{% url 'articles_1' %}">The Thoroton Society</a>
                 </li>
                 <li class="topnav">
-                  <a class="dropdown-item" href="#">Workshop Anecdotes</a>
+                  <a class="dropdown-item" href="{% url 'articles_2' %}">Workshop Anecdotes</a>
                 </li>
                 <li class="topnav">
-                  <a class="dropdown-item" href="#">Family Recollections</a>
+                  <a class="dropdown-item" href="{% url 'articles_3' %}">Family Recollections</a>
                 </li>
               </ul>
             </li>
