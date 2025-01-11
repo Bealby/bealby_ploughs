@@ -53,6 +53,16 @@ body {
   font-weight: bold;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color:#222222 !important;
+  font-weight: bold !important;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg:#ffffff !important;
+  --bs-dropdown-link-hover-bg: #ffffff !important;
+}
+
 /*---Navbar Dropdown---*/
 
 .dropdown-menu-links {
