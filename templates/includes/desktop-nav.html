@@ -14,7 +14,7 @@
             <li class="nav-item topnav">
               <a class="nav-link nav-text" href="{% url 'home' %}">Home</a>
             </li>
-            <li class="dropdown topnav dropdown-nav">
+            <li class="dropdown topnav">
               <a
                 class="nav-link dropdown-toggle nav-text"
                 id="navbarDropdownMenuLink"
@@ -38,7 +38,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown topnav">
               <a
                 class="nav-link nav-text dropdown-toggle"
                 id="navbarDropdownMenuLink"
@@ -52,9 +52,9 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li class="topnav"><a class="dropdown-item" href="#">Invoice Journals</a></li>
-                <li class="topnav"><a class="dropdown-item" href="#">Brook House</a></li>
-                <li class="topnav"><a class="dropdown-item" href="#">Family Tree</a></li>
+                <li class="topnav"><a class="dropdown-item" href="{% url 'research_1' %}">Invoice Journals</a></li>
+                <li class="topnav"><a class="dropdown-item" href="{% url 'research_2' %}">Brook House</a></li>
+                <li class="topnav"><a class="dropdown-item" href="{% url 'research_3' %}">Family Tree</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -96,10 +96,9 @@
       if ($(this).prop("href") == window.location.href) {
         $(this).addClass("active");
         $(this).parents("li").addClass("active");
-        $(".dropdown-nav a").first().addClass("active");
       }
     });
-  });  
+  }); 
 
 </script>
 
