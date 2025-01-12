@@ -11,7 +11,7 @@ def gallery_1(request):
 def gallery_2(request):
     '''A view to return the index page'''
     
-    return render(request, 'agallery/gallery_2.html')
+    return render(request, 'gallery/gallery_2.html')
 
 
 
