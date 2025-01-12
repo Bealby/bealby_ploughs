@@ -15,10 +15,6 @@ body {
   margin-top: 8rem;
 }
 
-.header-container-2 {
-  margin-top: 5rem;
-}
-
 /*---Navbar---*/
 
 .navbar {
@@ -171,6 +167,17 @@ body {
 .section-gutter {
   --bs-gutter-x: 30rem;
   margin-top: 5rem;
+}
+
+.section-gutter-2 {
+  --bs-gutter-x: 30rem;
+  margin-top: 8rem;
+}
+
+/*---Page Margin/ Padding---*/
+
+.index-mb{
+  margin-bottom: 5rem;
 }
 
 /*--- MOBILE NAV ---*/
@@ -455,4 +462,23 @@ li {
   .section-gutter {
     margin-top: 0rem;
   }
+}
+
+
+/*---Section gutter decrease gutter x for better viewing ---*/
+
+@media (max-width: 767px) {
+.section-gutter {
+  --bs-gutter-x: 30rem;
+  margin-top: 5rem;
+}
+}
+
+/*---Carousel page header MT 0 for better viewing on mobile---*/
+
+@media (max-width: 767px) {
+.section-gutter-2 {
+  --bs-gutter-x: 30rem;
+  margin-top: 8rem;
+}
 }

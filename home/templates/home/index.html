@@ -58,7 +58,7 @@
         </div>
     </div>
     {% for home_about in home_about %}
-    <div class="row mb-3">
+    <div class="row">
         <div class="col-lg-12 section-content">
             <p>{{ home_about.paragraph_1 }}
             </p>
@@ -91,7 +91,7 @@
         </div>
     </div>
     {% for home_articles in home_articles %}
-    <div class="row mb-5">
+    <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_articles.article_image_1.url }}" class="img-fluid story-image" alt="{{ article_image_1_description }}" width="600" height="400">
@@ -121,7 +121,7 @@
             <h4 class="decorated"><span>Research</span></h4>
         </div>
     </div>
-    <div class="row mb-5">
+    <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
@@ -147,13 +147,13 @@
 </div>
 
 <!---Gallery--->
-<div class="container-fluid section-gutter">
+<div class="container-fluid section-gutter index-mb">
     <div class="row mb-4">
         <div class="col">
             <h4 class="decorated"><span>Gallery</span></h4>
         </div>
     </div>
-    <div class="row mb-5">
+    <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
