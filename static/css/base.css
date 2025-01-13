@@ -465,20 +465,74 @@ li {
 }
 
 
-/*---Section gutter decrease gutter x for better viewing ---*/
+/*---Section gutter decrease gutter x for better viewing 1200px---*/
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
 .section-gutter {
-  --bs-gutter-x: 30rem;
+  --bs-gutter-x: 25rem;
   margin-top: 5rem;
 }
 }
 
-/*---Carousel page header MT 0 for better viewing on mobile---*/
+/*---Section gutter decrease gutter x for better viewing 1200px---*/
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
 .section-gutter-2 {
-  --bs-gutter-x: 30rem;
+  --bs-gutter-x: 25rem;
   margin-top: 8rem;
 }
 }
+
+/*---Section gutter decrease gutter x for better viewing 992px---*/
+
+@media (max-width: 992px) {
+  .section-gutter {
+    --bs-gutter-x: 15rem;
+    margin-top: 5rem;
+  }
+  }
+  
+/*---Section gutter decrease gutter x for better viewing 992px---*/
+  
+  @media (max-width: 992px) {
+  .section-gutter-2 {
+    --bs-gutter-x: 15rem;
+    margin-top: 8rem;
+  }
+  }
+
+/*---Section gutter decrease gutter x for better viewing 767px---*/
+
+@media (max-width: 767px) {
+  .section-gutter {
+    --bs-gutter-x: 10rem;
+    margin-top: 5rem;
+  }
+  }
+  
+/*---Section gutter decrease gutter x for better viewing 767px---*/
+  
+  @media (max-width: 767px) {
+  .section-gutter-2 {
+    --bs-gutter-x: 10rem;
+    margin-top: 8rem;
+  }
+  }
+
+/*---Section gutter decrease gutter x for better viewing 576px---*/
+
+@media (max-width: 576px) {
+  .section-gutter {
+    --bs-gutter-x: 4rem;
+    margin-top: 5rem;
+  }
+  }
+  
+/*---Section gutter decrease gutter x for better viewing 576px---*/
+  
+  @media (max-width: 576px) {
+  .section-gutter-2 {
+    --bs-gutter-x: 4rem;
+    margin-top: 8rem;
+  }
+  }
