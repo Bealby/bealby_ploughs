@@ -10,9 +10,9 @@ class HomeAboutAdmin(admin.ModelAdmin):
     list_display = (
         'about_paragraph_1',
         'about_image_1',
-        'about_image_1_description',
+        'about_image_1_title',
         'about_image_2',
-        'about_image_2_description',
+        'about_image_2_title',
         'about_paragraph_2',
     )
 
