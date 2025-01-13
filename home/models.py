@@ -8,12 +8,12 @@ class HomeAbout(models.Model):
     class Meta:
         verbose_name_plural = 'Home - About'
 
-    about_paragraph_1 = models.TextField(max_length=1000, null=True, blank=True, help_text="This is the grey text")
-    about_image_1 = models.ImageField(null=True, blank=True)
-    about_image_1_title = models.CharField(max_length=254, null=True, blank=True)
-    about_image_2 = models.ImageField(null=True, blank=True)
-    about_image_2_title = models.CharField(max_length=254, null=True, blank=True)
-    about_paragraph_2 = models.TextField(max_length=1000, null=True, blank=True)
+    about_paragraph_1 = models.TextField("(HOME) About - Paragraph 1", max_length=1000, null=True, blank=True)
+    about_image_1 = models.ImageField("(HOME) About - Image 1", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
+    about_image_1_title = models.CharField("(HOME) About - Image 1 Title", max_length=254, null=True, blank=True)
+    about_paragraph_2 = models.TextField("(HOME) About - Paragraph 2", max_length=1000, null=True, blank=True)
+    about_image_2 = models.ImageField("HOME) About - Image 2", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
+    about_image_2_title = models.CharField("(HOME) About - Image 2 Title", max_length=254, null=True, blank=True)
     
     def __str__(self):
         return self.about_paragraph_1
