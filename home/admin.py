@@ -8,12 +8,12 @@ from .models import HomeGallery
 class HomeAboutAdmin(admin.ModelAdmin):
     
     list_display = (
-        'paragraph_1',
-        'image_1',
-        'image_1_description',
-        'image_2',
-        'image_2_description',
-        'paragraph_2',
+        'about_paragraph_1',
+        'about_image_1',
+        'about_image_1_description',
+        'about_image_2',
+        'about_image_2_description',
+        'about_paragraph_2',
     )
 
 

@@ -121,10 +121,11 @@
             <h4 class="decorated"><span>Research</span></h4>
         </div>
     </div>
+    {% for home_research in home_research %}
     <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ research_image_1_description }}" width="600" height="400">
             </div></a>
         <a href="" class="text-links"><p class="section-title mt-2">Invoice Journal</p>
         <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
@@ -144,6 +145,7 @@
             <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 <!---Gallery--->
