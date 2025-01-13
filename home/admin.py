@@ -4,6 +4,7 @@ from .models import HomeArticles
 
 
 class HomeAboutAdmin(admin.ModelAdmin):
+    
     list_display = (
         'paragraph_1',
         'image_1',
@@ -15,6 +16,7 @@ class HomeAboutAdmin(admin.ModelAdmin):
 
 
 class HomeArticlesAdmin(admin.ModelAdmin):
+    
     list_display = (
         'article_title_1',
         'article_image_1',

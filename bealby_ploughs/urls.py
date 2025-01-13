@@ -27,3 +27,10 @@ urlpatterns = [
     path('gallery/', include('gallery.urls')),
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Bealby Ploughs'                    # default: "Django Administration"
+admin.site.index_title = 'Website Admin'                 # default: "Site administration"
+
+""""# default: "Django site admin"
+admin.site.site_title = 'HTML title from adminsitration' # default: "Django site admin"
+"""
