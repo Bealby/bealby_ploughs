@@ -60,23 +60,23 @@
     {% for home_about in home_about %}
     <div class="row">
         <div class="col-lg-12 section-content">
-            <p>{{ home_about.paragraph_1 }}
+            <p>{{ home_about.about_paragraph_1 }}
             </p>
         </div>
     </div>
     <div class="row mb-3">
         <div class="col-lg-6 text-center">
-            <img src="{{ home_about.image_1.url }}" class="img-fluid" alt="{{ home_about.image_1_description }}">
+            <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="{{ home_about.about_image_1_description }}">
             <p class="section-title mt-2"><i>{{ home_about.image_1_description }}</i></p>
         </div>
         <div class="col-lg-6 text-center">
-            <img src="{{ home_about.image_2.url }}" class="img-fluid" alt="{{ home_about.image_2_description }}">
-            <p class="section-title mt-2"><i>{{ home_about.image_2_description }}</i></p>
+            <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.abiout_image_2_description }}">
+            <p class="section-title mt-2"><i>{{ home_about.about_image_2_description }}</i></p>
         </div>
     </div>
     <div class="row"></div>
         <div class="col-lg-12 section-content">
-            <p> {{ home_about.paragraph_2 }}
+            <p> {{ home_about.abiout_paragraph_2 }}
             </p>
         </div>
     </div>
@@ -94,19 +94,19 @@
     <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{{ home_articles.article_image_1.url }}" class="img-fluid story-image" alt="{{ article_image_1_description }}" width="600" height="400">
+            <img src="{{ home_articles.article_image_1.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_1_description }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_1 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{{ home_articles.article_image_2.url }}" class="img-fluid story-image" alt="{{ article_image_3_description }}" width="600" height="400">
+            <img src="{{ home_articles.article_image_2.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_3_description }}" width="600" height="400">
             </div></a>
         <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_2 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{{ home_articles.article_image_3.url }}" class="img-fluid story-image" alt="{{ article_image_3_description }}" width="600" height="400">
+            <img src="{{ home_articles.article_image_3.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_3_description }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_3 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
@@ -125,24 +125,24 @@
     <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ research_image_1_description }}" width="600" height="400">
+            <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ home_research.research_title_1 }}" width="600" height="400">
             </div></a>
         <a href="" class="text-links"><p class="section-title mt-2">Invoice Journal</p>
-        <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        <p class="section-title-sub">{{ home_research.research_image_1_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_research.research_image_2.url }}" class="img-fluid story-image" alt="{{ home_research.research_title_2 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Brook House</p>
-            <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_research.research_image_2_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_research.research_image_3.url }}" class="img-fluid story-image" alt="{{ home_research.research_title_3 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Family Tree</p>
-            <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_research.research_image_2_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
     {% endfor %}
@@ -158,24 +158,24 @@
     <div class="row">
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_title_1 }}" width="600" height="400">
             </div></a>
         <a href="" class="text-links"><p class="section-title mt-2">Ploughs</p>
-        <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        <p class="section-title-sub">{{ home_gallery.gallery_image_1_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_title_2 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Workshop Tools</p>
-            <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_gallery.gallery_image_2_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
+            <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_title_3 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Bealbys</p>
-            <p class="section-title-sub">It was a thriving business, supplying ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_gallery.gallery_image_3_description.url }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
 </div>
