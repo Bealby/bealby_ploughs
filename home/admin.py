@@ -23,12 +23,12 @@ class HomeArticlesAdmin(admin.ModelAdmin):
         'article_title_1',
         'article_image_1',
         'article_image_1_description',
+        'article_title_2',
         'article_image_2',
         'article_image_2_description',
-        'article_title_2',
+        'article_title_3',
         'article_image_3',
         'article_image_3_description',
-        'article_title_3',
     )
 
 class HomeResearchAdmin(admin.ModelAdmin):
