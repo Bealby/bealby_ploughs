@@ -1,15 +1,45 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
-{% block content %}
-
-<!---Articles--->
 <div class="container-fluid section-gutter-2">
-    <div class="row mb-4">
-        <div class="col">
-            <h4 class="decorated"><span>Workshop Anecdotes</span></h4>
-        </div>
+  <div class="row mb-4">
+    <div class="col">
+      <h4 class="decorated"><span>Workshop Anecdotes</span></h4>
     </div>
+  </div>
+ <!---Articles--->  
+  <div class="row">
+    {% for article_2 in articles_2 %}
+    <div class="col-sm-12 col-lg-4">
+      <h4 class="text-muted text-left mb-5 d-lg-none text-center">
+        {{ article.title }}
+      </h4>
+      <img
+        src="static/images/news/highlights_magazine.png"
+        class="img-fluid"
+        alt="Thailand Landscape"
+      />
+    </div>
+    <div class="col-sm-12 col-lg-8 text-muted">
+      <h3 class="d-none d-lg-block">Interview with Frank Hurst</h3>
+      <h5><i>Highlights Magazine</i></h5>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto mt-0 text-muted"></div>
+      </div>
+      <h5 class="pt-2">Summer 2023</h5>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto text-muted"></div>
+      </div>
+      <p class="pt-2 news-mb">
+        Frank Hurst spent thirty-six years as a criminal investigator for the
+        British Government. After leaving the service of the Crown, Frank has
+        devoted his time to writing novels. His Golden Triangle trilogy, set in
+        the Far East, has received wide acclaim and won literary awards. Here he
+        tells us a little more about the second book in the trilogy.
+      </p>
+    </div>
+    <div class="block-divider mx-auto mt-5 mb-3 text-muted"></div>
+  {% endfor %}
+  </div>
 </div>
 
-{% endblock %}v
+{% endblock %}
