@@ -28,12 +28,15 @@ class HomeArticles(models.Model):
     article_image_1 = models.ImageField("1. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     article_description_1 = models.CharField("1. Article - Description", max_length=254, null=True, blank=True)
     article_title_1 = models.CharField("1. Article - Title", max_length=254, null=True, blank=True)
+    article_image_alt_text_1 = models.CharField("1. Article - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     article_image_2 = models.ImageField("2. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     article_description_2 = models.CharField("2. Article - Description", max_length=254, null=True, blank=True)
     article_title_2 = models.CharField("2. Article - Title", max_length=254, null=True, blank=True)
+    article_image_alt_text_2 = models.CharField("2. Article - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     article_image_3 = models.ImageField("3. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     article_description_3 = models.CharField("3. Article - Description", max_length=254, null=True, blank=True)
     article_title_3 = models.CharField("3. Article - Title", max_length=254, null=True, blank=True)
+    article_image_alt_text_3 = models.CharField("3. Article - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
 
     
     def __str__(self):
@@ -47,14 +50,17 @@ class HomeResearch(models.Model):
         verbose_name_plural = 'Home - Research'
 
     research_image_1 = models.ImageField("1. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    research_title_1 = models.CharField("1. Research - Image Title", max_length=254, null=True, blank=True)
-    research_image_1_description = models.CharField("1. Research - Image Description", max_length=254, null=True, blank=True)
+    research_title_1 = models.CharField("1. Research - Title", max_length=254, null=True, blank=True)
+    research_description_1 = models.CharField("1. Research - Description", max_length=254, null=True, blank=True)
+    research_image_alt_text_1 = models.CharField("1. Reseacrh - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     research_image_2 = models.ImageField("2. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    research_title_2 = models.CharField("2. Research - Image title", max_length=254, null=True, blank=True)
-    research_image_2_description = models.CharField("2. Research - Image Description", max_length=254, null=True, blank=True)
+    research_title_2 = models.CharField("2. Research - Title", max_length=254, null=True, blank=True)
+    research_description_2 = models.CharField("2. Research - Description", max_length=254, null=True, blank=True)
+    research_image_alt_text_2 = models.CharField("1. Reseacrh - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     research_image_3 = models.ImageField("3. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    research_title_3 = models.CharField("3.  Research - Image Title", max_length=254, null=True, blank=True)
-    research_image_3_description = models.CharField("3. Research - Image Description", max_length=254, null=True, blank=True)
+    research_title_3 = models.CharField("3.  Research - Title", max_length=254, null=True, blank=True)
+    research_description_3 = models.CharField("3. Research - Description", max_length=254, null=True, blank=True)
+    research_image_alt_text_3 = models.CharField("1. Reseacrh - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
 
     
     def __str__(self):
@@ -67,16 +73,18 @@ class HomeGallery(models.Model):
     class Meta:
         verbose_name_plural = 'Home - Gallery'
 
-    gallery_image_1 = models.ImageField("1. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    gallery_title_1 = models.CharField("1. Research - Image Title", max_length=254, null=True, blank=True)
-    gallery_image_1_description = models.CharField("1. Research - Image Description", max_length=254, null=True, blank=True)
-    gallery_image_2 = models.ImageField("1. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    gallery_title_2 = models.CharField("1. Research - Image Title", max_length=254, null=True, blank=True)
-    gallery_image_2_description = models.CharField("1. Research - Image Description", max_length=254, null=True, blank=True)
-    gallery_image_3 = models.ImageField("1. Research - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    gallery_title_3 = models.CharField("1. Research - Image Title", max_length=254, null=True, blank=True)
-    gallery_image_3_description = models.CharField("1. Research - Image Description", max_length=254, null=True, blank=True)
-
+    gallery_image_1 = models.ImageField("1. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
+    gallery_title_1 = models.CharField("1. Gallery - Title", max_length=254, null=True, blank=True)
+    gallery_description_1 = models.CharField("1. Gallery - Description", max_length=254, null=True, blank=True)
+    gallery_image_alt_text_1 = models.CharField("1. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
+    gallery_image_2 = models.ImageField("2. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
+    gallery_title_2 = models.CharField("2. Gallery - Title", max_length=254, null=True, blank=True)
+    gallery_description_2 = models.CharField("2. Gallery - Description", max_length=254, null=True, blank=True)
+    gallery_image_alt_text_2 = models.CharField("2. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
+    gallery_image_3 = models.ImageField("3. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
+    gallery_title_3 = models.CharField("3. Gallery - Title", max_length=254, null=True, blank=True)
+    gallery_description_3 = models.CharField("3. Gallery - Description", max_length=254, null=True, blank=True)
+    gallery_image_alt_text_3 = models.CharField("3. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     
     def __str__(self):
         return self.gallery_title_1
