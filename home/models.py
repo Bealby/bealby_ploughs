@@ -26,13 +26,13 @@ class HomeArticles(models.Model):
         verbose_name_plural = 'Home - Articles'
 
     article_image_1 = models.ImageField("1. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    article_image_1_description = models.CharField("1. Article - Image Description", max_length=254, null=True, blank=True)
+    article_description_1 = models.CharField("1. Article - Description", max_length=254, null=True, blank=True)
     article_title_1 = models.CharField("1. Article - Title", max_length=254, null=True, blank=True)
     article_image_2 = models.ImageField("2. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    article_image_2_description = models.CharField("2. Article - Image Description", max_length=254, null=True, blank=True)
+    article_description_2 = models.CharField("2. Article - Description", max_length=254, null=True, blank=True)
     article_title_2 = models.CharField("2. Article - Title", max_length=254, null=True, blank=True)
     article_image_3 = models.ImageField("3. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
-    article_image_3_description = models.CharField("3. Article - Image Description", max_length=254, null=True, blank=True)
+    article_description_3 = models.CharField("3. Article - Description", max_length=254, null=True, blank=True)
     article_title_3 = models.CharField("3. Article - Title", max_length=254, null=True, blank=True)
 
     

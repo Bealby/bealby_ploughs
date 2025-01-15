@@ -30,7 +30,4 @@ urlpatterns = [
 
 admin.site.site_header = 'Bealby Ploughs Website'                    # default: "Django Administration"
 admin.site.index_title = 'Website Admin'                 # default: "Site administration"
-
-""""# default: "Django site admin"
-admin.site.site_title = 'HTML title from adminsitration' # default: "Django site admin"
-"""
+admin.site.site_title = 'HTML title from adminsitration' # default: "Django Bealby Plough Site Admin"
