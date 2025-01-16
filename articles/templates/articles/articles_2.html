@@ -11,30 +11,22 @@
     {% for article_2 in articles_2 %}
     <div class="col-sm-12 col-lg-4">
       <h4 class="text-muted text-left mb-5 d-lg-none text-center">
-        {{ article.title }}
+        {{ article_2.title }}
       </h4>
       <img
-        src="static/images/news/highlights_magazine.png"
-        class="img-fluid"
-        alt="Thailand Landscape"
+        src="{{ article_2.article_image.url }}"
+        class="img-fluid mt-5"
+        alt="{{ article_2.article_image_description }}"
       />
     </div>
     <div class="col-sm-12 col-lg-8 text-muted">
-      <h3 class="d-none d-lg-block">Interview with Frank Hurst</h3>
-      <h5><i>Highlights Magazine</i></h5>
+      <h3 class="d-none d-lg-block">{{ article_2.title }}</h3>
+      <h5><i>{{ article_2.name }}</i></h5>
       <div class="col-12 p-0">
         <div class="block-divider-sub mx-auto mt-0 text-muted"></div>
       </div>
-      <h5 class="pt-2">Summer 2023</h5>
-      <div class="col-12 p-0">
-        <div class="block-divider-sub mx-auto text-muted"></div>
-      </div>
       <p class="pt-2 news-mb">
-        Frank Hurst spent thirty-six years as a criminal investigator for the
-        British Government. After leaving the service of the Crown, Frank has
-        devoted his time to writing novels. His Golden Triangle trilogy, set in
-        the Far East, has received wide acclaim and won literary awards. Here he
-        tells us a little more about the second book in the trilogy.
+        {{ article_2.text|linebreaksbr }}
       </p>
     </div>
     <div class="block-divider mx-auto mt-5 mb-3 text-muted"></div>
