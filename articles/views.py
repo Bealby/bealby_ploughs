@@ -32,4 +32,4 @@ def articles_3(request):
         'articles_3': articles_3,
     }
     
-    return render(request, 'articles/articles_2.html', context)
+    return render(request, 'articles/articles_3.html', context)
