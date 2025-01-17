@@ -67,11 +67,11 @@
     <div class="row mb-3">
         <div class="col-lg-6 text-center">
             <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="{{ home_about.about_image_1_description }}">
-            <p class="section-title mt-2"><i>{{ home_about.about_image_1_title }}</i></p>
+            <p class="section-title mt-2"><i>{{ home_about.about_image_1_title|default_if_none:"" }}</i></p>
         </div>
         <div class="col-lg-6 text-center">
             <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_2_description }}">
-            <p class="section-title mt-2"><i>{{ home_about.about_image_2_title }}</i></p>
+            <p class="section-title mt-2"><i>{{ home_about.about_image_2_title|default_if_none:"" }}</i></p>
         </div>
     </div>
     <div class="row"></div>
@@ -96,22 +96,22 @@
             <a href=""><div class="zoom">
             <img src="{{ home_articles.article_image_1.url }}" class="img-fluid story-image" alt="{{ home_articles.article_image_alt_text_1 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_1 }}</p>
-            <p class="section-title-sub">{{ home_articles.article_description_1 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_1|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_articles.article_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_articles.article_image_2.url }}" class="img-fluid story-image" alt="{{ home_articles.article_image_alt_text_2 }}" width="600" height="400">
             </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_2 }}</p>
-            <p class="section-title-sub">{{ home_articles.article_description_2 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_2|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_articles.article_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_articles.article_image_3.url }}" class="img-fluid story-image" alt="{{ home_articles.article_image_alt_text_3 }}" width="600" height="400">
              </div></a>
-             <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_3 }}</p>
-             <p class="section-title-sub">{{ home_articles.article_description_3 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+             <a href="" class="text-links"><p class="section-title mt-2">{{ home_articles.article_title_3|default_if_none:"" }}</p>
+             <p class="section-title-sub">{{ home_articles.article_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
             </div>
         </div>
     </div>
@@ -131,22 +131,22 @@
             <a href=""><div class="zoom">
             <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_1 }}" width="600" height="400">
             </div></a>
-        <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_1 }}</p>
-        <p class="section-title-sub">{{ home_research.research_description_1 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
+        <p class="section-title-sub">{{ home_research.research_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_research.research_image_2.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_2 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_2 }}</p>
-            <p class="section-title-sub">{{ home_research.research_description_2 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_research.research_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_research.research_image_3.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_3 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_3 }}</p>
-            <p class="section-title-sub">{{ home_research.research_description_3 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_research.research_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
     {% endfor %}
@@ -166,21 +166,21 @@
             <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_1 }}" width="600" height="400">
             </div></a>
         <a href="" class="text-links"><p class="section-title mt-2">Ploughs</p>
-        <p class="section-title-sub">{{ home_gallery.gallery_description_1 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+        <p class="section-title-sub">{{ home_gallery.gallery_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_2 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Workshop Tools</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_2 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_gallery.gallery_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4 text-center">
             <a href=""><div class="zoom">
             <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
              </div></a>
             <a href="" class="text-links"><p class="section-title mt-2">Bealbys</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_3 }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
+            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
     {% endfor %}
