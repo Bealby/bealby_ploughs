@@ -14,4 +14,40 @@
     </div>
 </div>
 
-{% endblock %}v
+<!---Articles--->  
+<div class="row">
+    {% for article_3 in articles_3 %}
+    <div class="col-sm-12 col-lg-4">
+      <h4 class="text-muted text-left mb-5 d-lg-none text-center">
+        {{ article_3.title }}
+      </h4>
+      {% if article32.article_image %}
+      <img
+        src="{{ article_3.article_image.url }}"
+        class="img-fluid mt-5"
+        alt="{{ article_3.article_image_description }}"
+      />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ article_3.article_image_description }}"
+      />
+      {% endif %}
+    </div>
+    <div class="col-sm-12 col-lg-8 text-muted">
+      <h3 class="d-none d-lg-block">{{ article_3.title }}</h3>
+      <h5><i>{{ article_3.name }}</i></h5>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto mt-0 text-muted"></div>
+      </div>
+      <p class="pt-2 news-mb">
+        {{ article_3.text|linebreaksbr }}
+      </p>
+    </div>
+    <div class="block-divider mx-auto mt-5 mb-3 text-muted"></div>
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
