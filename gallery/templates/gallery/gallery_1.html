@@ -1,15 +1,26 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <!---Articles--->
 <div class="container-fluid section-gutter-2">
-    <div class="row mb-4">
-        <div class="col">
-            <h4 class="decorated"><span>Ploughs</span></h4>
-        </div>
+  <div class="row mb-4">
+    <div class="col">
+      <h4 class="decorated"><span>Ploughs</span></h4>
     </div>
+  </div>
+  <div class="row">
+    {% for gallery_1 in galleries_1 %}
+    <div class="col-md-2 pt-4">
+      <img
+        loading="lazy"
+        src="{{ gallery_1.image.url }}"
+        srcset="{{ gallery_1.image.url }}"
+        class="img-fluid"
+        alt="{{ gallery_1.image_description }}"
+      />
+      <p class="section-title mt-2">{{ gallery_1.image_description }}</p>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
 {% endblock %}v
