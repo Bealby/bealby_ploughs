@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Research_1
+from .models import Research_2
 
 # Create your views here.
 
