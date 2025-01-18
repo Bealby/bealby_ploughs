@@ -79,6 +79,33 @@ body {
   width: 300px;
 }
 
+
+/*---Carousel---*/
+
+@-webkit-keyframes zoom2 {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom2 {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+} 
+
+.carousel-item > img {
+  -webkit-animation: zoom2 20s;
+  animation: zoom2 20s;
+}
+
+
 /*---Sections---*/
 
 .section-content {
@@ -389,7 +416,6 @@ li {
   text-decoration: none !important;
   cursor: pointer;
 }
-
 
 /*---NAVBAR MEDIA QUERIES---*/
 
