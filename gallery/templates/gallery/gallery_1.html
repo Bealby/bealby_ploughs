@@ -18,7 +18,8 @@
         alt="{{ gallery_1.image_description }}"
         width="600" height="400"
       />
-      <p class="section-title mt-2">{{ gallery_1.image_description }}</p>
+      <p class="section-title mt-2">{{ gallery_1.image_title|default_if_none:"" }}</p>
+      <p class="section-title-sub">{{ gallery_1.image_description|default_if_none:"" }}&emsp</p>
     </div>
     {% endfor %}
   </div>

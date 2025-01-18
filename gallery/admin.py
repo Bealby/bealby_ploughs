@@ -6,6 +6,7 @@ class Gallery_1Admin(admin.ModelAdmin):
     
     list_display = (
         'image',
+        'image_title',
         'image_description',
     )
 
