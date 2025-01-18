@@ -165,7 +165,7 @@ body {
 /*---Secions_gutter---*/
 
 .section-gutter {
-  --bs-gutter-x: 30rem;
+  --bs-gutter-x: 85rem;
   margin-top: 5rem;
 }
 
@@ -482,6 +482,43 @@ li {
     margin-top: 0rem;
   }
 }
+
+/*---Section gutter decrease gutter x for better viewing 1200px---*/
+
+@media (max-width: 2200px) {
+  .section-gutter {
+    --bs-gutter-x: 61rem;
+    margin-top: 5rem;
+  }
+  }
+
+
+  /*---Section gutter decrease gutter x for better viewing 1900px---*/
+
+@media (max-width: 1900px) {
+  .section-gutter {
+    --bs-gutter-x: 50rem;
+    margin-top: 5rem;
+  }
+  }
+
+    /*---Section gutter decrease gutter x for better viewing 1600px---*/
+
+@media (max-width: 1600px) {
+  .section-gutter {
+    --bs-gutter-x: 40rem;
+    margin-top: 5rem;
+  }
+  }
+
+      /*---Section gutter decrease gutter x for better viewing 1400px---*/
+
+@media (max-width: 1400px) {
+  .section-gutter {
+    --bs-gutter-x: 30rem;
+    margin-top: 5rem;
+  }
+  }
 
 
 /*---Section gutter decrease gutter x for better viewing 1200px---*/
