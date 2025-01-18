@@ -31,6 +31,6 @@ class Gallery_3Admin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Gallery_1, Gallery_3Admin)
-admin.site.register(Gallery_2, Gallery_3Admin)
+admin.site.register(Gallery_1, Gallery_1Admin)
+admin.site.register(Gallery_2, Gallery_2Admin)
 admin.site.register(Gallery_3, Gallery_3Admin)
