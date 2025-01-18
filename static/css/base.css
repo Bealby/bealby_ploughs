@@ -24,7 +24,7 @@ body {
 
 .nav-link {
   font-family: "Noticia Text", serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
 }
@@ -396,7 +396,7 @@ li {
 /*---Nav text/ logo smaller for better viewing at 1700---*/
 @media (max-width: 1700px) {
   .nav-link {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
   }
   .logo_desktop img {
@@ -407,7 +407,7 @@ li {
 /*---Nav text/ logo smaller for better viewing at 1200---*/
 @media (max-width: 1200px) {
   .nav-link {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
   }
   .logo_desktop img {
@@ -418,7 +418,7 @@ li {
 /*---Nav text/ logo smaller for better viewing at 992---*/
 @media (max-width: 992px) {
   .nav-link {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
   }
   .logo_desktop img {
@@ -429,7 +429,7 @@ li {
 /*---Nav text/ logo smaller for better viewing at 850---*/
 @media (max-width: 850px) {
   .nav-link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
   }
   .logo_desktop img {
