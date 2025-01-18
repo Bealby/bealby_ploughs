@@ -9,18 +9,19 @@
   </div>
   <div class="row">
     {% for gallery_1 in galleries_1 %}
-    <div class="col-md-2 pt-4">
+    <div class="col-lg-4 col-md-6 pt-4">
       <img
         loading="lazy"
         src="{{ gallery_1.image.url }}"
         srcset="{{ gallery_1.image.url }}"
         class="img-fluid"
         alt="{{ gallery_1.image_description }}"
+        width="600" height="400"
       />
       <p class="section-title mt-2">{{ gallery_1.image_description }}</p>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 {% endblock %}v
