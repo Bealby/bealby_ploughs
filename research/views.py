@@ -16,6 +16,12 @@ def research_1(request):
 
 
 def research_2(request):
-    '''A view to return the index page'''
+    ''' A view to return index page'''
+
+    researches_2 = Research_2.objects.all()
+
+    context = {
+        'researches_2': researches_2,
+    }
     
-    return render(request, 'research/research_2.html')
+    return render(request, 'research/research_2.html', context)
