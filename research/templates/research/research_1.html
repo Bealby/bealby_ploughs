@@ -16,13 +16,13 @@
   </div>
   <div class="row">
     <div class="col-lg-6 col-md-6 pt-4">
-      {% if research_1.image %}
+      {% if research_1.image_1 %}
       <img
         loading="lazy"
         src="{{ research_1.image_1.url }}"
-        srcset="{{ research_1.image.url }}"
+        srcset="{{ research_1.image_1.url }}"
         class="img-fluid"
-        alt="{{ research_1.image_description }}"
+        alt="{{ research_1.image_description_1 }}"
         width="600"
         height="400"
       />
@@ -41,7 +41,7 @@
       </p>
     </div>
     <div class="col-lg-6 col-md-6 pt-4">
-      {% if research_1.image %}
+      {% if research_1.image_2 %}
       <img
         loading="lazy"
         src="{{ research_1.image_2.url }}"
