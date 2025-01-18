@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<!---Articles--->
+<!---Gallery--->
 <div class="container-fluid section-gutter-2">
   <div class="row mb-4">
     <div class="col">
@@ -10,6 +10,7 @@
   <div class="row">
     {% for gallery_1 in galleries_1 %}
     <div class="col-lg-4 col-md-6 pt-4">
+      {% if gallery_1.image %}
       <img
         loading="lazy"
         src="{{ gallery_1.image.url }}"
@@ -18,6 +19,13 @@
         alt="{{ gallery_1.image_description }}"
         width="600" height="400"
       />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ gallery_1.image_description }}"
+      />
+      {% endif %}
       <p class="section-title mt-2">{{ gallery_1.image_title|default_if_none:"" }}</p>
       <p class="section-title-sub">{{ gallery_1.image_description|default_if_none:"" }}&emsp</p>
     </div>
@@ -25,4 +33,4 @@
   </div>
 </div>
 
-{% endblock %}v
+{% endblock %}
