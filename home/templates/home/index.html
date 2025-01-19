@@ -101,24 +101,24 @@
     {% for home_article in home_articles %}
     <div class="row">
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'articles_1' %}"><div class="zoom">
             <img src="{{ home_article.article_image_1.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_1 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_1|default_if_none:"" }}</p>
+            <a href="{% url 'articles_1' %}" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_1|default_if_none:"" }}</p>
             <p class="section-title-sub">{{ home_article.article_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'articles_2' %}"><div class="zoom">
             <img src="{{ home_article.article_image_2.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_2 }}" width="600" height="400">
             </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_2|default_if_none:"" }}</p>
+            <a href="{% url 'articles_2' %}" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_2|default_if_none:"" }}</p>
             <p class="section-title-sub">{{ home_article.article_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'articles_3' %}"><div class="zoom">
             <img src="{{ home_article.article_image_3.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_3 }}" width="600" height="400">
              </div></a>
-             <a href="" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_3|default_if_none:"" }}</p>
+             <a href="{% url 'articles_3' %}" class="text-links"><p class="section-title mt-2">{{ home_article.article_title_3|default_if_none:"" }}</p>
              <p class="section-title-sub">{{ home_article.article_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
             </div>
         </div>
@@ -136,24 +136,24 @@
     {% for home_research in home_researches %}
     <div class="row">
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'research_1' %}"><div class="zoom">
             <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_1 }}" width="600" height="400">
             </div></a>
-        <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
+        <a href="{% url 'research_1' %}" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
         <p class="section-title-sub">{{ home_research.research_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'research_2' %}"><div class="zoom">
             <img src="{{ home_research.research_image_2.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_2 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
+            <a href="{% url 'research_2' %}" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
             <p class="section-title-sub">{{ home_research.research_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'research_3' %}"><div class="zoom">
             <img src="{{ home_research.research_image_3.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_3 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
+            <a href="{% url 'research_3' %}" class="text-links"><p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
             <p class="section-title-sub">{{ home_research.research_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
@@ -170,24 +170,24 @@
     {% for home_gallery in home_galleries %}
     <div class="row">
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'gallery_1' %}"><div class="zoom">
             <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_1 }}" width="600" height="400">
             </div></a>
-        <a href="" class="text-links"><p class="section-title mt-2">Ploughs</p>
+        <a href="{% url 'gallery_1' %}" class="text-links"><p class="section-title mt-2">Ploughs</p>
         <p class="section-title-sub">{{ home_gallery.gallery_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'gallery_2' %}"><div class="zoom">
             <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_2 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">Workshop Tools</p>
+            <a href="{% url 'gallery_2' %}" class="text-links"><p class="section-title mt-2">Workshop Tools</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div class="col-lg-4">
-            <a href=""><div class="zoom">
+            <a href="{% url 'gallery_3' %}"><div class="zoom">
             <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
              </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">Bealbys</p>
+            <a href="{% url 'gallery_3' %}" class="text-links"><p class="section-title mt-2">Bealbys</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
         </div>
     </div>
