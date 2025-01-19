@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
 <div class="container-fluid section-gutter-2">
-  <div class="row mb-4">
+  <div class="row mb-5">
     <div class="col">
       <h4 class="decorated"><span>Family Recollections</span></h4>
     </div>
@@ -11,19 +11,20 @@
   <div class="row">
     {% for article_3 in articles_3 %}
     <div class="col-sm-12 col-lg-4">
-      <h4 class="text-muted text-left mb-5 d-lg-none text-center">
+      <h3 class="text-muted d-lg-none">
         {{ article_3.title }}
-      </h4>
+      </h3>
+      <h5 class="d-lg-none text-muted"><i>{{ article_2.author }}</i></h5>
       {% if article_3.article_image %}
       <img
         src="{{ article_3.article_image.url }}"
-        class="img-fluid mt-5"
+        class="img-fluid article-image"
         alt="{{ article_3.article_image_description }}"
       />
       {% else %}
       <img
         src="{{ MEDIA_URL }}"
-        class="img-fluid mt-5"
+        class="img-fluid article-image"
         alt="{{ article_3.article_image_description }}"
       />
       {% endif %}
@@ -38,7 +39,7 @@
         {{ article_3.text|linebreaksbr }}
       </p>
     </div>
-    <div class="block-divider mx-auto mt-5 mb-3 text-muted"></div>
+    <div class="block-divider mx-auto mt-5 mb-5 text-muted"></div>
   {% endfor %}
   </div>
 </div>
