@@ -7,7 +7,7 @@ from .models import Article_3
 def articles_1(request):
     '''A view to return the index page'''
     
-    return render(request, 'articles/articles_1.html')
+    return render(request, 'articles/article_1.html')
 
 
 def articles_2(request):
@@ -19,7 +19,7 @@ def articles_2(request):
         'articles_2': articles_2,
     }
     
-    return render(request, 'articles/articles_2.html', context)
+    return render(request, 'articles/article_2.html', context)
 
 
 
@@ -32,4 +32,4 @@ def articles_3(request):
         'articles_3': articles_3,
     }
     
-    return render(request, 'articles/articles_3.html', context)
+    return render(request, 'articles/article_3.html', context)
