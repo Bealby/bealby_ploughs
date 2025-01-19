@@ -26,3 +26,9 @@ def research_2(request):
     }
     
     return render(request, 'research/research_2.html', context)
+
+
+def research_3(request):
+    ''' A view to return index page'''
+    
+    return render(request, 'research/research_3.html')

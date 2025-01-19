@@ -10,14 +10,14 @@ def index(request):
 
     home_abouts = HomeAbout.objects.all()
     home_articles = HomeArticle.objects.all()
-    home_research = HomeResearch.objects.all()
-    home_gallery = HomeGallery.objects.all()
+    home_researches = HomeResearch.objects.all()
+    home_galleries = HomeGallery.objects.all()
 
     context = {
         'home_abouts': home_abouts,
         'home_articles': home_articles,
-        'home_research': home_research,
-        'home_gallery': home_gallery,
+        'home_researches': home_researches,
+        'home_galleries': home_galleries,
     }
 
     return render(request, 'home/index.html', context)
