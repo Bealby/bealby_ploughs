@@ -92,6 +92,7 @@ html {
      font-weight: 400;
      letter-spacing: 0.5px;
      text-align: justify;
+     color:rgba(33, 37, 41, 0.75) !important;
 }
  .section-title {
      font-size: 15px;
@@ -137,6 +138,16 @@ html {
 .article-image{
     margin-top:1rem;
     margin-bottom:1rem;
+}
+
+.gallery-image{
+    margin-bottom: 2rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.image-shadow {
+    box-shadow: 0rem 0rem 1.5rem 0rem rgb(0, 0, 0, 1);
 }
 
 /*---Links---*/

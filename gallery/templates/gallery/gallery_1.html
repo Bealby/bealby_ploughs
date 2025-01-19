@@ -2,20 +2,20 @@
 
 <!---Gallery--->
 <div class="container-fluid section-gutter-2">
-  <div class="row mb-4">
+  <div class="row mb-5">
     <div class="col">
       <h4 class="decorated"><span>Ploughs</span></h4>
     </div>
   </div>
   <div class="row">
     {% for gallery_1 in galleries_1 %}
-    <div class="col-lg-6 col-md-6 pt-4">
+    <div class="col-lg-6 col-md-6 gallery-image">
       {% if gallery_1.image %}
       <img
         loading="lazy"
         src="{{ gallery_1.image.url }}"
         srcset="{{ gallery_1.image.url }}"
-        class="img-fluid"
+        class="img-fluid text-center image-shadow"
         alt="{{ gallery_1.image_description }}"
         width="600" height="400"
       />
