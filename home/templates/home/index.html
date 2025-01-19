@@ -12,28 +12,28 @@
 {% block content %}
 
 
-<div id="carouselExampleCaptions" class="carousel slide d-none d-md-block">
+<div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item carousel_height active">
+    <div class="carousel-item carousel_height active" data-bs-interval="6000">
       <img src="{% static 'images/carousel/brook_house.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Brook House</h5>
         <p>Bealby Plough Workers</p>
       </div>
     </div>
-    <div class="carousel-item carousel_height">
+    <div class="carousel-item carousel_height" data-bs-interval="6000">
       <img src="{% static 'images/carousel/tools.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Workshop Tools</h5>
         <p>...</p>
       </div>
     </div>
-    <div class="carousel-item carousel_height">
+    <div class="carousel-item carousel_height" data-bs-interval="6000">
       <img src="{% static 'images/carousel/tree_plough.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Tree Plough</h5>
