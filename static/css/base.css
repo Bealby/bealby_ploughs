@@ -16,7 +16,7 @@ html {
  .navbar {
      --bs-navbar-nav-link-padding-x: 1.5rem;
      background-color: rgba(255, 255, 255, 1) !important;
-     border-bottom: rgba(239, 125, 25, 1);
+     border-bottom: 2px solid rgba(239, 125, 25, 1 );
 }
  .nav-link {
      font-family: "Noticia Text", serif;
@@ -170,7 +170,7 @@ html {
      width: 1800px;
     /* half of limiter*/
      margin: 0 20px;
-     color: rgba(239, 125, 25, 0.3);
+     color: rgba(239, 125, 25, 1);
 }
  .decorated > span:before {
      right: 100%;
