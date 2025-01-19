@@ -94,15 +94,16 @@ html {
      text-align: justify;
 }
  .section-title {
-     font-size: 15px;
+     font-size: 13px;
      text-align: left !important;
      font-weight: bold;
-     margin-bottom: 8px;
+     margin-bottom: 2px;
 }
  .section-title-sub {
-     font-size: 15px;
+     font-size: 13px;
      font-weight: 400;
      text-align: left !important;
+     font-style: italic;
 }
 /*---IMAGES---*/
 /*---Section Image Zoom---*/

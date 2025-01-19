@@ -58,7 +58,7 @@
             <h4 class="decorated"><span>About</span></h4>
         </div>
     </div>
-    {% for home_about in home_about %}
+    {% for home_about in home_abouts %}
     <div class="row">
         <div class="col-lg-12 section-content">
             <p>{{ home_about.about_paragraph_1 }}
@@ -66,19 +66,26 @@
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col-lg-6 text-center">
-            <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="{{ home_about.about_image_1_description }}">
-            <p class="section-title mt-2"><i>{{ home_about.about_image_1_title|default_if_none:"" }}</i></p>
+        <div class="col-lg-6 mt-4">
+            <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="">
+            <p class="section-title mt-2">{{ home_about.about_image_title_1|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_about.about_image_description_1 }}</p></a>
         </div>
-        <div class="col-lg-6 text-center">
-            <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_2_description }}">
-            <p class="section-title mt-2"><i>{{ home_about.about_image_2_title|default_if_none:"" }}</i></p>
+        <div class="col-lg-6 mt-4 d-none d-lg-block">
+            <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_1 }}">
+            <p class="section-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_about.about_image_description_2 }}</p></a>
         </div>
     </div>
     <div class="row"></div>
-        <div class="col-lg-12 section-content">
+        <div class="col-lg-12 section-content mt-1  ">
             <p> {{ home_about.about_paragraph_2 }}
             </p>
+        </div>
+        <div class="col-lg-6 mt-4 d-lg-none">
+            <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_2 }}">
+            <p class="section-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
+            <p class="section-title-sub">{{ home_about.about_image_description_2 }}</p></a>
         </div>
     </div>
     {% endfor %}
