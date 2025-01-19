@@ -15,7 +15,7 @@ html {
 /*---Navbar---*/
  .navbar {
      --bs-navbar-nav-link-padding-x: 1.5rem;
-     background-color: rgba(255, 255, 255, 1) !important;
+     background-color: #ffffff !important;
      border-bottom: 2px solid rgba(239, 125, 25, 1 );
 }
  .nav-link {
@@ -196,14 +196,14 @@ html {
  .block-divider {
      height: 2px;
      border: 0;
-     background-color: rgb(128, 128, 128, 1);
+     background-color: rgba(33, 37, 41, 0.75);
      margin-top: 1px;
      margin-bottom: 1px;
 }
  .block-divider-sub {
      height: 1px;
      border: 0;
-     background-color: rgb(128, 128, 128, 0.6);
+     background-color: rgba(33, 37, 41, 0.75);
      margin-top: 1px;
      margin-bottom: 1px;
 }
@@ -222,7 +222,7 @@ html {
  .menu-toggler {
      position: absolute;
      margin: 0 auto;
-     right: 40px;
+     right: 36px;
      top: 0;
      width: 80px;
      height: 102px;
@@ -536,7 +536,7 @@ html {
  @media (max-width: 767px) {
      .section-gutter-2 {
          --bs-gutter-x: 6rem;
-         margin-top: 8rem;
+         margin-top: 1rem;
     }
 }
 /*---Section gutter decrease gutter x for better viewing 576px---*/
@@ -550,7 +550,7 @@ html {
  @media (max-width: 576px) {
      .section-gutter-2 {
          --bs-gutter-x: 5rem;
-         margin-top: 8rem;
+         margin-top: 1rem;
     }
 }
 /*---Navbar margin right decrease for better viewing <992pz---*/
@@ -569,7 +569,7 @@ html {
 }
 
 
-/*---image description for better viewing on small devices.---*/
+/*---article image better margins for smaller devices at 991px---*/
 @media (max-width: 991px) {
 .article-image{
     margin-top:1.5rem;
@@ -577,3 +577,12 @@ html {
     text-align: center;
 }
 }
+
+/*---Menu togglr right spacing for better alignment for smaller devices at 560px---*/
+@media (max-width: 560px) {
+    .menu-toggler {
+        right:25px;
+    }
+    }
+
+
