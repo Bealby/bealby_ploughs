@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import HomeAbout
-from .models import HomeArticles
+from .models import HomeArticle
 from .models import HomeResearch
 from .models import HomeGallery
 
@@ -19,7 +19,7 @@ class HomeAboutAdmin(admin.ModelAdmin):
     )
 
 
-class HomeArticlesAdmin(admin.ModelAdmin):
+class HomeArticleAdmin(admin.ModelAdmin):
     
     list_display = (
         'article_title_1',
@@ -74,6 +74,6 @@ class HomeGalleryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(HomeAbout, HomeAboutAdmin)
-admin.site.register(HomeArticles, HomeArticlesAdmin)
+admin.site.register(HomeArticle, HomeArticleAdmin)
 admin.site.register(HomeResearch, HomeResearchAdmin)
 admin.site.register(HomeGallery, HomeGalleryAdmin)

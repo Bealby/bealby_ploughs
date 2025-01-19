@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import HomeAbout
-from .models import HomeArticles
+from .models import HomeArticle
 from .models import HomeResearch
 from .models import HomeGallery
 
@@ -9,7 +9,7 @@ def index(request):
     ''' A view to return index page'''
 
     home_abouts = HomeAbout.objects.all()
-    home_articles = HomeArticles.objects.all()
+    home_articles = HomeArticle.objects.all()
     home_research = HomeResearch.objects.all()
     home_gallery = HomeGallery.objects.all()
 
