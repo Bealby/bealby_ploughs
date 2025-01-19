@@ -136,6 +136,7 @@ html {
 
 .article-image{
     margin-top:1rem;
+    margin-bottom:1rem;
 }
 
 /*---Links---*/
@@ -507,42 +508,42 @@ html {
 /*---Section gutter decrease gutter x for better viewing 992px---*/
  @media (max-width: 992px) {
      .section-gutter {
-         --bs-gutter-x: 5rem;
+         --bs-gutter-x: 8rem;
          margin-top: 3rem;
     }
 }
 /*---Section gutter decrease gutter x for better viewing 992px---*/
  @media (max-width: 992px) {
      .section-gutter-2 {
+         --bs-gutter-x: 8rem;
+         margin-top: 8rem;
+    }
+}
+/*---Section gutter decrease gutter x for better viewing 767px---*/
+ @media (max-width: 767px) {
+     .section-gutter {
+         --bs-gutter-x: 6rem;
+         margin-top: 3rem;
+    }
+}
+/*---Section gutter decrease gutter x for better viewing 767px---*/
+ @media (max-width: 767px) {
+     .section-gutter-2 {
+         --bs-gutter-x: 6rem;
+         margin-top: 8rem;
+    }
+}
+/*---Section gutter decrease gutter x for better viewing 576px---*/
+ @media (max-width: 576px) {
+     .section-gutter {
          --bs-gutter-x: 5rem;
-         margin-top: 8rem;
-    }
-}
-/*---Section gutter decrease gutter x for better viewing 767px---*/
- @media (max-width: 767px) {
-     .section-gutter {
-         --bs-gutter-x: 4rem;
-         margin-top: 3rem;
-    }
-}
-/*---Section gutter decrease gutter x for better viewing 767px---*/
- @media (max-width: 767px) {
-     .section-gutter-2 {
-         --bs-gutter-x: 4rem;
-         margin-top: 8rem;
-    }
-}
-/*---Section gutter decrease gutter x for better viewing 576px---*/
- @media (max-width: 576px) {
-     .section-gutter {
-         --bs-gutter-x: 4rem;
          margin-top: 3rem;
     }
 }
 /*---Section gutter decrease gutter x for better viewing 576px---*/
  @media (max-width: 576px) {
      .section-gutter-2 {
-         --bs-gutter-x: 4rem;
+         --bs-gutter-x: 5rem;
          margin-top: 8rem;
     }
 }
@@ -559,4 +560,14 @@ html {
 .section-title-sub {
     margin-bottom: 2rem;
     }
+}
+
+
+/*---image description for better viewing on small devices.---*/
+@media (max-width: 991px) {
+.article-image{
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    text-align: center;
+}
 }

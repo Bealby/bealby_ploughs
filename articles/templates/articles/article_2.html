@@ -14,26 +14,37 @@
       <h3 class="text-muted d-lg-none">
         {{ article_2.title }}
       </h3>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto mt-0 text-muted d-lg-none"></div>
+      </div>
       <h5 class="d-lg-none text-muted"><i>{{ article_2.author }}</i></h5>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto mt-0 text-muted d-lg-none"></div>
+      </div>
       {% if article_2.article_image %}
+      <div class="article-image">
       <img
         src="{{ article_2.article_image.url }}"
-        class="img-fluid article-image"
+        class="img-fluid"
         alt="{{ article_2.article_image_description }}"
       />
       {% else %}
       <img
         src="{{ MEDIA_URL }}"
-        class="img-fluid article-image"
+        class="img-fluid"
         alt="{{ article_2.article_image_description }}"
       />
       {% endif %}
     </div>
+    </div>
     <div class="col-sm-12 col-lg-8 text-muted">
       <h3 class="d-none d-lg-block">{{ article_2.title }}</h3>
+      <div class="col-12 p-0">
+        <div class="block-divider-sub mx-auto mt-0 text-muted d-none d-lg-block"></div>
+      </div>
       <h5 class="d-none d-lg-block"><i>{{ article_2.author }}</i></h5>
       <div class="col-12 p-0">
-        <div class="block-divider-sub mx-auto mt-0 text-muted"></div>
+        <div class="block-divider-sub mx-auto mt-0 text-muted d-none d-lg-block"></div>
       </div>
       <p class="pt-2 news-mb">
         {{ article_2.text|linebreaksbr }}
