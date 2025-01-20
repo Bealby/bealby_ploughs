@@ -7,7 +7,7 @@ from .models import Gallery_3
 # Create your views here.
 
 def gallery_1(request):
-    ''' A view to return index page'''
+    '''A view to return the Gallery 1 page'''
 
     galleries_1 = Gallery_1.objects.all()
 
@@ -19,7 +19,7 @@ def gallery_1(request):
 
 
 def gallery_2(request):
-    '''A view to return the index page'''
+    '''A view to return the Gallery 2 page'''
 
     galleries_2 = Gallery_2.objects.all()
 
@@ -31,7 +31,7 @@ def gallery_2(request):
 
 
 def gallery_3(request):
-    '''A view to return the index page'''
+    '''A view to return the Gallery 3 page'''
 
     galleries_3 = Gallery_3.objects.all()
 

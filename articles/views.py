@@ -6,13 +6,13 @@ from .models import Article_3
 
 
 def articles_1(request):
-    '''A view to return the index page'''
+    '''A view to return the Article 1 page'''
 
     return render(request, 'articles/article_1.html')
 
 
 def articles_2(request):
-    ''' A view to return index page'''
+    '''A view to return the Article 2 page'''
 
     articles_2 = Article_2.objects.all()
 
@@ -24,7 +24,7 @@ def articles_2(request):
 
 
 def articles_3(request):
-    '''A view to return the index page'''
+    '''A view to return the Article 3 page'''
 
     articles_3 = Article_3.objects.all()
 

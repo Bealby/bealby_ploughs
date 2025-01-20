@@ -6,7 +6,7 @@ from .models import HomeGallery
 
 
 def index(request):
-    ''' A view to return index page'''
+    ''' A view to return Home page'''
 
     home_abouts = HomeAbout.objects.all()
     home_articles = HomeArticle.objects.all()

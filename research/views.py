@@ -6,7 +6,7 @@ from .models import Research_2
 # Create your views here.
 
 def research_1(request):
-    ''' A view to return index page'''
+    '''A view to return the Research 1 page'''
 
     researches_1 = Research_1.objects.all()
 
@@ -18,7 +18,7 @@ def research_1(request):
 
 
 def research_2(request):
-    ''' A view to return index page'''
+    '''A view to return the Research 2 page'''
 
     researches_2 = Research_2.objects.all()
 
@@ -30,6 +30,6 @@ def research_2(request):
 
 
 def research_3(request):
-    ''' A view to return index page'''
+    '''A view to return the Research 3 page'''
 
     return render(request, 'research/research_3.html')
