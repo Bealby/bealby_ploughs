@@ -1,72 +1,71 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<!---Research 1--->
+<!--Research_1-->
 <div class="container-fluid section-gutter-2">
-  <div class="row mb-4">
-    <div class="col">
-      <h4 class="decorated"><span>Invoice Journals</span></h4>
-    </div>
-  </div>
-  {% for research_1 in researches_1 %}
-  <div class="row">
-    <div class="col-lg-12 section-content">
-      <p>{{ research_1.text }}
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-md-6 pt-4">
-      {% if research_1.image_1 %}
-      <img
-        loading="lazy"
-        src="{{ research_1.image_1.url }}"
-        srcset="{{ research_1.image_1.url }}"
-        class="img-fluid"
-        alt="{{ research_1.image_description_1 }}"
-        width="600"
-        height="400"
-      />
-      {% else %}
-      <img
-        src="{{ MEDIA_URL }}"
-        class="img-fluid mt-5"
-        alt="{{ research_1.image_description_1 }}"
-      />
-      {% endif %}
-      <p class="section-title mt-2">
-        {{ research_1.image_title_1|default_if_none:"" }}
-      </p>
-      <p class="section-title-sub">
-        {{ research_1.image_description_1|default_if_none:"" }}&emsp
-      </p>
-    </div>
-    <div class="col-lg-6 col-md-6 pt-4">
-      {% if research_1.image_2 %}
-      <img
-        loading="lazy"
-        src="{{ research_1.image_2.url }}"
-        srcset="{{ research_1.image_2.url }}"
-        class="img-fluid"
-        alt="{{ research_1.image_description_2 }}"
-        width="600"
-        height="400"
-      />
-      {% else %}
-      <img
-        src="{{ MEDIA_URL }}"
-        class="img-fluid mt-5"
-        alt="{{ research_1.image_description_2 }}"
-      />
-      {% endif %}
-      <p class="section-title mt-2">
-        {{ research_1.image_title_2|default_if_none:"" }}
-      </p>
-      <p class="section-title-sub">
-        {{ research_1.image_description_2|default_if_none:"" }}&emsp
-      </p>
-    </div>
-    {% endfor %}
-  </div>
+   <div class="row mb-4">
+      <div class="col">
+         <h4 class="decorated"><span>Invoice Journals</span></h4>
+      </div>
+   </div>
+   {% for research_1 in researches_1 %}
+   <div class="row">
+      <div class="col-lg-12 section-content">
+         <p>{{ research_1.text }}
+         </p>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-lg-6 col-md-6 pt-4">
+         {% if research_1.image_1 %}
+         <img
+            loading="lazy"
+            src="{{ research_1.image_1.url }}"
+            srcset="{{ research_1.image_1.url }}"
+            class="img-fluid"
+            alt="{{ research_1.image_description_1 }}"
+            width="600"
+            height="400"
+            />
+         {% else %}
+         <img
+            src="{{ MEDIA_URL }}"
+            class="img-fluid mt-5"
+            alt="{{ research_1.image_description_1 }}"
+            />
+         {% endif %}
+         <p class="section-title mt-2">
+            {{ research_1.image_title_1|default_if_none:"" }}
+         </p>
+         <p class="section-title-sub">
+            {{ research_1.image_description_1|default_if_none:"" }}&emsp
+         </p>
+      </div>
+      <div class="col-lg-6 col-md-6 pt-4">
+         {% if research_1.image_2 %}
+         <img
+            loading="lazy"
+            src="{{ research_1.image_2.url }}"
+            srcset="{{ research_1.image_2.url }}"
+            class="img-fluid"
+            alt="{{ research_1.image_description_2 }}"
+            width="600"
+            height="400"
+            />
+         {% else %}
+         <img
+            src="{{ MEDIA_URL }}"
+            class="img-fluid mt-5"
+            alt="{{ research_1.image_description_2 }}"
+            />
+         {% endif %}
+         <p class="section-title mt-2">
+            {{ research_1.image_title_2|default_if_none:"" }}
+         </p>
+         <p class="section-title-sub">
+            {{ research_1.image_description_2|default_if_none:"" }}&emsp
+         </p>
+      </div>
+      {% endfor %}
+   </div>
 </div>
-
 {% endblock %}

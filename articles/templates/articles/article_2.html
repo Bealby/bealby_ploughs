@@ -1,48 +1,46 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
+<!--Article_2-->  
 <div class="container-fluid section-gutter-2">
-  <div class="row mb-5">
-    <div class="col">
-      <h4 class="decorated"><span>Workshop Anecdotes</span></h4>
-    </div>
-  </div>
-  
- <!---Articles--->  
-  <div class="row">
-    {% for article_2 in articles_2 %}
-    <div class="col-sm-12 col-lg-4">
-      {% if article_2.article_image %}
-      <div class="article-image">
-      <img
-        src="{{ article_2.article_image.url }}"
-        class="img-fluid"
-        alt="{{ article_2.article_image_description }}"
-      />
-      {% else %}
-      <img
-        src="{{ MEDIA_URL }}"
-        class="img-fluid"
-        alt="{{ article_2.article_image_description }}"
-      />
-      {% endif %}
-    </div>
-    </div>
-    <div class="col-sm-12 col-lg-8">
-      <h3 class="">{{ article_2.title }}</h3>
-      <div class="col-12 p-0">
-        <div class="block-divider-sub mx-auto mt-0"></div>
+   <div class="row mb-5">
+      <div class="col">
+         <h4 class="decorated"><span>Workshop Anecdotes</span></h4>
       </div>
-      <h5 class="mt-1"><i>By {{ article_2.author }}</i></h5>
-      <div class="col-12 p-0">
-        <div class="block-divider-sub mx-auto mt-0"></div>
+   </div>
+   <div class="row">
+      {% for article_2 in articles_2 %}
+      <div class="col-sm-12 col-lg-4">
+         {% if article_2.article_image %}
+         <div class="article-image">
+            <img
+               src="{{ article_2.article_image.url }}"
+               class="img-fluid"
+               alt="{{ article_2.article_image_description }}"
+               />
+            {% else %}
+            <img
+               src="{{ MEDIA_URL }}"
+               class="img-fluid"
+               alt="{{ article_2.article_image_description }}"
+               />
+            {% endif %}
+         </div>
       </div>
-      <p class="pt-2 section-content">
-        {{ article_2.text|linebreaksbr }}
-      </p>
-    </div>
-    <div class="block-divider mx-auto mt-5 mb-5"></div>
-  {% endfor %}
-  </div>
+      <div class="col-sm-12 col-lg-8">
+         <h3 class="">{{ article_2.title }}</h3>
+         <div class="col-12 p-0">
+            <div class="block-divider-sub mx-auto mt-0"></div>
+         </div>
+         <h5 class="mt-1"><i>By {{ article_2.author }}</i></h5>
+         <div class="col-12 p-0">
+            <div class="block-divider-sub mx-auto mt-0"></div>
+         </div>
+         <p class="pt-2 section-content">
+            {{ article_2.text|linebreaksbr }}
+         </p>
+      </div>
+      <div class="block-divider mx-auto mt-5 mb-5"></div>
+      {% endfor %}
+   </div>
 </div>
-
 {% endblock %}
