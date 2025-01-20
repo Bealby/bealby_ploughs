@@ -389,8 +389,31 @@ li {
 .accordion-body:hover,
 .accordion-body:focus,
 .accordion-body:active {
-	color: rgba(239, 125, 25) !important;
+	color: #ffffff !important;
 }
+
+#my-scroll-to-top-btn {
+	position: fixed !important;
+	bottom: 12px !important;
+	right: 10px !important;
+	z-index: 20 !important;
+	font-size: 18px !important;
+	border: none !important;
+	outline: none !important;
+	background-color: rgba(239, 125, 25, 0.5) !important;
+	color: rgb(255, 255, 255, 1) !important;
+	cursor: pointer !important;
+	padding: 8px !important;
+	border-radius: 50% !important;
+	transition: all 5s ease-out !important;
+	width: 40px !important;
+	height: 40px !important;
+	visibility: hidden;
+  }
+  
+  .fa-arrow-up {
+	transition: all 5s ease-out !important;
+  }
 
 /*---Footer---*/
 .footernav {
@@ -413,14 +436,6 @@ li {
 	text-align: center;
 	font-size: 0.6rem;
 	font-family: "Roboto", sans-serif;
-	margin-top: 0rem;
-	padding-top: 0.4rem;
-}
-
-#footer-contact p{
-	margin-bottom: 0rem !important;
-	text-align: center;
-	font-size: 1rem;
 	margin-top: 0rem;
 	padding-top: 0.4rem;
 }
