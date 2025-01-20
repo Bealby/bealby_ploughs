@@ -16,15 +16,15 @@ class HomeAbout(models.Model):
     about_image_title_2 = models.CharField("2. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_2 = models.CharField("2. About - Image Description", max_length=254, null=True, blank=True)
     about_paragraph_2 = models.TextField("2. About - Paragraph ", max_length=1000, null=True, blank=True)
-    
+
     def __str__(self):
         return self.about_paragraph_1
-    
+
 
 class HomeArticle(models.Model):
     '''Programmatic Name'''
 
-    class Meta: 
+    class Meta:
         verbose_name_plural = 'Home - Articles'
 
     article_image_1 = models.ImageField("1. Article - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
@@ -40,7 +40,6 @@ class HomeArticle(models.Model):
     article_title_3 = models.CharField("3. Article - Title", max_length=254, null=True, blank=True)
     article_description_3 = models.CharField("3. Article - Description", max_length=254, null=True, blank=True)
 
-    
     def __str__(self):
         return self.article_title_1
 
@@ -64,10 +63,10 @@ class HomeResearch(models.Model):
     research_title_3 = models.CharField("3.  Research - Title", max_length=254, null=True, blank=True)
     research_description_3 = models.CharField("3. Research - Description", max_length=254, null=True, blank=True)
 
-    
+
     def __str__(self):
         return self.research_title_1
-    
+
 
 class HomeGallery(models.Model):
     '''Programmatic Name'''
@@ -87,6 +86,6 @@ class HomeGallery(models.Model):
     gallery_image_alt_text_3 = models.CharField("3. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_3 = models.CharField("3. Gallery - Title", max_length=254, null=True, blank=True)
     gallery_description_3 = models.CharField("3. Gallery - Description", max_length=254, null=True, blank=True)
-    
+
     def __str__(self):
         return self.gallery_title_1

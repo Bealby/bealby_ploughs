@@ -18,7 +18,7 @@ class Research_1(models.Model):
 
     def __str__(self):
         return self.text
-    
+
 
 class Research_2(models.Model):
     '''Programmatic Name'''

@@ -4,7 +4,7 @@ from .models import Article_3
 
 
 class Article_2Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'title',
         'article_image',
@@ -13,8 +13,9 @@ class Article_2Admin(admin.ModelAdmin):
         'text',
     )
 
+
 class Article_3Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'title',
         'article_image',
@@ -22,6 +23,7 @@ class Article_3Admin(admin.ModelAdmin):
         'author',
         'text',
     )
+
 
 admin.site.register(Article_2, Article_2Admin)
 admin.site.register(Article_3, Article_3Admin)

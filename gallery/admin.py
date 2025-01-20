@@ -5,7 +5,7 @@ from .models import Gallery_3
 
 
 class Gallery_1Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'image_title',
         'image',
@@ -14,7 +14,7 @@ class Gallery_1Admin(admin.ModelAdmin):
 
 
 class Gallery_2Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'image_title',
         'image',
@@ -23,7 +23,7 @@ class Gallery_2Admin(admin.ModelAdmin):
 
 
 class Gallery_3Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'image_title',
         'image',

@@ -4,7 +4,7 @@ from .models import Research_2
 
 
 class Research_1Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'text',
         'image_1',
@@ -17,7 +17,7 @@ class Research_1Admin(admin.ModelAdmin):
 
 
 class Research_2Admin(admin.ModelAdmin):
-    
+
     list_display = (
         'text',
         'image_1',

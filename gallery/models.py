@@ -14,7 +14,7 @@ class Gallery_1(models.Model):
 
     def __str__(self):
         return self.image_title
-    
+
 
 class Gallery_2(models.Model):
     '''Programmatic Name'''
@@ -28,7 +28,7 @@ class Gallery_2(models.Model):
 
     def __str__(self):
         return self.image_title
-    
+
 
 class Gallery_3(models.Model):
     '''Programmatic Name'''

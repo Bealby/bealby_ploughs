@@ -6,7 +6,7 @@ from .models import HomeGallery
 
 
 class HomeAboutAdmin(admin.ModelAdmin):
-    
+
     list_display = (
         'about_paragraph_1',
         'about_image_1',
@@ -20,7 +20,7 @@ class HomeAboutAdmin(admin.ModelAdmin):
 
 
 class HomeArticleAdmin(admin.ModelAdmin):
-    
+
     list_display = (
         'article_title_1',
         'article_image_1',
@@ -38,7 +38,7 @@ class HomeArticleAdmin(admin.ModelAdmin):
 
 
 class HomeResearchAdmin(admin.ModelAdmin):
-    
+
     list_display = (
         'research_title_1',
         'research_image_1',
@@ -56,7 +56,7 @@ class HomeResearchAdmin(admin.ModelAdmin):
 
 
 class HomeGalleryAdmin(admin.ModelAdmin):
-    
+
     list_display = (
         'gallery_title_1',
         'gallery_image_1',
