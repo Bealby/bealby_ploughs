@@ -425,13 +425,18 @@ li {
 	padding-top: 0.4rem;
 }
 
-.footer-links a {
-	color: rgb(100, 255, 218, 1);
-	font-size: 1.3rem;
-	text-decoration: none !important;
-	cursor: pointer;
+#footer-contact p{
+	margin-bottom: 0rem !important;
+	text-align: center;
+	font-size: 1rem;
+	margin-top: 0rem;
+	padding-top: 0.4rem;
 }
 
+#footer-contact a{
+	text-decoration: none;
+	color: #222222;
+}
 
 /*---NAVBAR MEDIA QUERIES---*/
 /*---Nav text/ logo smaller for better viewing at 1700---*/
