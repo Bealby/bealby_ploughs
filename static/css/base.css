@@ -11,10 +11,6 @@ body {
 	font-family: "Noticia Text", serif;
 }
 
-.header-container {
-	margin-top: 8rem;
-}
-
 /*---Navbar---*/
 .navbar {
 	--bs-navbar-nav-link-padding-x: 1.5rem;
@@ -510,42 +506,6 @@ li {
 		width: 200px;
 		margin-left: 40px;
 		margin-top: 5px;
-	}
-}
-
-/*---CAROUSEL ADJUSTMENT PAGE HEADER---*/
-/*---Carousel page header MT for full view of carousel image at 1700---*/
-@media (max-width: 1700px) {
-	.header-container {
-		margin-top: 6.8rem;
-	}
-}
-
-/*---Carousel page header MT for full view of carousel image at 1200---*/
-@media (max-width: 1200px) {
-	.header-container {
-		margin-top: 5.6rem;
-	}
-}
-
-/*---Carousel page header MT for full view of carousel image at 992---*/
-@media (max-width: 992px) {
-	.header-container {
-		margin-top: 4.5rem;
-	}
-}
-
-/*---Carousel page header MT for full view of carousel image at 883---*/
-@media (max-width: 883px) {
-	.header-container {
-		margin-top: 3.8rem;
-	}
-}
-
-/*---Carousel page header MT 0 for better viewing on mobile---*/
-@media (max-width: 767px) {
-	.header-container {
-		margin-top: 0rem;
 	}
 }
 
