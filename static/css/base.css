@@ -367,6 +367,7 @@ li {
 .accordion {
 	margin: 0 auto;
 	width: min-content;
+	--bs-accordion-body-padding-y: 0.5rem;
 }
 
 .accordion-button {
