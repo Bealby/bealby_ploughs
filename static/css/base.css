@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	color: #222222;
+	color: rgba(33, 37, 41, 1);
 	background: #ffffff;
 	font-family: "Noticia Text", serif;
 }
@@ -14,8 +14,7 @@ body {
 /*---Navbar---*/
 .navbar {
 	--bs-navbar-nav-link-padding-x: 1.5rem;
-	background-color: rgba(255,255, 255, 1) !important;
-	border-bottom: 2px solid #000000;
+	background-color: #515151 !important;
 }
 
 .nav-link {
@@ -23,36 +22,41 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	font-style: normal;
-	color: #222222;
+	color: #ffffff !important;
 }
 
 /*--- Nav Desktop Hover ---*/
 .topnav a:hover {
-	border-bottom: 3px solid #222222;
+	border-bottom: 3px solid #ffffff;
 }
 
 .topnav a.active {
-	border-bottom: 3px solid #222222;
+	border-bottom: 3px solid #ffffff;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-	color: #222222 !important;
+	color: #ffffff !important;
 	font-weight: bold !important;
 }
 
 .dropdown-menu {
-	--bs-dropdown-link-active-bg: #ffffff !important;
-	--bs-dropdown-link-hover-bg: #ffffff !important;
+	--bs-dropdown-link-active-bg: #515151 !important;
+	--bs-dropdown-link-hover-bg: #515151!important;
+	background-color: #515151 !important;
 }
 
 /*---Navbar Dropdown---*/
 .dropdown-menu-links {
-	background-color: #ffffff;
+	background-color: #515151;
 	border: none;
 	margin-left: 10px;
 	padding-top: 0px;
 	margin-top: 0px !important;
+}
+
+.dropdown-item {
+	color: #ffffff !important;
 }
 
 .navbar-desktop {
@@ -92,6 +96,13 @@ body {
 
 .carousel-item {
 	transition: transform 1s ease-in;
+}
+
+/*--Gradient - Title--*/
+
+.gradient {
+    background: rgba(34, 34, 34, 0.8);
+    color: white
 }
 
 /*---Sections---*/
@@ -165,11 +176,11 @@ body {
 /*---Links---*/
 .text-links {
 	text-decoration: none !important;
-	color: #222222;
+	color: #ffffff;
 }
 
 .text-links:hover {
-	color: #222222;
+	color: #ffffff;
 }
 
 /*---headlines with lines---*/
@@ -248,6 +259,10 @@ li {
 	text-decoration: none !important;
 }
 
+.mob-nav-bg{
+	background-color: #515151;
+}
+
 /*--- Mobile Nav - Cross Icon ---*/
 .input-toggler {
 	display: none;
@@ -271,7 +286,7 @@ li {
 .menu-toggler-line {
 	width: 60%;
 	height: 3px;
-	background: #222222;
+	background: #ffffff;
 	margin: 0 0 10px 0px;
 	position: relative;
 	transition: all 0.4s ease-out;
@@ -302,7 +317,7 @@ li {
 	top: 0;
 	height: 100vh;
 	width: 100%;
-	background: #ffffff;
+	background: #515151;
 	opacity: 0.5;
 	justify-content: center;
 	align-items: center;
@@ -318,14 +333,14 @@ li {
 
 /*---Navbar Overlay for mobile---*/
 .menu-icon {
-	color: #222222 !important;
+	color: #ffffff !important;
 	font-size: 40px;
 	cursor: pointer;
 }
 
 /*--- Mobile Nav - Menu Link ---*/
 .menu-link {
-	color: #222222;
+	color: #ffffff;
 	font-size: 30px;
 	line-height: 15vmin;
 	-webkit-transition: all 0.25s ease-out;
@@ -358,6 +373,8 @@ li {
 	font-family: "Noticia Text", serif;
 	font-weight: 400;
 	font-size: 30px;
+	background-color: #515151 !important;
+	color: #ffffff !important;
 }
 
 .accordion-button::after {
@@ -371,6 +388,11 @@ li {
 	background-size: var(--bs-accordion-btn-icon-width);
 	transition: var(--bs-accordion-btn-icon-transition);
 	margin-left: 10px;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
 }
 
 .accordion-body {
@@ -380,15 +402,17 @@ li {
 
 .accordion-item {
 	border: none;
+	background-color:#515151 !important;
 }
 
 .accordion-body:hover,
 .accordion-body:focus,
 .accordion-body:active {
-	color: #222222 !important;
+	color: #ffffff !important;
 	font-weight: bold !important;
-
 }
+
+/*---Scroll to top feature---*/
 
 #my-scroll-to-top-btn {
 	position: fixed !important;
@@ -416,8 +440,8 @@ li {
 /*---Footer---*/
 .footernav {
 	background-color: #ffffff;
-	color: #222222;
-	border-top: 2px solid rgba(239, 125, 25, 1);
+	color: rgba(51, 51, 51);
+	border-top: 2px solid 
 }
 
 #footer {
@@ -448,7 +472,7 @@ li {
 
 #footer-contact a{
 	text-decoration: none;
-	color: #222222;
+	color: #ffffff;
 }
 
 /*---NAVBAR MEDIA QUERIES---*/
