@@ -356,7 +356,7 @@ li {
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
-	color: rgba(239, 125, 25) !important;
+	color: #ffffff !important;
 }
 
 .menu-link-home {
