@@ -226,6 +226,10 @@ body {
 	margin-bottom: 8rem;
 }
 
+.section-header-gutter{
+	margin-bottom: 2.5rem;
+}
+
 /*---Page Margin/ Padding---*/
 .index-mb {
 	margin-bottom: 5rem;
@@ -694,4 +698,12 @@ li {
 	.menu-toggler {
 		right: 25px;
 	}
+}
+
+
+/*---Menu togglr right spacing for better alignment for smaller devices at 560px---*/
+@media (max-width: 991px) {
+.section-header-gutter {
+	margin-bottom: 1rem;
+	}	
 }
