@@ -147,6 +147,11 @@ body {
 	font-style: italic;
 }
 
+/*---Page Margin/ Padding---*/
+.page-bottom-margin {
+	margin-bottom: 5rem;
+}
+
 /*---IMAGES---*/
 /*---Section Image Zoom---*/
 .story-image {
@@ -232,17 +237,6 @@ body {
 
 .section-header-gutter {
 	margin-bottom: 2.5rem;
-}
-
-.section-gutter-2 {
-	--bs-gutter-x: 60rem;
-	margin-top: 14rem;
-	margin-bottom: 8rem;
-}
-
-/*---Page Margin/ Padding---*/
-.index-mb {
-	margin-bottom: 5rem;
 }
 
 /*---Block Dividers---*/
@@ -569,13 +563,6 @@ li {
 	}
 }
 
-@media (max-width: 2200px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 40rem;
-		margin-top: 4rem;
-	}
-}
-
 /*---Section gutter decrease gutter x for better viewing 1900px---*/
 @media (max-width: 1900px) {
 	.section-gutter {
@@ -591,13 +578,6 @@ li {
 	}
 }
 
-@media (max-width: 1900px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 30rem;
-		margin-top: 4rem;
-	}
-}
-
 /*---Section gutter decrease gutter x for better viewing 1600px---*/
 @media (max-width: 1600px) {
 	.section-gutter {
@@ -608,13 +588,6 @@ li {
 
 @media (max-width: 1600px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 25rem;
-		margin-top: 5rem;
-	}
-}
-
-@media (max-width: 1600px) {
-	.section-gutter-2 {
 		--bs-gutter-x: 25rem;
 		margin-top: 5rem;
 	}
@@ -657,13 +630,6 @@ li {
 	}
 }
 
-@media (max-width: 1200px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 10rem;
-		margin-top: 3rem;
-	}
-}
-
 /*---Section gutter decrease gutter x for better viewing 992px---*/
 @media (max-width: 992px) {
 	.section-gutter {
@@ -679,10 +645,10 @@ li {
 	}
 }
 
+/*---Page bottom margin for better spacing for smaller devices---*/
 @media (max-width: 992px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 8rem;
-		margin-top: 3rem;
+	.page-bottom-margin {
+	margin-bottom: 4rem;
 	}
 }
 
@@ -701,10 +667,10 @@ li {
 	}
 }
 
+/*---Page bottom margin for better spacing for smaller devices---*/
 @media (max-width: 767px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 6rem;
-		margin-top: 3rem;
+	.page-bottom-margin {
+	margin-bottom: 4rem;
 	}
 }
 
@@ -716,17 +682,17 @@ li {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 	.section-gutter-main-header {
 		--bs-gutter-x: 5rem;
 		margin-top: 3rem;
 	}
 }
 
+/*---Page bottom margin for better spacing for smaller devices---*/
 @media (max-width: 576px) {
-	.section-gutter-2 {
-		--bs-gutter-x: 5rem;
-		margin-top: 2.5rem;
+	.page-bottom-margin {
+	margin-bottom: 4rem;
 	}
 }
 
@@ -788,3 +754,4 @@ li {
 	margin-bottom: 3rem;
 	}
 }
+
