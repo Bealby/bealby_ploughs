@@ -230,7 +230,7 @@ body {
 	margin-top: 4rem;
 }
 
-.section-header-gutter-about {
+.section-header-gutter {
 	margin-bottom: 2.5rem;
 }
 
@@ -239,11 +239,6 @@ body {
 	margin-top: 14rem;
 	margin-bottom: 8rem;
 }
-
-.section-article-margins{
-	margin-top: 2rem;
-}
-
 
 /*---Page Margin/ Padding---*/
 .index-mb {
