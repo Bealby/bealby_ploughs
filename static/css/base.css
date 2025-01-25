@@ -271,8 +271,9 @@ li {
 	text-decoration: none !important;
 }
 
-.mob-nav-bg{
+.mob-nav{
 	background-color: #515151;
+	padding-bottom: 1rem;
 }
 
 /*--- Mobile Nav - Cross Icon ---*/
@@ -663,6 +664,14 @@ li {
 	}
 }
 
+/*---Secition header MT for better spacing in smaller devices---*/
+@media (max-width: 992px) {
+.section-header-gutter {
+	margin-bottom: 1.5rem;
+	}
+}
+
+
 /*---Section gutter decrease gutter x for better viewing 767px---*/
 @media (max-width: 767px) {
 	.section-gutter {
@@ -678,20 +687,6 @@ li {
 	}
 }
 
-/*---Page bottom margin for better spacing for smaller devices---*/
-@media (max-width: 767px) {
-	.page-bottom-margin {
-	margin-bottom: 4rem;
-	}
-}
-
-/*---Page bottom margin for better spacing for smaller devices---*/
-@media (max-width: 767px) {
-	.page-bottom-margin-2 {
-	margin-bottom: 6rem;
-	}
-}
-
 /*---Section gutter decrease gutter x for better viewing 576px---*/
 @media (max-width: 576px) {
 	.section-gutter {
@@ -704,20 +699,6 @@ li {
 	.section-gutter-main-header {
 		--bs-gutter-x: 5rem;
 		margin-top: 3rem;
-	}
-}
-
-/*---Page bottom margin for better spacing for smaller devices---*/
-@media (max-width: 576px) {
-	.page-bottom-margin {
-	margin-bottom: 4rem;
-	}
-}
-
-/*---Page bottom margin for better spacing for smaller devices---*/
-@media (max-width: 576px) {
-	.page-bottom-margin-2 {
-	margin-bottom: 6rem;
 	}
 }
 
