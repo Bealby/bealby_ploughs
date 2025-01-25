@@ -4,12 +4,12 @@
 <div class="container-fluid section-gutter-main-header">
    <div class="row section-gutter-main-header">
       <div class="col">
-         <h4 class="decorated"><span>Workshop Anecdotes</span></h4>
+         <h4 class="decorated page-header"><span>Workshop Anecdotes</span></h4>
       </div>
    </div>
    <div class="row section-article-margins">
       {% for article_2 in articles_2 %}
-      <h3 class="d-lg-none text-center">{{ article_2.title }}</h3>
+      <h4 class="d-lg-none text-center">{{ article_2.title }}</h4>
       <div class="col-sm-12 col-lg-4">
          {% if article_2.article_image %}
          <div class="article-image">
@@ -28,7 +28,7 @@
          </div>
       </div>
       <div class="col-sm-12 col-lg-8">
-         <h3 class="d-none d-lg-block">{{ article_2.title }}</h3>
+         <h4 class="d-none d-lg-block">{{ article_2.title }}</h4>
          <div class="col-12 p-0">
             <div class="block-divider-sub mx-auto mt-0"></div>
          </div>

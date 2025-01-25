@@ -11,6 +11,10 @@ body {
 	font-family: "Noticia Text", serif;
 }
 
+.page-header{
+	font-weight: bold !important;
+}
+
 /*---Navbar---*/
 .navbar {
 	--bs-navbar-nav-link-padding-x: 1.5rem;
@@ -106,6 +110,7 @@ body {
 }
 
 /*---Sections---*/
+
 .section-content {
 	font-size: 17px;
 	font-weight: 400;
