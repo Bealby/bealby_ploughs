@@ -20,7 +20,6 @@ django-storages==1.13.1
 docker==5.0.3
 env==0.1.0
 filelock==3.2.0
-flake8==6.0.0
 Flask==2.0.1
 graphene==2.1.9
 graphene-django==2.15.0
