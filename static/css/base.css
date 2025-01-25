@@ -220,15 +220,25 @@ body {
 	margin-top: 4rem;
 }
 
+.section-gutter-main-header {
+	--bs-gutter-x: 70rem;
+	margin-top: 4rem;
+}
+
+.section-header-gutter-about {
+	margin-bottom: 2.5rem;
+}
+
 .section-gutter-2 {
 	--bs-gutter-x: 60rem;
 	margin-top: 14rem;
 	margin-bottom: 8rem;
 }
 
-.section-header-gutter-about {
-	margin-bottom: 2.5rem;
+.section-article-margins{
+	margin-top: 2rem;
 }
+
 
 /*---Page Margin/ Padding---*/
 .index-mb {
@@ -769,5 +779,12 @@ li {
 	word-spacing: 4px;	
 	text-align: left;
 	color: rgba(33, 37, 41, 0.75) !important;
+	}
+}
+
+/*---Margin bottom for better spacing under article image for smaller devices ---*/
+@media (max-width: 991px) {
+.article-image {
+	margin-bottom: 3rem;
 	}
 }
