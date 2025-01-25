@@ -107,9 +107,9 @@ body {
 
 /*---Sections---*/
 .section-content {
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 400;
-	letter-spacing: 0.5px;
+	word-spacing: 4px;
 	text-align: justify;
 	color: rgba(33, 37, 41, 0.75) !important;
 }
@@ -226,7 +226,7 @@ body {
 	margin-bottom: 8rem;
 }
 
-.section-header-gutter{
+.section-header-gutter-about {
 	margin-bottom: 2.5rem;
 }
 
@@ -608,7 +608,7 @@ li {
 @media (max-width: 1200px) {
 	.section-gutter {
 		--bs-gutter-x: 10rem;
-		margin-top: 4rem;
+		margin-top: 3rem;
 	}
 }
 
@@ -616,7 +616,7 @@ li {
 @media (max-width: 1200px) {
 	.section-gutter-2 {
 		--bs-gutter-x: 10rem;
-		margin-top: 4rem;
+		margin-top: 3rem;
 	}
 }
 
@@ -656,7 +656,7 @@ li {
 @media (max-width: 576px) {
 	.section-gutter {
 		--bs-gutter-x: 5rem;
-		margin-top: 3rem;
+		margin-top: 2.5rem;
 	}
 }
 
@@ -664,7 +664,7 @@ li {
 @media (max-width: 576px) {
 	.section-gutter-2 {
 		--bs-gutter-x: 5rem;
-		margin-top: 3rem;
+		margin-top: 2.5rem;
 	}
 }
 
@@ -701,9 +701,19 @@ li {
 }
 
 
-/*---Menu togglr right spacing for better alignment for smaller devices at 560px---*/
+/*---MB under section hear for better viewinig on mobile  ---*/
 @media (max-width: 991px) {
-.section-header-gutter {
+.section-header-gutter-about {
 	margin-bottom: 1rem;
 	}	
+}
+
+@media (max-width: 560px) {
+.section-content {
+	font-size: 16px;
+	font-weight: 400;
+	word-spacing: 4px;	
+	text-align: left;
+	color: rgba(33, 37, 41, 0.75) !important;
+	}
 }
