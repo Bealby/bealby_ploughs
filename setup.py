@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bealby_ploughs',  # Replace with your package name
-    version='0.1.0',  # Initial version
+    version='1.0.0',  # Initial version
     author='Murray Bealby',  # Your name
     author_email='bealbyploughs@gmail.com',  # Your email
     description='Bealby Ploughs',  # Short description
