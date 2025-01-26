@@ -69,3 +69,5 @@ virtualenv==20.8.1
 websocket-client==1.2.1
 Werkzeug==2.0.1
 wrapt==1.12.1
+wheel==0.45.1
+setuptools==75.8.0
