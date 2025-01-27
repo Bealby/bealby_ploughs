@@ -16,9 +16,7 @@ if os.path.exists('env.py'):
     import env
 
 from pathlib import Path
-
-import os
-
+from bealby_ploughs.settings import BASE_DIR
 # Set static root for Heroku
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
