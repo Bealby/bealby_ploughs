@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     'research',
     'gallery',
     'contact',
-
-    
 ]
 
 MIDDLEWARE = [
@@ -61,9 +59,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'allauth.account.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'bealby_ploughs.urls'
