@@ -1,1 +1,1 @@
-web: gunicorn bealby_ploughs.wsgi:application
+web: gunicorn bealby_ploughs.wsgi:application --log-file -
