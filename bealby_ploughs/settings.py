@@ -62,7 +62,7 @@ MIDDLEWARE = [
     #'allauth.account.middleware.AccountMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.middleware.AuthenticationMiddleware',
+    #'allauth.middleware.AuthenticationMiddleware',
 ]
 
 ROOT_URLCONF = 'bealby_ploughs.urls'
