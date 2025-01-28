@@ -14,7 +14,6 @@ django-auto-logout==0.5.1
 django-cors-headers==4.6.0
 django-crispy-forms==1.14.0
 django-session-timeout==0.1.0
-django-storages==1.13.1
 docker==5.0.3
 env==0.1.0
 filelock==3.2.0
