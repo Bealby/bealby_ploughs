@@ -184,6 +184,15 @@ body {
 	padding-right: 2rem !important;
 }
 
+.image-container.vertical:before {
+	width: 300px;
+}
+
+.image-container.horizontal:before {
+	width: 600px;
+	height: 400px;
+}
+
 .image-shadow {
 	box-shadow: 0rem 0rem 1.5rem 0rem rgb(0, 0, 0, 1);
 }

@@ -17,7 +17,6 @@
             srcset="{{ gallery_3.image.url }}"
             class="img-fluid image-shadow"
             alt="{{ gallery_3.image_description }}"
-            width="600" height="400"
             />
          {% else %}
          <img
@@ -41,6 +40,25 @@
 
 <!--Scroll to top feature-->
 <script>
+
+   document.addEventListener('DOMContentLoaded', function() {
+      const imageContainers = document.querySelectorAll('.image-container');
+
+      imageContainers.forEach(function(container) {
+            const img = container.querySelector('img');
+            img.addEventListener('load', function() {
+               const width = this.naturalWidth;
+               const height = this.naturalHeight;
+
+               if (width < height) {
+                  container.classList.add('vertical');
+               } else {
+                  container.classList.add('horizontal');
+               }
+            });
+      });
+   });
+  
 
     //Scroll to Top
     function scrollFunction() {
