@@ -40,25 +40,6 @@
 
 <!--Scroll to top feature-->
 <script>
-   
-   document.addEventListener('DOMContentLoaded', function() {
-      const imageContainers = document.querySelectorAll('.gallery-image');
-
-      imageContainers.forEach(function(container) {
-         const img = container.querySelector('img');
-         img.addEventListener('load', function() {
-            const width = this.naturalWidth;
-            const height = this.naturalHeight;
-
-            if (width < height) {
-                  container.classList.add('vertical');
-            } else {
-                  container.classList.add('horizontal');
-            }
-         });
-      });
-   });
-  
 
     //Scroll to Top
     function scrollFunction() {
