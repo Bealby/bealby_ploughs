@@ -184,13 +184,12 @@ body {
 	padding-right: 2rem !important;
 }
 
-.gallery-image.vertical:before {
-	width: 300px;
+.gallery-image.vertical {
+    max-width: 200px;
 }
 
-.gallery-image.horizontal:before {
-	width: 600px;
-	height: 400px;
+.gallery-image.horizontal {
+    max-width: 400px;
 }
 
 .image-shadow {
