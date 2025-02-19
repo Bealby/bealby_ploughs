@@ -9,13 +9,13 @@
    </div>
    <div class="row">
       {% for gallery_1 in galleries_1 %}
-      <div class="col-lg-6 col-md-6 gallery-image">
+      <div class="col-lg-6 col-md-6 gallery-image mx-auto">
          {% if gallery_1.image %}
          <img
             loading="lazy"
             src="{{ gallery_1.image.url }}"
             srcset="{{ gallery_1.image.url }}"
-            class="img-fluid text-center image-shadow"
+            class="img-fluid image-shadow"
             alt="{{ gallery_1.image_description }}"
             />
          {% else %}

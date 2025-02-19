@@ -9,13 +9,13 @@
    </div>
    <div class="row">
       {% for gallery_2 in galleries_2 %}
-      <div class="col-lg-6 col-md-6 gallery-image">
+      <div class="col-lg-6 col-md-6 gallery-image mx-auto">
          {% if gallery_2.image %}
          <img
             loading="lazy"
             src="{{ gallery_2.image.url }}"
             srcset="{{ gallery_2.image.url }}"
-            class="img-fluid text-center image-shadow"
+            class="img-fluid image-shadow"
             alt="{{ gallery_2.image_description }}"
             id="dynamicImage"
             />
@@ -41,21 +41,6 @@
 
 <!--Scroll to top feature-->
 <script>
-
-   function adjustImageSize() {
-      const img = document.getElementById("dynamicImage");
-      
-      // Wait until the image loads
-      img.onload = function () {
-          if (img.naturalHeight > img.naturalWidth) {
-              img.style.width = "60%"; // Vertical Image
-          } else {
-              img.style.width = "100%"; // Horizontal Image
-          }
-      };
-   }
-
-   adjustImageSize(); // Run function when script loads
 
     //Scroll to Top
     function scrollFunction() {
