@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Gallery_1
+from .models import BealbyFamily
 from .models import Gallery_2
 from .models import Gallery_3
 
 
-class Gallery_1Admin(admin.ModelAdmin):
+class BealbyFamilyAdmin(admin.ModelAdmin):
 
     list_display = (
         'image_title',
@@ -31,6 +31,6 @@ class Gallery_3Admin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Gallery_1, Gallery_1Admin)
+admin.site.register(BealbyFamily, BealbyFamilyAdmin)
 admin.site.register(Gallery_2, Gallery_2Admin)
 admin.site.register(Gallery_3, Gallery_3Admin)

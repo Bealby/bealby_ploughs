@@ -1,21 +1,21 @@
 from django.shortcuts import render
-from .models import Gallery_1
+from .models import BealbyFamily
 from .models import Gallery_2
 from .models import Gallery_3
 
 
 # Create your views here.
 
-def gallery_1(request):
-    '''A view to return the Gallery 1 page'''
+def bealby_family(request):
+    '''A view to return the Bealby Family page'''
 
-    galleries_1 = Gallery_1.objects.all()
+    bealby_families = BealbyFamily.objects.all()
 
     context = {
-        'galleries_1': galleries_1,
+        'bealby_families': bealby_families,
     }
 
-    return render(request, 'gallery/gallery_1.html', context)
+    return render(request, 'gallery/bealby_family.html', context)
 
 
 def gallery_2(request):

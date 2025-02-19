@@ -1,32 +1,32 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<!--Gallery_1-->
+<!--Bealby Family-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
    <div class="row section-header-gutter">
       <div class="col">
-         <h4 class="decorated page-header"><span>Ploughs</span></h4>
+         <h4 class="decorated page-header"><span>Bealby Family</span></h4>
       </div>
    </div>
    <div class="row">
-      {% for gallery_1 in galleries_1 %}
+      {% for bealby_family in bealby_families %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
-         {% if gallery_1.image %}
+         {% if bealby_family.image %}
          <img
             loading="lazy"
-            src="{{ gallery_1.image.url }}"
-            srcset="{{ gallery_1.image.url }}"
+            src="{{ bealby_family.image.url }}"
+            srcset="{{ bealby_family.image.url }}"
             class="img-fluid image-shadow"
-            alt="{{ gallery_1.image_description }}"
+            alt="{{ bealby_family.image_description }}"
             />
          {% else %}
          <img
             src="{{ MEDIA_URL }}"
             class="img-fluid mt-5"
-            alt="{{ gallery_1.image_description }}"
+            alt="{{ bealby_family.image_description }}"
             />
          {% endif %}
-         <p class="section-title mt-2">{{ gallery_1.image_title|default_if_none:"" }}</p>
-         <p class="section-title-sub">{{ gallery_1.image_description|default_if_none:"" }}</p>
+         <p class="section-title mt-2">{{ bealby_family.image_title|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ bealby_family.image_description|default_if_none:"" }}</p>
       </div>
       {% endfor %}
    </div>
