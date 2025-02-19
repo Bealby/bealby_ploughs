@@ -762,3 +762,12 @@ li {
 	}
 }
 
+/*---Reduce PL, PR, better spacing for gallery images ---*/
+@media (max-width: 767px) {
+.gallery-image {
+	margin-bottom: 1rem;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	}
+}
+
