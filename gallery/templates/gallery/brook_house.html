@@ -4,29 +4,29 @@
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
    <div class="row section-header-gutter">
       <div class="col">
-         <h4 class="decorated page-header"><span>Bealbys</span></h4>
+         <h4 class="decorated page-header"><span>Brook House</span></h4>
       </div>
    </div>
    <div class="row">
-      {% for gallery_3 in galleries_3 %}
+      {% for brook_house in brook_houses %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
-         {% if gallery_3.image %}
+         {% if brook_house.image %}
          <img
             loading="lazy"
-            src="{{ gallery_3.image.url }}"
-            srcset="{{ gallery_3.image.url }}"
+            src="{{ brook_house.image.url }}"
+            srcset="{{ brook_house.image.url }}"
             class="img-fluid image-shadow"
-            alt="{{ gallery_3.image_description }}"
+            alt="{{ brook_house.image_description }}"
             />
          {% else %}
          <img
             src="{{ MEDIA_URL }}"
             class="img-fluid mt-5"
-            alt="{{ gallery_3.image_description }}"
+            alt="{{ brook_house.image_description }}"
             />
          {% endif %}
-         <p class="section-title mt-2">{{ gallery_3.image_title|default_if_none:"" }}</p>
-         <p class="section-title-sub">{{ gallery_3.image_description|default_if_none:"" }}
+         <p class="section-title mt-2">{{ brook_house.image_title|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ brook_house.image_description|default_if_none:"" }}
          </p>
       </div>
       {% endfor %}

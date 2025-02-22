@@ -4,30 +4,29 @@
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
    <div class="row section-header-gutter">
       <div class="col">
-         <h4 class="decorated page-header"><span>Workshop Tools</span></h4>
+         <h4 class="decorated page-header"><span>The Bealby Workshop</span></h4>
       </div>
    </div>
    <div class="row">
-      {% for gallery_2 in galleries_2 %}
+      {% for bealby_workshop in bealby_workshops %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
-         {% if gallery_2.image %}
+         {% if bealby_workshop.image %}
          <img
             loading="lazy"
-            src="{{ gallery_2.image.url }}"
-            srcset="{{ gallery_2.image.url }}"
+            src="{{ bealby_workshop.image.url }}"
+            srcset="{{ bealby_workshop.image.url }}"
             class="img-fluid image-shadow"
-            alt="{{ gallery_2.image_description }}"
-            id="dynamicImage"
+            alt="{{ bealby_workshop.image_description }}"
             />
          {% else %}
          <img
             src="{{ MEDIA_URL }}"
             class="img-fluid mt-5"
-            alt="{{ gallery_2.image_description }}"
+            alt="{{ bealby_workshop.image_description }}"
             />
          {% endif %}
-         <p class="section-title mt-2">{{ gallery_2.image_title|default_if_none:"" }}</p>
-         <p class="section-title-sub">{{ gallery_2.image_description|default_if_none:"" }}</p>
+         <p class="section-title mt-2">{{ bealby_workshop.image_title|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ bealby_workshop.image_description|default_if_none:"" }}</p>
       </div>
       {% endfor %}
    </div>

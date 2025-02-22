@@ -1,7 +1,8 @@
 from django.contrib import admin
 from .models import BealbyFamily
-from .models import Gallery_2
-from .models import Gallery_3
+from .models import BrookHouse
+from .models import BealbyWorkshop
+from .models import WorkshopTool
 
 
 class BealbyFamilyAdmin(admin.ModelAdmin):
@@ -13,7 +14,7 @@ class BealbyFamilyAdmin(admin.ModelAdmin):
     )
 
 
-class Gallery_2Admin(admin.ModelAdmin):
+class BrookHouseAdmin(admin.ModelAdmin):
 
     list_display = (
         'image_title',
@@ -22,7 +23,16 @@ class Gallery_2Admin(admin.ModelAdmin):
     )
 
 
-class Gallery_3Admin(admin.ModelAdmin):
+class BealbyWorkshopAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'image_title',
+        'image',
+        'image_description',
+    )
+
+
+class WorkshopToolAdmin(admin.ModelAdmin):
 
     list_display = (
         'image_title',
@@ -32,5 +42,6 @@ class Gallery_3Admin(admin.ModelAdmin):
 
 
 admin.site.register(BealbyFamily, BealbyFamilyAdmin)
-admin.site.register(Gallery_2, Gallery_2Admin)
-admin.site.register(Gallery_3, Gallery_3Admin)
+admin.site.register(BrookHouse, BrookHouseAdmin)
+admin.site.register(BealbyWorkshop, BealbyWorkshopAdmin)
+admin.site.register(WorkshopTool, WorkshopToolAdmin)
