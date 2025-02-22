@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .models import BealbyFamily
 from .models import BrookHouse
 from .models import BealbyWorkshop
+from .models import BealbyPlough
+from .models import BealbyForestCart
 from .models import WorkshopTool
 
 
@@ -32,7 +34,7 @@ def brook_house(request):
 
 
 def bealby_workshop(request):
-    '''A view to return the Brook House gallery page'''
+    '''A view to return the Bealby Workshop gallery page'''
 
     bealby_workshops = BealbyWorkshop.objects.all()
 
@@ -41,6 +43,30 @@ def bealby_workshop(request):
     }
 
     return render(request, 'gallery/bealby_workshop.html', context)
+
+
+def bealby_plough(request):
+    '''A view to return the Bealby Plough gallery page'''
+
+    bealby_ploughs = BealbyPlough.objects.all()
+
+    context = {
+        'bealby_ploughs': bealby_ploughs,
+    }
+
+    return render(request, 'gallery/bealby_ploughs.html', context)
+
+
+def bealby_forest_cart(request):
+    '''A view to return the Brook House gallery page'''
+
+    bealby_forest_carts = BealbyForestCart.objects.all()
+
+    context = {
+        'bealby_forest_carts': bealby_forest_carts,
+    }
+
+    return render(request, 'gallery/bealby_forest_cart.html', context)
 
 
 def workshop_tool(request):

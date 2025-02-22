@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<!--Gallery_3-->
+<div class="container-fluid section-gutter-main-header page-bottom-margin">
+   <div class="row section-header-gutter">
+      <div class="col">
+         <h4 class="decorated page-header"><span>Bealby Ploughs</span></h4>
+      </div>
+   </div>
+   <div class="row">
+      {% for bealby_plough in bealby_ploughs %}
+      <div class="col-lg-6 col-md-6 gallery-image mx-auto">
+         {% if bealby_plough.image %}
+         <img
+            loading="lazy"
+            src="{{ bealby_plough.image.url }}"
+            srcset="{{ bealby_plough.image.url }}"
+            class="img-fluid image-shadow"
+            alt="{{ bealby_plough.image_description }}"
+            />
+         {% else %}
+         <img
+            src="{{ MEDIA_URL }}"
+            class="img-fluid mt-5"
+            alt="{{ bealby_plough.image_description }}"
+            />
+         {% endif %}
+         <p class="section-title mt-2">{{ bealby_plough.image_title|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ bealby_plough.image_description|default_if_none:"" }}
+         </p>
+      </div>
+      {% endfor %}
+   </div>
+</div>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<!--Scroll to top feature-->
+<script>
+
+    //Scroll to Top
+    function scrollFunction() {
+        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+        if (window.pageYOffset > 700) {
+            myScrollToTopBtn.style.display = "block";
+            myScrollToTopBtn.style.visibility = "visible";
+        } else {
+            myScrollToTopBtn.style.display = "none";
+            myScrollToTopBtn.style.visibility = "hidden";
+        }
+    }
+
+    window.onscroll = function () { scrollFunction() };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
+
+{% endblock %}

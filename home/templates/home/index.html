@@ -192,6 +192,8 @@
    </div>
    {% for home_gallery in home_galleries %}
    <div class="row">
+
+      <!--Bealby Family-->
       <div class="col-lg-4">
          <a href="{% url 'bealby_family' %}">
             <div class="zoom">
@@ -199,29 +201,73 @@
             </div>
          </a>
          <a href="{% url 'bealby_family' %}" class="text-links">
-            <p class="section-title mt-2">Ploughs</p>
+            <p class="section-title mt-2">Bealby Family</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
          </a>
       </div>
+
+      <!--Brook House-->
       <div class="col-lg-4">
-         <a href="{% url 'gallery_2' %}">
+         <a href="{% url 'brook_house' %}">
             <div class="zoom">
                <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_2 }}" width="600" height="400">
             </div>
          </a>
-         <a href="{% url 'gallery_2' %}" class="text-links">
-            <p class="section-title mt-2">Workshop Tools</p>
+         <a href="{% url 'brook_house' %}" class="text-links">
+            <p class="section-title mt-2">Brook House</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
          </a>
       </div>
+
+
+      <!--The Bealby Workshop-->
       <div class="col-lg-4">
-         <a href="{% url 'gallery_3' %}">
+         <a href="{% url 'bealby_workshop' %}">
             <div class="zoom">
                <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
             </div>
          </a>
-         <a href="{% url 'gallery_3' %}" class="text-links">
-            <p class="section-title mt-2">Bealbys</p>
+         <a href="{% url 'bealby_workshop' %}" class="text-links">
+            <p class="section-title mt-2">The Bealby Workshop</p>
+            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+         </a>
+      </div>
+
+      <!--Bealby Ploughs-->
+      <div class="col-lg-4">
+         <a href="{% url 'bealby_plough' %}">
+            <div class="zoom">
+               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+            </div>
+         </a>
+         <a href="{% url 'bealby_plough' %}" class="text-links">
+            <p class="section-title mt-2">Bealby Ploughs</p>
+            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+         </a>
+      </div>
+
+      <!--Bealby Forest Cart-->
+      <div class="col-lg-4">
+         <a href="{% url 'bealby_plough' %}">
+            <div class="zoom">
+               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+            </div>
+         </a>
+         <a href="{% url 'bealby_plough' %}" class="text-links">
+            <p class="section-title mt-2">Bealby Forest Cart</p>
+            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+         </a>
+      </div>
+
+      <!--Workshop Tools-->
+      <div class="col-lg-4">
+         <a href="{% url 'workshop_tools' %}">
+            <div class="zoom">
+               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+            </div>
+         </a>
+         <a href="{% url 'workshop_tools' %}" class="text-links">
+            <p class="section-title mt-2">Workshop Tools</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
          </a>
       </div>
