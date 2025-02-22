@@ -261,12 +261,12 @@
 
       <!--Workshop Tools-->
       <div class="col-lg-4">
-         <a href="{% url 'workshop_tools' %}">
+         <a href="{% url 'workshop_tool' %}">
             <div class="zoom">
                <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
             </div>
          </a>
-         <a href="{% url 'workshop_tools' %}" class="text-links">
+         <a href="{% url 'workshop_tool' %}" class="text-links">
             <p class="section-title mt-2">Workshop Tools</p>
             <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
          </a>
