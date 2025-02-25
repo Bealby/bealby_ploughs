@@ -161,7 +161,7 @@ body {
 /*---Section Image Zoom---*/
 .story-image {
 	cursor: pointer;
-	transition: all 0.5s ease;
+	transition: all 2s ease;
 	transform-origin: center;
 }
 
@@ -180,13 +180,74 @@ body {
 
 .gallery-image {
 	margin-bottom: 2rem;
-	padding-left: 2rem !important;
-	padding-right: 2rem !important;
+	padding-left: 4rem !important;
+	padding-right: 4rem !important;
 }
 
 .image-shadow {
 	box-shadow: 0rem 0rem 1.5rem 0rem rgb(0, 0, 0, 1);
 }
+
+/*---Reveal---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400;1,500&display=swap');
+
+.reveal {
+	display: grid;
+	place-items: center;
+	width: 600px;
+	height: 400px;
+	background-color: rgba(239, 125, 25, 1);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0.5rem;
+	box-shadow: 1rem 1rem 5rem #373e12;
+	transition: 2s ease;
+	overflow: hidden;
+}
+
+.reveal > * {
+	grid-area: 1 / 1;
+}
+
+.reveal img {
+	width: 600px;
+	height: 400px;
+	clip-path: inset(15% 47% 15% 47% round 0rem 0rem);
+	transition: 1.5s ease;
+}
+
+.reveal:hover img {
+	clip-path: inset(0% 0% 0% 0% round 0.5rem 0.5rem);
+}
+
+h2 {
+	font-size: 4.5rem;
+	color: #C4D570;
+	transition: 3s ease;
+	font-family: 'Aref Ruqaa Ink', serif;
+	z-index: 10;
+}
+
+h2:nth-child(2) {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	opacity: 0;
+}
+
+.reveal:hover h2:nth-child(1) {
+	opacity: 0;
+}
+
+.reveal:hover h2:nth-child(2) {
+	color: #999;
+	transition-delay: 1.5s;
+	opacity: 1;
+}
+
+
 
 /*---Links---*/
 .text-links {

@@ -195,15 +195,12 @@
 
       <!--Bealby Family-->
       <div class="col-lg-4">
-         <a href="{% url 'bealby_family' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_1 }}" width="600" height="400">
+         <div class="reveal">
+            <div class="">
+               <h2>Bealby Family</h2>
+               <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid" alt="{{ home_gallery.gallery_image_alt_text_1 }}" />
             </div>
-         </a>
-         <a href="{% url 'bealby_family' %}" class="text-links">
-            <p class="section-title mt-2">Bealby Family</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
+         </div>
       </div>
 
       <!--Brook House-->
