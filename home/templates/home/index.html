@@ -1,305 +1,426 @@
-{% extends "base.html" %}
-{% load static %}
-{% block page_header %}
-
-<div class="container header-container">
+{% extends "base.html" %} {% load static %} {% block page_header %} <div class="container header-container">
    <div class="row">
-      <div class="col"></div>
+     <div class="col"></div>
    </div>
-</div>
-{% endblock %}
-
-{% block content %}
-<div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+ </div> {% endblock %} {% block content %} <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
    </div>
    <div class="carousel-inner">
-      <div class="carousel-item carousel_height active" data-bs-interval="6000">
-         <img src="{% static 'images/carousel/brook_house.jpg' %}" class="d-block w-100" alt="...">
-         <div class="carousel-caption d-none d-md-block">
-            <h5>Brook House</h5>
-            <p>Bealby Plough Workers</p>
-         </div>
-      </div>
-      <div class="carousel-item carousel_height" data-bs-interval="6000">
-         <img src="{% static 'images/carousel/tools.jpg' %}" class="d-block w-100" alt="...">
-         <div class="carousel-caption d-none d-md-block">
-            <h5>Workshop Tools</h5>
-            <p>...</p>
-         </div>
-      </div>
-      <div class="carousel-item carousel_height" data-bs-interval="6000">
-         <img src="{% static 'images/carousel/tree_plough.jpg' %}" class="d-block w-100" alt="...">
-         <div class="carousel-caption d-none d-md-block">
-            <h5>Tree Plough</h5>
-            <p>S...</p>
-         </div>
-      </div>
+     <div class="carousel-item carousel-item_1 carousel_height active" data-bs-interval="6000">
+       <img src="{% static 'images/carousel/brook_house.jpg' %}" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Brook House</h5>
+         <p>Bealby Plough Workers</p>
+       </div>
+     </div>
+     <div class="carousel-item carousel-item_1 carousel_height" data-bs-interval="6000">
+       <img src="{% static 'images/carousel/tools.jpg' %}" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Workshop Tools</h5>
+         <p>...</p>
+       </div>
+     </div>
+     <div class="carousel-item carousel-item_1 carousel_height" data-bs-interval="6000">
+       <img src="{% static 'images/carousel/tree_plough.jpg' %}" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Tree Plough</h5>
+         <p>S...</p>
+       </div>
+     </div>
    </div>
-
    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-   <span class="visually-hidden">Previous</span>
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
    </button>
    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-   <span class="visually-hidden">Next</span>
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
    </button>
+ </div>
 
-</div>
-
-<!--About-->
-<div class="container-fluid section-gutter-main-header">
+ <!--About-->
+ <div class="container-fluid section-gutter-main-header">
    <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>About</span></h4>
-      </div>
-   </div>
-   {% for home_about in home_abouts %}
-   <div class="row">
-      <div class="col-lg-12 section-content">
-         <p>{{ home_about.about_paragraph_1 }}
-         </p>
-      </div>
+     <div class="col">
+       <h4 class="decorated page-header">
+         <span>About</span>
+       </h4>
+     </div>
+   </div> {% for home_about in home_abouts %} <div class="row">
+     <div class="col-lg-12 section-content">
+       <p>{{ home_about.about_paragraph_1 }}
+       </p>
+     </div>
    </div>
    <div class="row mb-3">
-      <div class="col-lg-6 mt-4">
-         <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="{{ home_about.about_image_description_1 }}">
-         <p class="section-image-title mt-2">{{ home_about.about_image_title_1|default_if_none:"" }}</p>
-         <p class="section-image-title-sub">{{ home_about.about_image_description_1 }}</p>
-      </div>
-      <div class="col-lg-6 mt-4 d-none d-lg-block">
-         <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_2 }}">
-         <p class="section-image-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
-         <p class="section-image-title-sub">{{ home_about.about_image_description_2 }}</p>
-      </div>
+     <div class="col-lg-6 mt-4">
+       <img src="{{ home_about.about_image_1.url }}" class="img-fluid" alt="{{ home_about.about_image_description_1 }}">
+       <p class="section-image-title mt-2">{{ home_about.about_image_title_1|default_if_none:"" }}</p>
+       <p class="section-image-title-sub">{{ home_about.about_image_description_1 }}</p>
+     </div>
+     <div class="col-lg-6 mt-4 d-none d-lg-block">
+       <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_2 }}">
+       <p class="section-image-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
+       <p class="section-image-title-sub">{{ home_about.about_image_description_2 }}</p>
+     </div>
    </div>
    <div class="row">
-      <div class="col-lg-12 section-content mt-1">
-         <p> {{ home_about.about_paragraph_2 }}
-         </p>
-      </div>
-      <div class="col-lg-6 mt-4 d-lg-none">
-         <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_2 }}">
-         <p class="section-image-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
-         <p class="section-image-title-sub">{{ home_about.about_image_description_2 }}</p>
-      </div>
-   </div>
-   {% endfor %}
-</div>
-
-<!--Articles-->
-<div class="container-fluid section-gutter">
+     <div class="col-lg-12 section-content mt-1">
+       <p> {{ home_about.about_paragraph_2 }}
+       </p>
+     </div>
+     <div class="col-lg-6 mt-4 d-lg-none">
+       <img src="{{ home_about.about_image_2.url }}" class="img-fluid" alt="{{ home_about.about_image_description_2 }}">
+       <p class="section-image-title mt-2">{{ home_about.about_image_title_2|default_if_none:"" }}</p>
+       <p class="section-image-title-sub">{{ home_about.about_image_description_2 }}</p>
+     </div>
+   </div> {% endfor %}
+ </div>
+ '
+ <!--Articles-->
+ <div class="container-fluid section-gutter">
    <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Articles</span></h4>
-      </div>
+     <div class="col">
+       <h4 class="decorated page-header">
+         <span>Articles</span>
+       </h4>
+     </div>
    </div>
-   {% for home_article in home_articles %}
-   <div class="row">
-      <div class="col-lg-4">
+
+   <!--Articles - Mobile - Carousel--> {% for home_article in home_articles %} <div id="carouselExampleCaptions2" class="carousel slide d-lg-none" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner text-center">
+       <div class="carousel-item active">
          <a href="{% url 'articles_1' %}">
-            <div class="zoom">
-               <img src="{{ home_article.article_image_1.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_1 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_article.article_image_1.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_article.article_image_alt_text_1 }}">
          </a>
          <a href="{% url 'articles_1' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_article.article_title_1|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_article.article_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_article.article_title_1|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_article.article_description_1|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
-      <div class="col-lg-4">
+       </div>
+       <div class="carousel-item">
          <a href="{% url 'articles_2' %}">
-            <div class="zoom">
-               <img src="{{ home_article.article_image_2.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_2 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_article.article_image_2.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_article.article_image_alt_text_2 }}" width="600" height="400">
          </a>
          <a href="{% url 'articles_2' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_article.article_title_2|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_article.article_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_article.article_title_2|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_article.article_description_2|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
-      <div class="col-lg-4">
+       </div>
+       <div class="carousel-item">
          <a href="{% url 'articles_3' %}">
-            <div class="zoom">
-               <img src="{{ home_article.article_image_3.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_3 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_article.article_image_1.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_article.article_image_alt_text_3 }}" width="600" height="400">
          </a>
          <a href="{% url 'articles_3' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_article.article_title_3|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_article.article_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_article.article_title_3|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_article.article_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
    </div>
-   {% endfor %}
-</div>
 
-<!--Research-->
-<div class="container-fluid section-gutter">
-   <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Research</span></h4>
-      </div>
-   </div>
-   {% for home_research in home_researches %}
+   <!--Articles - LG/MD-->
    <div class="row">
-      <div class="col-lg-4">
+     <div class="col-4 d-none d-lg-block">
+       <a href="{% url 'articles_1' %}">
+         <div class="zoom">
+           <img src="{{ home_article.article_image_1.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_1 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'articles_1' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_article.article_title_1|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_article.article_description_1|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+     <div class="col-4 d-none d-lg-block">
+       <a href="{% url 'articles_2' %}">
+         <div class="zoom">
+           <img src="{{ home_article.article_image_2.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_2 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'articles_2' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_article.article_title_2|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_article.article_description_2|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+     <div class="col-4 d-none d-lg-block">
+       <a href="{% url 'articles_3' %}">
+         <div class="zoom">
+           <img src="{{ home_article.article_image_3.url }}" class="img-fluid story-image" alt="{{ home_article.article_image_alt_text_3 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'articles_3' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_article.article_title_3|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_article.article_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+   </div> {% endfor %}
+ </div>
+
+ <!--Research-->
+ <div class="container-fluid section-gutter">
+   <div class="row section-header-gutter">
+     <div class="col">
+       <h4 class="decorated page-header">
+         <span>Research</span>
+       </h4>
+     </div>
+   </div>
+
+   <!--Research - Mobile - Carousel-->
+   {% for home_research in home_researches %} <div id="carouselExampleCaptions3" class="carousel slide d-lg-none" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner text-center">
+       <div class="carousel-item active">
          <a href="{% url 'research_1' %}">
-            <div class="zoom">
-               <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_1 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_research.research_image_1.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_research.research_image_alt_text_1 }}">
          </a>
          <a href="{% url 'research_1' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_research.research_description_1|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_research.research_description_1|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
-      <div class="col-lg-4">
+       </div>
+       <div class="carousel-item">
          <a href="{% url 'research_2' %}">
-            <div class="zoom">
-               <img src="{{ home_research.research_image_2.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_2 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_research.research_image_2.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_research.research_image_alt_text_2 }}" width="600" height="400">
          </a>
          <a href="{% url 'research_2' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_research.research_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_article.article_description_2|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
-      <div class="col-lg-4">
+       </div>
+       <div class="carousel-item">
          <a href="{% url 'research_3' %}">
-            <div class="zoom">
-               <img src="{{ home_research.research_image_3.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_3 }}" width="600" height="400">
-            </div>
+           <img src="{{ home_research.research_image_3.url }}" class="img-fluid carousel_image_mobile" alt="{{ home_research.research_image_alt_text_3 }}" width="600" height="400">
          </a>
          <a href="{% url 'research_3' %}" class="text-links">
-            <p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
-            <p class="section-title-sub">{{ home_research.research_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+           <p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
+           <p class="section-title-sub">{{ home_article.article_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+           </p>
          </a>
-      </div>
-   </div>
-   {% endfor %}
-</div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div> {% endfor %}
 
-<!--Gallery-->
-<div class="container-fluid section-gutter page-bottom-margin-2">
+   <!--Research - LG/MD-->
+   {% for home_research in home_researches %} <div class="row">
+     <div class="col-lg-4 d-none d-lg-block">
+       <a href="{% url 'research_1' %}">
+         <div class="zoom">
+           <img src="{{ home_research.research_image_1.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_1 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'research_1' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_research.research_title_1|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_research.research_description_1|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+     <div class="col-lg-4 d-none d-lg-block">
+       <a href="{% url 'research_2' %}">
+         <div class="zoom">
+           <img src="{{ home_research.research_image_2.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_2 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'research_2' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_research.research_title_2|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_research.research_description_2|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+     <div class="col-lg-4 d-none d-lg-block">
+       <a href="{% url 'research_3' %}">
+         <div class="zoom">
+           <img src="{{ home_research.research_image_3.url }}" class="img-fluid story-image" alt="{{ home_research.research_image_alt_text_3 }}" width="600" height="400">
+         </div>
+       </a>
+       <a href="{% url 'research_3' %}" class="text-links">
+         <p class="section-title mt-2">{{ home_research.research_title_3|default_if_none:"" }}</p>
+         <p class="section-title-sub">{{ home_research.research_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+         </p>
+       </a>
+     </div>
+   </div> {% endfor %}
+ </div>
+
+ <!--Gallery-->
+ <div class="container-fluid section-gutter page-bottom-margin-2">
    <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Gallery</span></h4>
-      </div>
+     <div class="col">
+       <h4 class="decorated page-header">
+         <span>Gallery</span>
+       </h4>
+     </div>
    </div>
-   {% for home_gallery in home_galleries %}
-   <div class="row">
-
-      <!--Bealby Family-->
-      <div class="col-lg-4">
-         <div class="reveal">
-            <div class="">
-               <h2>Bealby Family</h2>
-               <img src="{{ home_gallery.gallery_image_1.url }}" class="img-fluid" alt="{{ home_gallery.gallery_image_alt_text_1 }}" />
+   {% for home_gallery in home_galleries %} <div id="carouselExampleCaptions4" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner text-center">
+       <div class="carousel-item active">
+         <!--Bealby Family-->
+         <div class="row mx-auto">
+           <div class="col-lg-4">
+             <a href="{% url 'bealby_family' %}">
+               <div class="zoom">
+                 <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_1 }}" width="600" height="400">
+               </div>
+             </a>
+             <a href="{% url 'bealby_family' %}">Bealby Family </p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_1|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+             </a>
+           </div>
+           <!--Brook House-->
+           <div class="col-lg-4">
+             <a href="{% url 'brook_house' %}">
+               <div class="zoom">
+                 <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_2 }}" width="600" height="400">
+               </div>
+             </a>
+             <a href="{% url 'brook_house' %}" class="text-links">
+               <p class="section-title mt-2">Brook House</p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_2|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+             </a>
+           </div>
+           <!--The Bealby Workshop-->
+           <div class="col-lg-4">
+             <a href="{% url 'bealby_workshop' %}">
+               <div class="zoom">
+                 <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+               </div>
+             </a>
+             <a href="{% url 'bealby_workshop' %}" class="text-links">
+               <p class="section-title mt-2">The Bealby Workshop</p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+             </a>
+           </div>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <!--Bealby Ploughs-->
+         <div class="row mx-auto">
+            <div class="col-lg-4">
+            <a href="{% url 'bealby_plough' %}">
+               <div class="zoom">
+                  <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+               </div>
+            </a>
+            <a href="{% url 'bealby_plough' %}" class="text-links">
+               <p class="section-title mt-2">Bealby Ploughs</p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+            </a>
+            </div>
+            <!--Bealby Forest Cart-->
+            <div class="col-lg-4">
+            <a href="{% url 'bealby_plough' %}">
+               <div class="zoom">
+                  <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+               </div>
+            </a>
+            <a href="{% url 'bealby_plough' %}" class="text-links">
+               <p class="section-title mt-2">Bealby Forest Cart</p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+            </a>
+            </div>
+            <!--Workshop Tools-->
+            <div class="col-lg-4">
+            <a href="{% url 'workshop_tool' %}">
+               <div class="zoom">
+                  <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
+               </div>
+            </a>
+            <a href="{% url 'workshop_tool' %}" class="text-links">
+               <p class="section-title mt-2">Workshop Tools</p>
+               <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp; <i class="fa-solid fa-arrow-right"></i>
+               </p>
+            </a>
             </div>
          </div>
-      </div>
-
-      <!--Brook House-->
-      <div class="col-lg-4">
-         <a href="{% url 'brook_house' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_2.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_2 }}" width="600" height="400">
-            </div>
-         </a>
-         <a href="{% url 'brook_house' %}" class="text-links">
-            <p class="section-title mt-2">Brook House</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_2|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
-      </div>
-
-
-      <!--The Bealby Workshop-->
-      <div class="col-lg-4">
-         <a href="{% url 'bealby_workshop' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
-            </div>
-         </a>
-         <a href="{% url 'bealby_workshop' %}" class="text-links">
-            <p class="section-title mt-2">The Bealby Workshop</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
-      </div>
-
-      <!--Bealby Ploughs-->
-      <div class="col-lg-4">
-         <a href="{% url 'bealby_plough' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
-            </div>
-         </a>
-         <a href="{% url 'bealby_plough' %}" class="text-links">
-            <p class="section-title mt-2">Bealby Ploughs</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
-      </div>
-
-      <!--Bealby Forest Cart-->
-      <div class="col-lg-4">
-         <a href="{% url 'bealby_plough' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
-            </div>
-         </a>
-         <a href="{% url 'bealby_plough' %}" class="text-links">
-            <p class="section-title mt-2">Bealby Forest Cart</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
-      </div>
-
-      <!--Workshop Tools-->
-      <div class="col-lg-4">
-         <a href="{% url 'workshop_tool' %}">
-            <div class="zoom">
-               <img src="{{ home_gallery.gallery_image_3.url }}" class="img-fluid story-image" alt="{{ home_gallery.gallery_image_alt_text_3 }}" width="600" height="400">
-            </div>
-         </a>
-         <a href="{% url 'workshop_tool' %}" class="text-links">
-            <p class="section-title mt-2">Workshop Tools</p>
-            <p class="section-title-sub">{{ home_gallery.gallery_description_3|default_if_none:"" }}&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-         </a>
-      </div>
+       </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div> {% endfor %}
    </div>
-   {% endfor %}
-</div>
-<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+ </div>
 
-{% endblock %}
+ <button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+   <i class="fas fa-arrow-up"></i>
+ </button>
+ 
+ {% endblock %}
+ 
+ {% block postloadjs %} {{ block.super }}
 
-{% block postloadjs %}
-{{ block.super }}
-
-<!--Scroll to top feature-->
-<script>
-
-    //Scroll to Top
-    function scrollFunction() {
-        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
-        if (window.pageYOffset > 700) {
-            myScrollToTopBtn.style.display = "block";
-            myScrollToTopBtn.style.visibility = "visible";
-        } else {
-            myScrollToTopBtn.style.display = "none";
-            myScrollToTopBtn.style.visibility = "hidden";
-        }
-    }
-
-    window.onscroll = function () { scrollFunction() };
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-</script>
-
-{% endblock %}
+ <!--Scroll to top feature-->
+ <script>
+   //Scroll to Top
+   function scrollFunction() {
+     var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+     if (window.pageYOffset > 700) {
+       myScrollToTopBtn.style.display = "block";
+       myScrollToTopBtn.style.visibility = "visible";
+     } else {
+       myScrollToTopBtn.style.display = "none";
+       myScrollToTopBtn.style.visibility = "hidden";
+     }
+   }
+   window.onscroll = function() {
+     scrollFunction()
+   };
+ 
+   function topFunction() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+   }
+ </script>
+ 
+ {% endblock %}
