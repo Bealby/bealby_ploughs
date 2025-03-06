@@ -182,6 +182,7 @@ body {
 	cursor: pointer;
 	transition: all 2s ease;
 	transform-origin: center;
+	text-decoration: none !important;
 }
 
 .zoom:hover .story-image {
