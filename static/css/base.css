@@ -838,6 +838,8 @@ li {
 
 /*--Gallery MD/LG styling carousel follow better placement--*/
 
+/*--Prev and Next--*/
+
 @media (max-width: 2600px) {
 	.gallery_desktop-carousel-control-prev{
 	left:92px;
@@ -907,6 +909,22 @@ li {
 	.gallery_desktop-carousel-control-next{
 		right:-58px;
 		top:-80px;
+		}
+	}
+
+/*--Gallery Home Page Text
+--*/
+
+@media (max-width: 2200px) {
+
+	.section-title-gallery {
+		margin-left: 36px;
+		margin-right: 25px;
+		}
+	
+	.section-title-sub-gallery {
+		margin-left: 36px;
+		margin-right: 25px;
 		}
 	}
 
