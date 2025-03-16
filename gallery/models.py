@@ -11,7 +11,7 @@ class BealbyFamily(models.Model):
     image = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     image_title = models.CharField("Image Title", max_length=254, null=True, blank=True)
     image_description = models.TextField("Image Description", max_length=1000, null=True, blank=True)
-    position = models.CharField(max_length=254, null=True, blank=True)
+    position = models.CharField("Horizontal or Verical Image?", max_length=254, null=True, blank=True, help_text="Please add the letter 'h' for horizontal image and letter 'v' for vertical image")
 
     def __str__(self):
         return self.image_title
