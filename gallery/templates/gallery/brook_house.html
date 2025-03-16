@@ -8,7 +8,7 @@
       </div>
    </div>
    <div class="row">
-      {% for brook_house in brook_houses %}
+      {% for brook_house in brook_houses|dictsort:"position" %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
          {% if brook_house.image %}
          <img
