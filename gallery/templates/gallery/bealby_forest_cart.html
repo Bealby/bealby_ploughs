@@ -8,7 +8,7 @@
       </div>
    </div>
    <div class="row">
-      {% for bealby_forest_cart in bealby_forest_carts %}
+      {% for bealby_forest_cart in bealby_forest_carts|dictsort:"position" %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
          {% if bealby_forest_cart.image %}
          <img

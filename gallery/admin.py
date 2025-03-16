@@ -23,6 +23,7 @@ class BrookHouseAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 
@@ -32,6 +33,7 @@ class BealbyWorkshopAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 
@@ -41,6 +43,7 @@ class BealbyPloughAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 
@@ -51,6 +54,7 @@ class BealbyForestCartAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 
@@ -60,6 +64,7 @@ class WorkshopToolAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 
