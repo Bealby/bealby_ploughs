@@ -13,6 +13,7 @@ class BealbyFamilyAdmin(admin.ModelAdmin):
         'image_title',
         'image',
         'image_description',
+        'position',
     )
 
 

@@ -8,7 +8,7 @@
       </div>
    </div>
    <div class="row">
-      {% for bealby_family in bealby_families %}
+      {% for bealby_family in bealby_families|dictsort:"position" %}
       <div class="col-lg-6 col-md-6 gallery-image mx-auto">
          {% if bealby_family.image %}
          <img
