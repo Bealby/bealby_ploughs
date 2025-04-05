@@ -2,7 +2,7 @@ from django.db import models
 '''Pillow must be installed'''
 
 
-class Article_2(models.Model):
+class WorkshopAnecdote(models.Model):
     '''Programmatic Name'''
 
     class Meta:
@@ -18,7 +18,7 @@ class Article_2(models.Model):
         return self.title
 
 
-class Article_3(models.Model):
+class FamilyRecollection(models.Model):
     '''Programmatic Name'''
 
     class Meta:

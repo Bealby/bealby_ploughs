@@ -1,35 +1,35 @@
 from django.shortcuts import render
-from .models import Article_2
-from .models import Article_3
+from .models import WorkshopAnecdote
+from .models import FamilyRecollection
 
 # Create your views here.
 
 
-def articles_1(request):
-    '''A view to return the Article 1 page'''
+def the_thoroton_society(request):
+    '''A view to return The Thoroton Society page'''
 
-    return render(request, 'articles/article_1.html')
-
-
-def articles_2(request):
-    '''A view to return the Article 2 page'''
-
-    articles_2 = Article_2.objects.all()
-
-    context = {
-        'articles_2': articles_2,
-    }
-
-    return render(request, 'articles/article_2.html', context)
+    return render(request, 'articles/the_thoroton_society.html')
 
 
-def articles_3(request):
-    '''A view to return the Article 3 page'''
+def workshop_anecdote(request):
+    '''A view to return Workshop Anecdote page'''
 
-    articles_3 = Article_3.objects.all()
+    workshop_anecdotes = WorkshopAnecdote.objects.all()
 
     context = {
-        'articles_3': articles_3,
+        'workshop_anecdotes': workshop_anecdotes,
     }
 
-    return render(request, 'articles/article_3.html', context)
+    return render(request, 'articles/workshop_anecdotes.html', context)
+
+
+def family_recollection(request):
+    '''A view to return Family recollection page'''
+
+    family_recollections = FamilyRecollection.objects.all()
+
+    context = {
+        'family_recollections': family_recollections,
+    }
+
+    return render(request, 'articles/family_recollections.html', context)

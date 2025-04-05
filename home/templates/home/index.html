@@ -22,7 +22,7 @@
       />
       <div class="carousel-caption d-none d-md-block">
         <h5>Brook House</h5>
-        <p>Bealby Plough Workers, outside Workshop. circa 1910</p>
+        <p>Walter Bealby with a work mate and the two elder sons: Jim and Frank, circa 1910</p>
       </div>
     </div>
     <div
@@ -155,14 +155,14 @@
   >
     <div class="carousel-inner text-center">
       <div class="carousel-item active">
-        <a href="{% url 'articles_1' %}">
+        <a href="{% url 'the_thoroton_society' %}">
           <img
             src="{{ home_article.article_image_1.url }}"
             class="img-fluid carousel_image_mobile"
             alt="{{ home_article.article_image_alt_text_1 }}"
           />
         </a>
-        <a href="{% url 'articles_1' %}" class="text-links">
+        <a href="{% url 'the_thoroton_society' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_article.article_title_1|default_if_none:"" }}
           </p>
@@ -173,7 +173,7 @@
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{% url 'articles_2' %}">
+        <a href="{% url 'workshop_anecdote' %}">
           <img
             src="{{ home_article.article_image_2.url }}"
             class="img-fluid carousel_image_mobile"
@@ -182,7 +182,7 @@
             height="400"
           />
         </a>
-        <a href="{% url 'articles_2' %}" class="text-links">
+        <a href="{% url 'workshop_anecdote' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_article.article_title_2|default_if_none:"" }}
           </p>
@@ -193,7 +193,7 @@
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{% url 'articles_3' %}">
+        <a href="{% url 'family_recollection' %}">
           <img
             src="{{ home_article.article_image_1.url }}"
             class="img-fluid carousel_image_mobile"
@@ -202,7 +202,7 @@
             height="400"
           />
         </a>
-        <a href="{% url 'articles_3' %}" class="text-links">
+        <a href="{% url 'family_recollection' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_article.article_title_3|default_if_none:"" }}
           </p>
@@ -236,7 +236,7 @@
   <!--Articles - LG/MD-->
   <div class="row">
     <div class="col-4 d-none d-lg-block">
-      <a href="{% url 'articles_1' %}">
+      <a href="{% url 'the_thoroton_society' %}">
         <div class="zoom">
           <img
             src="{{ home_article.article_image_1.url }}"
@@ -247,7 +247,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'articles_1' %}" class="text-links">
+      <a href="{% url 'the_thoroton_society' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_article.article_title_1|default_if_none:"" }}
         </p>
@@ -258,7 +258,7 @@
       </a>
     </div>
     <div class="col-4 d-none d-lg-block">
-      <a href="{% url 'articles_2' %}">
+      <a href="{% url 'workshop_anecdote' %}">
         <div class="zoom">
           <img
             src="{{ home_article.article_image_2.url }}"
@@ -269,7 +269,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'articles_2' %}" class="text-links">
+      <a href="{% url 'workshop_anecdote' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_article.article_title_2|default_if_none:"" }}
         </p>
@@ -280,7 +280,7 @@
       </a>
     </div>
     <div class="col-4 d-none d-lg-block">
-      <a href="{% url 'articles_3' %}">
+      <a href="{% url 'family_recollection' %}">
         <div class="zoom">
           <img
             src="{{ home_article.article_image_3.url }}"
@@ -291,7 +291,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'articles_3' %}" class="text-links">
+      <a href="{% url 'family_recollection' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_article.article_title_3|default_if_none:"" }}
         </p>
@@ -324,14 +324,14 @@
   >
     <div class="carousel-inner text-center">
       <div class="carousel-item active">
-        <a href="{% url 'research_1' %}">
+        <a href="{% url 'invoice_journal' %}">
           <img
             src="{{ home_research.research_image_1.url }}"
             class="img-fluid carousel_image_mobile"
             alt="{{ home_research.research_image_alt_text_1 }}"
           />
         </a>
-        <a href="{% url 'research_1' %}" class="text-links">
+        <a href="{% url 'invoice_journal' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_research.research_title_1|default_if_none:"" }}
           </p>
@@ -342,7 +342,7 @@
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{% url 'research_2' %}">
+        <a href="{% url 'brook_house' %}">
           <img
             src="{{ home_research.research_image_2.url }}"
             class="img-fluid carousel_image_mobile"
@@ -351,7 +351,7 @@
             height="400"
           />
         </a>
-        <a href="{% url 'research_2' %}" class="text-links">
+        <a href="{% url 'brook_house' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_research.research_title_2|default_if_none:"" }}
           </p>
@@ -362,7 +362,7 @@
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{% url 'research_3' %}">
+        <a href="{% url 'bealby_family' %}">
           <img
             src="{{ home_research.research_image_3.url }}"
             class="img-fluid carousel_image_mobile"
@@ -371,7 +371,7 @@
             height="400"
           />
         </a>
-        <a href="{% url 'research_3' %}" class="text-links">
+        <a href="{% url 'bealby_family' %}" class="text-links">
           <p class="section-title mt-2">
             {{ home_research.research_title_3|default_if_none:"" }}
           </p>
@@ -407,7 +407,7 @@
   {% for home_research in home_researches %}
   <div class="row">
     <div class="col-lg-4 d-none d-lg-block">
-      <a href="{% url 'research_1' %}">
+      <a href="{% url 'invoice_journal' %}">
         <div class="zoom">
           <img
             src="{{ home_research.research_image_1.url }}"
@@ -418,7 +418,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'research_1' %}" class="text-links">
+      <a href="{% url 'invoice_journal' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_research.research_title_1|default_if_none:"" }}
         </p>
@@ -429,7 +429,7 @@
       </a>
     </div>
     <div class="col-lg-4 d-none d-lg-block">
-      <a href="{% url 'research_2' %}">
+      <a href="{% url 'brook_house' %}">
         <div class="zoom">
           <img
             src="{{ home_research.research_image_2.url }}"
@@ -440,7 +440,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'research_2' %}" class="text-links">
+      <a href="{% url 'brook_house' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_research.research_title_2|default_if_none:"" }}
         </p>
@@ -451,7 +451,7 @@
       </a>
     </div>
     <div class="col-lg-4 d-none d-lg-block">
-      <a href="{% url 'research_3' %}">
+      <a href="{% url 'bealby_family' %}">
         <div class="zoom">
           <img
             src="{{ home_research.research_image_3.url }}"
@@ -462,7 +462,7 @@
           />
         </div>
       </a>
-      <a href="{% url 'research_3' %}" class="text-links">
+      <a href="{% url 'bealby_family' %}" class="text-links">
         <p class="section-title mt-2">
           {{ home_research.research_title_3|default_if_none:"" }}
         </p>

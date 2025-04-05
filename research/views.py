@@ -1,35 +1,42 @@
 from django.shortcuts import render
-from .models import Research_1
-from .models import Research_2
+from .models import InvoiceJournal
+from .models import BrookHouse
+from .models import BealbyFamily
 
 
 # Create your views here.
 
-def research_1(request):
-    '''A view to return the Research 1 page'''
+def invoice_journal(request):
+    '''A view to return Invoice Journals'''
 
-    researches_1 = Research_1.objects.all()
-
-    context = {
-        'researches_1': researches_1,
-    }
-
-    return render(request, 'research/research_1.html', context)
-
-
-def research_2(request):
-    '''A view to return the Research 2 page'''
-
-    researches_2 = Research_2.objects.all()
+    invoice_journals = InvoiceJournal.objects.all()
 
     context = {
-        'researches_2': researches_2,
+        'invoice_journals': invoice_journals,
     }
 
-    return render(request, 'research/research_2.html', context)
+    return render(request, 'research/invoice_journals.html', context)
 
 
-def research_3(request):
-    '''A view to return the Research 3 page'''
+def brook_house(request):
+    '''A view to return Brook House'''
 
-    return render(request, 'research/research_3.html')
+    brook_houses = BrookHouse.objects.all()
+
+    context = {
+        'brook_houses': brook_houses,
+    }
+
+    return render(request, 'research/brook_house.html', context)
+
+
+def bealby_family_A(request):
+    '''A view to return the Bealby Family page'''
+
+    bealby_families = BealbyFamily.objects.all()
+
+    context = {
+        'bealby_families': bealby_families,
+    }
+
+    return render(request, 'research/bealby_family_A.html', context)

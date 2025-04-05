@@ -1,20 +1,9 @@
 from django.contrib import admin
-from .models import Article_2
-from .models import Article_3
+from .models import WorkshopAnecdote
+from .models import FamilyRecollection
 
 
-class Article_2Admin(admin.ModelAdmin):
-
-    list_display = (
-        'title',
-        'article_image',
-        'article_image',
-        'author',
-        'text',
-    )
-
-
-class Article_3Admin(admin.ModelAdmin):
+class WorkshopAnecdoteAdmin(admin.ModelAdmin):
 
     list_display = (
         'title',
@@ -25,5 +14,16 @@ class Article_3Admin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Article_2, Article_2Admin)
-admin.site.register(Article_3, Article_3Admin)
+class FamilyRecollectionAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'title',
+        'article_image',
+        'article_image',
+        'author',
+        'text',
+    )
+
+
+admin.site.register(WorkshopAnecdote, WorkshopAnecdoteAdmin)
+admin.site.register(FamilyRecollection, FamilyRecollectionAdmin)

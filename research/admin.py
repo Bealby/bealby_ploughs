@@ -1,22 +1,9 @@
 from django.contrib import admin
-from .models import Research_1
-from .models import Research_2
+from .models import InvoiceJournal
+from .models import BrookHouse
+from .models import BealbyFamily
 
-
-class Research_1Admin(admin.ModelAdmin):
-
-    list_display = (
-        'text',
-        'image_1',
-        'image_title_1',
-        'image_description_1',
-        'image_2',
-        'image_title_2',
-        'image_description_2',
-    )
-
-
-class Research_2Admin(admin.ModelAdmin):
+class InvoiceJournalAdmin(admin.ModelAdmin):
 
     list_display = (
         'text',
@@ -29,5 +16,33 @@ class Research_2Admin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Research_1, Research_1Admin)
-admin.site.register(Research_2, Research_2Admin)
+class BrookHouseAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'text',
+        'image_1',
+        'image_title_1',
+        'image_description_1',
+        'image_2',
+        'image_title_2',
+        'image_description_2',
+    )
+
+
+class BealbyFamilyAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'main_header',
+        'authur',
+        'sub_header_1',
+        'paragraph_1',
+        'sub_header_2',
+        'paragraph_2',
+        'sub_header_3',
+        'paragraph_3',
+    )
+
+
+admin.site.register(InvoiceJournal, InvoiceJournalAdmin)
+admin.site.register(BrookHouse, BrookHouseAdmin)
+admin.site.register(BealbyFamily, BealbyFamilyAdmin)
