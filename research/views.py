@@ -27,7 +27,7 @@ def brook_house_A(request):
         'brook_houses': brook_houses,
     }
 
-    return render(request, 'research/brook_house.html', context)
+    return render(request, 'research/brook_house_A.html', context)
 
 
 def bealby_family_A(request):
