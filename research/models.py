@@ -44,14 +44,14 @@ class BealbyFamily(models.Model):
     class Meta:
         verbose_name_plural = 'Bealby Family'
 
-    main_header = models.CharField("2. Image Title", max_length=254, null=True, blank=True)
-    authur = models.TextField("Title", max_length=1000, null=True, blank=True)
-    sub_header_1 = models.CharField("2. Image Title", max_length=254, null=True, blank=True)
-    paragraph_1 = models.TextField("Text", max_length=1000, null=True, blank=True)
-    sub_header_2 = models.CharField("2. Image Title", max_length=254, null=True, blank=True)
-    paragraph_2 = models.TextField("Text", max_length=1000, null=True, blank=True)
-    sub_header_3 = models.CharField("2. Image Title", max_length=254, null=True, blank=True)
-    paragraph_3 = models.TextField("Text", max_length=1000, null=True, blank=True)
+    main_header = models.CharField("Main Title", max_length=254, null=True, blank=True)
+    authur = models.TextField("Arthur", max_length=1000, null=True, blank=True)
+    sub_header_1 = models.CharField("Sub Header 1", max_length=254, null=True, blank=True)
+    paragraph_1 = models.TextField("Text_1", max_length=1000, null=True, blank=True)
+    sub_header_2 = models.CharField("Sub Header 1", max_length=254, null=True, blank=True)
+    paragraph_2 = models.TextField("Text_2", max_length=1000, null=True, blank=True)
+    sub_header_3 = models.CharField("Sub Header 1", max_length=254, null=True, blank=True)
+    paragraph_3 = models.TextField("Text_3", max_length=1000, null=True, blank=True)
 
     def __str__(self):
         return self.text

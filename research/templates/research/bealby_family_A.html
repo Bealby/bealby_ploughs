@@ -2,11 +2,47 @@
 
 <!--Family Bealby-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
+   {% for bealby_family_A in workshop_anecdotes %}
    <div class="row section-header-gutter">
       <div class="col">
-         <h4 class="decorated page-header"><span>Bealby Family</span></h4>
+         <h4 class="decorated page-header"><span>{{ bealby_family_A.main_header }}</span></h4>
       </div>
    </div>
+   <div class="row">
+    <div class="col-lg-12">
+       <h4><i>{{ bealby_family_A.authur }}</i></h4>
+       <h4>{{ bealby_family_A.sub_header_1 }}</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.sub_header_1 }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.paragraph_1 }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.sub_header_2 }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.paragraph_2 }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.sub_header_3 }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>{{ bealby_family_A.paragraph_3 }}</p>
+        </div>
+    </div>
 </div>
 <button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
