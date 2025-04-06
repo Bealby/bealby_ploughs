@@ -18,7 +18,7 @@ def invoice_journal(request):
     return render(request, 'research/invoice_journals.html', context)
 
 
-def brook_house(request):
+def brook_house_A(request):
     '''A view to return Brook House'''
 
     brook_houses = BrookHouse.objects.all()
