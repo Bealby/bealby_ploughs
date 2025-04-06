@@ -2,7 +2,12 @@
 
 <!--Family Bealby-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
-   {% for bealby_family_A in workshop_anecdotes %}
+    <div class="row section-header-gutter">
+        <div class="col">
+           <h4 class="decorated page-header">Bealby Family</span></h4>
+        </div>
+     </div>
+   {% for bealby_family_A in bealby_families %}
    <div class="row section-header-gutter">
       <div class="col">
          <h4 class="decorated page-header"><span>{{ bealby_family_A.main_header }}</span></h4>
