@@ -8,36 +8,36 @@
       </div>
    </div>
    <div class="row">
-      {% for article_3 in articles_3 %}
-      <h4 class="d-lg-none text-center">{{ article_3.title }}</h4>
+      {% for family_recollection in family_recollections %}
+      <h4 class="d-lg-none text-center">{{ family_recollection.title }}</h4>
       <div class="col-sm-12 col-lg-4">
-         {% if article_3.article_image %}
+         {% if family_recollection.article_image %}
          <div class="article-image">
             <img
-               src="{{ article_3.article_image.url }}"
+               src="{{ family_recollection.article_image.url }}"
                class="img-fluid"
-               alt="{{ article_3.article_image_description }}"
+               alt="{{ family_recollection.article_image_description }}"
                />
             {% else %}
             <img
                src="{{ MEDIA_URL }}"
                class="img-fluid"
-               alt="{{ article_3.article_image_description }}"
+               alt="{{ family_recollection.article_image_description }}"
                />
             {% endif %}
          </div>
       </div>
       <div class="col-sm-12 col-lg-8">
-         <h4 class="d-none d-lg-block">{{ article_3.title }}</h4>
+         <h4 class="d-none d-lg-block">{{ family_recollection.title }}</h4>
          <div class="col-12 p-0">
             <div class="block-divider-sub mx-auto mt-0"></div>
          </div>
-         <h5 class="mt-1"><i>By {{ article_3.author }}</i></h5>
+         <h5 class="mt-1"><i>By {{ family_recollection.author }}</i></h5>
          <div class="col-12 p-0">
             <div class="block-divider-sub mx-auto mt-0"></div>
          </div>
          <p class="pt-2 section-content">
-            {{ article_3.text|linebreaksbr }}
+            {{ family_recollection.text|linebreaksbr }}
          </p>
       </div>
       <div class="block-divider mx-auto mt-5 mb-5"></div>
