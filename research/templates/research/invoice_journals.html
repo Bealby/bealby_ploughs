@@ -58,12 +58,22 @@
             alt="{{ invoice_journal.image_description_2 }}"
             />
          {% endif %}
+         {% if invoice_journal.image_title_2 %}
          <p class="section-title mt-2">
             {{ invoice_journal.image_title_2|default_if_none:"" }}
          </p>
-         <p class="section-title-sub">
-            {{ invoice_journal.image_description_2|default_if_none:"" }}&emsp
+         {% else %}
+         <p class="section-title mt-2">
          </p>
+         {% endif %}
+         {% if invoice_journal.image_description_2 %}
+         <p class="section-title-sub">
+            {{ invoice_journal.image_description_2|default_if_none:"" }}
+         </p>
+         {% else %}
+         <p class="section-title mt-2">
+         </p>
+         {% endif %}
       </div>
       {% endfor %}
    </div>
