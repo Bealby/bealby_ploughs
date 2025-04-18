@@ -53,7 +53,6 @@ class BealbyPlough(models.Model):
     class Meta:
         verbose_name_plural = 'Bealby Ploughs'
 
-    text = models.TextField("Text", max_length=1000, null=True, blank=True)
     image = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     image_title = models.CharField("Image Title", max_length=254, null=True, blank=True)
     image_description = models.TextField("Image Description", max_length=1000, null=True, blank=True)
@@ -69,7 +68,6 @@ class BealbyForestCart(models.Model):
     class Meta:
         verbose_name_plural = 'Bealby Forest Cart'
 
-    text = models.TextField("Text", max_length=1000, null=True, blank=True)
     image = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     image_title = models.CharField("Image Title", max_length=254, null=True, blank=True)
     image_description = models.TextField("Image Description", max_length=1000, null=True, blank=True)
@@ -85,7 +83,6 @@ class WorkshopTool(models.Model):
     class Meta:
         verbose_name_plural = 'Workshop Tools'
 
-    text = models.TextField("Text", max_length=1000, null=True, blank=True)
     image = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     image_title = models.CharField("Image Title", max_length=254, null=True, blank=True)
     image_description = models.TextField("Image Description", max_length=1000, null=True, blank=True)

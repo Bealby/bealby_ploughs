@@ -2,70 +2,92 @@
 
 <!--Gallery_3-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
-   <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Bealby Ploughs</span></h4>
-      </div>
-   </div>
-   <div class="row">
-      <div class="col-lg-12 section-content">
-        <p>{{ bealby_plough.text }}</p>
-      </div>
+  <div class="row section-header-gutter">
+    <div class="col">
+      <h4 class="decorated page-header"><span>Bealby Ploughs</span></h4>
     </div>
-   <div class="row">
-      {% for bealby_plough in bealby_ploughs|dictsort:"position" %}
-      <div class="col-lg-6 col-md-6 gallery-image mx-auto">
-         {% if bealby_plough.image %}
-         <img
-            loading="lazy"
-            src="{{ bealby_plough.image.url }}"
-            srcset="{{ bealby_plough.image.url }}"
-            class="img-fluid image-shadow"
-            alt="{{ bealby_plough.image_description }}"
-            />
-         {% else %}
-         <img
-            src="{{ MEDIA_URL }}"
-            class="img-fluid mt-5"
-            alt="{{ bealby_plough.image_description }}"
-            />
-         {% endif %}
-         <p class="section-title mt-3">{{ bealby_plough.image_title|default_if_none:"" }}</p>
-         <p class="section-title-sub">{{ bealby_plough.image_description|default_if_none:"" }}
-         </p>
-      </div>
-      {% endfor %}
-   </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>
+        In the 70’s I ask my father to see if he could locate an original Bealby
+        plough. He contacted a gentleman called Charlie Sheldon (I believe
+        Jane’s husband was related?).
+      </p>
+      <p>
+        Charlie Shelton had two and sold one to my Dad for £30. I have two sons,
+        so a year later I asked Dad to see if he could buy the other. Charlie
+        Sheldon agreed and also to the “same price as last time”. I sent him a
+        cheque, which was duly returned as he wanted cash not a cheque!! My
+        father told me that when he was with Charlie Sheldon fixing the “deal”,
+        he phoned his son to say what he had done. I believe his son was most
+        unhappy with what had been done, but Charlie apparently said that the
+        deal had been done and that was that.
+      </p>
+      <p>
+        My father told me that his father had a number of “Match Ploughs” which
+        were used in competitions. I believe that when the brothers came home
+        during WW2 on leave, they burnt the ploughs on the fire due to wood
+        shortages.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    {% for bealby_plough in bealby_ploughs|dictsort:"position" %}
+    <div class="col-lg-6 col-md-6 gallery-image mx-auto">
+      {% if bealby_plough.image %}
+      <img
+        loading="lazy"
+        src="{{ bealby_plough.image.url }}"
+        srcset="{{ bealby_plough.image.url }}"
+        class="img-fluid image-shadow"
+        alt="{{ bealby_plough.image_description }}"
+      />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ bealby_plough.image_description }}"
+      />
+      {% endif %}
+      <p class="section-title mt-3">
+        {{ bealby_plough.image_title|default_if_none:"" }}
+      </p>
+      <p class="section-title-sub">
+        {{ bealby_plough.image_description|default_if_none:"" }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
+{% endblock %} {% block postloadjs %} {{ block.super }}
 
 <!--Scroll to top feature-->
 <script>
-
-    //Scroll to Top
-    function scrollFunction() {
-        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
-        if (window.pageYOffset > 700) {
-            myScrollToTopBtn.style.display = "block";
-            myScrollToTopBtn.style.visibility = "visible";
-        } else {
-            myScrollToTopBtn.style.display = "none";
-            myScrollToTopBtn.style.visibility = "hidden";
-        }
+  //Scroll to Top
+  function scrollFunction() {
+    var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+    if (window.pageYOffset > 700) {
+      myScrollToTopBtn.style.display = "block";
+      myScrollToTopBtn.style.visibility = "visible";
+    } else {
+      myScrollToTopBtn.style.display = "none";
+      myScrollToTopBtn.style.visibility = "hidden";
     }
+  }
 
-    window.onscroll = function () { scrollFunction() };
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
 
 {% endblock %}

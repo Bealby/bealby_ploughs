@@ -2,70 +2,82 @@
 
 <!--Gallery_3-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
-   <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Bealby Forest Cart</span></h4>
-      </div>
-   </div>
-   <div class="row">
-      <div class="col-lg-12 section-content">
-        <p>{{ bealby_forest_cart.text }}</p>
-      </div>
+  <div class="row section-header-gutter">
+    <div class="col">
+      <h4 class="decorated page-header"><span>Bealby Forest Cart</span></h4>
     </div>
-   <div class="row">
-      {% for bealby_forest_cart in bealby_forest_carts|dictsort:"position" %}
-      <div class="col-lg-6 col-md-6 gallery-image mx-auto">
-         {% if bealby_forest_cart.image %}
-         <img
-            loading="lazy"
-            src="{{ bealby_forest_cart.image.url }}"
-            srcset="{{ bealby_forest_cart.image.url }}"
-            class="img-fluid image-shadow"
-            alt="{{ bealby_forest_cart.image_description }}"
-            />
-         {% else %}
-         <img
-            src="{{ MEDIA_URL }}"
-            class="img-fluid mt-5"
-            alt="{{ bealby_forest_cart.image_description }}"
-            />
-         {% endif %}
-         <p class="section-title mt-3">{{ bealby_forest_cart.image_title|default_if_none:"" }}</p>
-         <p class="section-title-sub">{{ bealby_forest_cart.image_description|default_if_none:"" }}
-         </p>
-      </div>
-      {% endfor %}
-   </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>
+        In the 70’s I found the Cart in one of the sheds, and being concerned
+        that it might deteriate, agreed with my uncle that I should look after
+        it. It has two 6ft wooden spoked wheels together with the original chain
+        to haul the tree logs out of the forest.
+      </p>
+      <p>
+        My father told me that it was made in the 1890’s by two of the workshop
+        plough makers . They had a competition to see who made the best wheel! I
+        was told the name of each person but have forgotten.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    {% for bealby_forest_cart in bealby_forest_carts|dictsort:"position" %}
+    <div class="col-lg-6 col-md-6 gallery-image mx-auto">
+      {% if bealby_forest_cart.image %}
+      <img
+        loading="lazy"
+        src="{{ bealby_forest_cart.image.url }}"
+        srcset="{{ bealby_forest_cart.image.url }}"
+        class="img-fluid image-shadow"
+        alt="{{ bealby_forest_cart.image_description }}"
+      />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ bealby_forest_cart.image_description }}"
+      />
+      {% endif %}
+      <p class="section-title mt-3">
+        {{ bealby_forest_cart.image_title|default_if_none:"" }}
+      </p>
+      <p class="section-title-sub">
+        {{ bealby_forest_cart.image_description|default_if_none:"" }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
+{% endblock %} {% block postloadjs %} {{ block.super }}
 
 <!--Scroll to top feature-->
 <script>
-
-    //Scroll to Top
-    function scrollFunction() {
-        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
-        if (window.pageYOffset > 700) {
-            myScrollToTopBtn.style.display = "block";
-            myScrollToTopBtn.style.visibility = "visible";
-        } else {
-            myScrollToTopBtn.style.display = "none";
-            myScrollToTopBtn.style.visibility = "hidden";
-        }
+  //Scroll to Top
+  function scrollFunction() {
+    var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+    if (window.pageYOffset > 700) {
+      myScrollToTopBtn.style.display = "block";
+      myScrollToTopBtn.style.visibility = "visible";
+    } else {
+      myScrollToTopBtn.style.display = "none";
+      myScrollToTopBtn.style.visibility = "hidden";
     }
+  }
 
-    window.onscroll = function () { scrollFunction() };
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
 
 {% endblock %}
