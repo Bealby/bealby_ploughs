@@ -80,22 +80,27 @@ class HomeGallery(models.Model):
     gallery_image_alt_text_1 = models.CharField("1. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_1 = models.CharField("1. Gallery - Title", max_length=254, null=True, blank=True)
     gallery_description_1 = models.CharField("1. Gallery - Description", max_length=254, null=True, blank=True)
+
     gallery_image_2 = models.ImageField("2. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     gallery_image_alt_text_2 = models.CharField("2. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_2 = models.CharField("2. Gallery - Title", max_length=254, null=True, blank=True)
     gallery_description_2 = models.CharField("2. Gallery - Description", max_length=254, null=True, blank=True)
+
     gallery_image_3 = models.ImageField("3. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     gallery_image_alt_text_3 = models.CharField("3. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_3 = models.CharField("3. Gallery - Title", max_length=254, null=True, blank=True)
     gallery_description_3 = models.CharField("3. Gallery - Description", max_length=254, null=True, blank=True)
+
     gallery_image_4 = models.ImageField("4. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     gallery_image_alt_text_4 = models.CharField("4. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_4 = models.CharField("4. Gallery - Title", max_length=254, null=True, blank=True)
-    gallery_description_4 = models.CharField("3. Gallery - Description", max_length=254, null=True, blank=True)
+    gallery_description_4 = models.CharField("4. Gallery - Description", max_length=254, null=True, blank=True)
+
     gallery_image_5 = models.ImageField("5. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     gallery_image_alt_text_5 = models.CharField("5. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_5 = models.CharField("5. Gallery - Title", max_length=254, null=True, blank=True)
     gallery_description_5 = models.CharField("5. Gallery - Description", max_length=254, null=True, blank=True)
+    
     gallery_image_6 = models.ImageField("6. Gallery - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     gallery_image_alt_text_6 = models.CharField("6. Gallery - Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     gallery_title_6 = models.CharField("6. Gallery - Title", max_length=254, null=True, blank=True)
