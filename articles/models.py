@@ -12,7 +12,7 @@ class WorkshopAnecdote(models.Model):
     article_image_description = models.CharField("Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     title = models.CharField("Title", max_length=1000, null=True, blank=True)
     author = models.CharField("Author", max_length=1000, null=True, blank=True)
-    text = models.TextField("Workshop Anecdote Text", max_length=1000, null=True, blank=True)
+    text = models.TextField("Workshop Anecdote Text", max_length=5000, null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -28,7 +28,7 @@ class FamilyRecollection(models.Model):
     article_image_description = models.CharField("Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     title = models.CharField("Title", max_length=1000, null=True, blank=True)
     author = models.CharField("Author", max_length=1000, null=True, blank=True)
-    text = models.TextField("Workshop Anecdote Text", max_length=1000, null=True, blank=True)
+    text = models.TextField("Workshop Anecdote Text", max_length=5000, null=True, blank=True)
 
     def __str__(self):
         return self.title
