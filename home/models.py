@@ -16,7 +16,6 @@ class HomeAbout(models.Model):
     about_image_title_2 = models.CharField("2. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_2 = models.CharField("2. About - Image Description", max_length=254, null=True, blank=True)
     about_paragraph_2 = models.TextField("2. About - Paragraph ", max_length=1000, null=True, blank=True)
-    about_sub_title_3 = models.CharField("3. Title", max_length=254, null=True, blank=True)
     about_paragraph_3 = models.TextField("3. About - Paragraph ", max_length=3000, null=True, blank=True)
 
     def __str__(self):

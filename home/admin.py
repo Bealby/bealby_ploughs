@@ -16,7 +16,6 @@ class HomeAboutAdmin(admin.ModelAdmin):
         'about_image_title_2',
         'about_image_description_2',
         'about_paragraph_2',
-        'about_sub_title_3',
         'about_paragraph_3',
     )
 
