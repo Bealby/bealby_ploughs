@@ -71,6 +71,18 @@ class HomeGalleryAdmin(admin.ModelAdmin):
         'gallery_title_3',
         'gallery_description_3',
         'gallery_image_alt_text_3',
+        'gallery_image_4',
+        'gallery_title_4',
+        'gallery_description_4',
+        'gallery_image_alt_text_4',
+        'gallery_image_5',
+        'gallery_title_5',
+        'gallery_description_5',
+        'gallery_image_alt_text_5',
+        'gallery_image_6',
+        'gallery_title_6',
+        'gallery_description_6',
+        'gallery_image_alt_text_6',
     )
 
 
