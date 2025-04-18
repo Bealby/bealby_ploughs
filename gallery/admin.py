@@ -61,6 +61,7 @@ class BealbyForestCartAdmin(admin.ModelAdmin):
 class WorkshopToolAdmin(admin.ModelAdmin):
 
     list_display = (
+        'text',
         'image_title',
         'image',
         'image_description',
