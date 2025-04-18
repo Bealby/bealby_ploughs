@@ -40,6 +40,7 @@ class BealbyWorkshopAdmin(admin.ModelAdmin):
 class BealbyPloughAdmin(admin.ModelAdmin):
 
     list_display = (
+        'text',
         'image_title',
         'image',
         'image_description',
@@ -51,6 +52,7 @@ class BealbyPloughAdmin(admin.ModelAdmin):
 class BealbyForestCartAdmin(admin.ModelAdmin):
 
     list_display = (
+        'text',
         'image_title',
         'image',
         'image_description',
