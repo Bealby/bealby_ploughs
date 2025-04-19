@@ -953,3 +953,10 @@ li {
 		margin-right: 31px;
 		}
 	}
+
+@media (max-width: 560px) {
+	
+	.section-image-title {
+		font-size: 13px;
+		}
+	}
