@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<!--500 Page-->  
+<div class="container-fluid section-gutter-main-header page-bottom-margin">
+   <div class="row section-header-gutter">
+      <div class="col">
+         <h4 class="decorated page-header"><span>500 ERROR</span></h4>
+         <p class="pt-2 section-content">The server encountered an error and could not complete your request</p>
+         <a href="{% url 'home' %}"><i class="fa-solid fa-chevron-left"
+            style="font-size: 1.8rem !important; color:rgb(128, 0, 0, 1) !important;"></i>&nbsp;&nbsp;Home</a>
+      </div>
+   </div>
+
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
