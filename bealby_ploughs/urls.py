@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.static import serve
-from django.urls import re_path
+from django.contrib.sitemaps.views import sitemap
+from bealby_ploughs.sitemaps import StaticViewSitemap
+
+sitemaps = {
+    'static': StaticViewSitemap,
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,10 +32,7 @@ urlpatterns = [
     path('research/', include('research.urls')),
     path('gallery/', include('gallery.urls')),
     path('contact/', include('contact.urls')),
-    re_path(r'^sitemap\.xml$', serve, {
-        'document_root': settings.STATIC_ROOT,
-        'path': 'sitemap.xml'
-    }),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # default: "Django Administration"
