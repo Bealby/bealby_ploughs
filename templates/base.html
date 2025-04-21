@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bealby Ploughs, Ploughs, Farming, Old Ploughs, Fields, Earth">
     <meta property="og:title" content="Bealby Ploughs" />
-    <meta property="og:image" content="https://ignite-theatre.s3.amazonaws.com/static/images/logo/logo_white.png" />
+    <meta property="og:image" content="https://bealby-ploughs.s3.amazonaws.com/static/images/logo/logo_white.png" />
     <meta property="og:description" content="Bealby Ploughs. Django" />
     <meta property="og:url" content="https://www.bealbyploughs.com/" />
     {% endblock %}
@@ -40,17 +40,28 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c94280c78a.js" crossorigin="anonymous"></script>
+    
+    <!-- Schema Markup for Organization -->
+    <script type="application/ld+json" defer>
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Bealby Ploughs",
+            "url": "https://www.bealbyploughs.com",
+            "logo": "https://www.bealbyploughs.com/static/images/logo.png"
+        }
+    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
-    integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous" defer></script>
     {% endblock %}
 
     {% block extra_js %}
