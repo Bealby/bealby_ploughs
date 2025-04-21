@@ -8,103 +8,68 @@
 
 
 <url>
-  <loc>https://www.ignite-theatre.com/</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/about/</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/articles/the_thoroton_society</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/contact/</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/articles/workshop_anecdote</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/tickets/</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/articles/family_recollection</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=the_twits</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/research/invoice_journal</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=bite_size_plays</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/research/brook_house_A</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=james_and_the_giant_peach</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/research/bealby_family_A</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=eight</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/bealby_family</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=a_grandmas_grimm</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/brook_house</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=gabriel</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/bealby_workshop</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=wind_and_the_willows</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/bealby_plough</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/gallery/?show=the_memory_of_water</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/bealby_forest_cart</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ignite-theatre.com/cast/?show=bite_size_plays</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=the_twits</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=james_and_the_giant_peach</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=eight</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=a_grandmas_grimm</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=gabriel</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=wind_and_the_willows</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ignite-theatre.com/cast/?show=the_memory_of_water</loc>
-  <lastmod>2025-04-21T18:05:45+00:00</lastmod>
+  <loc>https://www.bealbyploughs.com/gallery/workshop_tool</loc>
+  <lastmod>2025-04-21T18:24:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
