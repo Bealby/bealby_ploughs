@@ -24,4 +24,8 @@ def index(request):
 
 
 def page_not_found(request, exception):
-    return render(request, '404.html', status=404)
+    # Log the URL that caused the 404 error (optional)
+    print(f"Page not found: {request.path}")  # You can log this in your server logs too
+
+    # Render the 404 page with the requested path passed to the template
+    return render(request, '404.html', {'requested_url': request.path}, status=404)
