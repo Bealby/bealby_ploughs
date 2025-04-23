@@ -35,8 +35,6 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'bealby_ploughs.views.custom_404'
-
 
 # default: "Django Administration"
 admin.site.site_header = 'Bealby Ploughs Website'
