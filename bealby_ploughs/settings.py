@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'gallery',
     'contact',
     'storages',
-    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
