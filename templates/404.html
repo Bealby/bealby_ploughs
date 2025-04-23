@@ -1,16 +1,8 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
 <!--404 Page-->  
-<div class="container-fluid section-gutter-main-header page-bottom-margin">
-   <div class="row section-header-gutter">
-      <div class="col">
-         <h4 class="decorated page-header"><span>404 ERROR</span></h4>
-         <p class="pt-2 section-content">The page you are looking for can't be found</p>
-         <a href="{% url 'home' %}"><i class="fa-solid fa-chevron-left"
-            style="font-size: 1.8rem !important; color:rgb(128, 0, 0, 1) !important;"></i>&nbsp;&nbsp;Home</a>
-      </div>
-   </div>
-
+<div>
+   <h4 class="decorated page-header"><span>404 ERROR</span></h4>
 </div>
 
 {% endblock %}
