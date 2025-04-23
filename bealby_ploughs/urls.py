@@ -28,6 +28,7 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = 'home.views.page_not_found'
 
 # default: "Django Administration"
 admin.site.site_header = 'Bealby Ploughs Website'
