@@ -3,32 +3,23 @@
 
 {% block content %}
 
-<section class="container-fluid" id="container-fluid-padding">
 
-    <div class="row text-box-outside">
-        <!---Content 1--->
-        <div class="text-box-inside">
-            <div class="col-12 col-md-8 offset-md-2">
-                <p class="page-main-header text-uppercase mt-4 mb-0">
-                    500 ERROR
-                </p>
-                <p class="content-p-errors">
-                    The server encountered an error and could not complete your request
-                </p>
-                <div class="content-h-errors text-center mb-2">
-                    <a href="{% url 'home' %}"><i class="fa-solid fa-chevron-left"
-                            style="font-size: 1.8rem !important; color:rgb(128, 0, 0, 1) !important;"></i>&nbsp;&nbsp;Home</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!--Push footer down-->
-<div class="container-fluid">
-    <div class="row email-success-footer-margin">
-    </div>
+<div class="container-fluid section-gutter-main-header">
+   <div class="row section-header-gutter">
+     <div class="col">
+       <h4 class="decorated page-header">
+         <span>About</span>
+       </h4>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-lg-12 section-content-error">
+       <p><strong>500 ERROR</strong></p>
+       <p>The server encountered an error and could not complete your request</p>
+       <a href="{% url 'home' %}" style="color:rgb(239, 125, 25, 1) !important; text-decoration: none !important"><i class="fa-solid fa-chevron-left"
+         style="font-size: 1rem !important; color:rgb(239, 125, 25, 1) !important;"></i>&nbsp;&nbsp;Home</a>
+     </div>
+   </div>
 </div>
 
 {% endblock %}
