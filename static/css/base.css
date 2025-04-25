@@ -150,6 +150,14 @@ body {
 	color: rgba(33, 37, 41, 0.75) !important;
 }
 
+.section-content-error {
+    font-size: 17px;
+    font-weight: 400;
+    word-spacing: 4px;
+    text-align: center;
+    color: rgba(33, 37, 41, 0.75) !important;
+}
+
 .section-title {
 	font-size: 15px;
 	text-align: left !important;
@@ -806,6 +814,17 @@ li {
 	word-spacing: 4px;	
 	text-align: left;
 	color: rgba(33, 37, 41, 0.75) !important;
+	}
+}
+
+/*---Section word spacing/ font size/ text aligh adjustments for better viewing on mb ---*/
+@media (max-width: 560px) {
+.section-content-error {
+    font-size: 17px;
+    font-weight: 400;
+    word-spacing: 4px;
+    text-align: center;
+    color: rgba(33, 37, 41, 0.75) !important;
 	}
 }
 
