@@ -12,6 +12,7 @@ class StaticViewSitemap(Sitemap):
                 'brook_house', 'bealby_workshop', 'bealby_plough', 'bealby_forest_cart', 
                 'workshop_tool']  # These are your URL names
 
+
     def location(self, item):
-        # Prepend the base URL (SITE_URL) to the relative URL
-        return settings.SITE_URL + reverse(item)
+        # Prepend the domain without https:// to avoid concatenating the protocol twice
+        return f'https://{settings.SITE_URL}{reverse(item)}'

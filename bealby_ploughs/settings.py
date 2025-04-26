@@ -31,7 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bealby-ploughs.herokuapp.com', 'localhost', 'bealby-ploughs-4b5de5e0f85d.herokuapp.com', '127.0.0.1', '0.0.0.0:8001', '0.0.0.0', 'www.bealbyploughs.com', '*']
 
-SITE_URL = 'https://www.bealbyploughs.com'
+SITE_URL = '/www.bealbyploughs.com'
 
 # Application definition
 
