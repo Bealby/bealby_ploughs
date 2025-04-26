@@ -7,12 +7,13 @@ class StaticViewSitemap(Sitemap):
     changefreq = 'monthly'
 
     def items(self):
-        return ['home', 'the_thoroton_society', 'workshop_anecdote', 'family_recollection', 
-                'invoice_journal', 'brook_house_A', 'bealby_family_A', 'bealby_family', 
-                'brook_house', 'bealby_workshop', 'bealby_plough', 'bealby_forest_cart', 
-                'workshop_tool']  # These are your URL names
-
+        return [
+            'home', 'the_thoroton_society', 'workshop_anecdote', 'family_recollection',
+            'invoice_journal', 'brook_house_A', 'bealby_family_A', 'bealby_family',
+            'brook_house', 'bealby_workshop', 'bealby_plough', 'bealby_forest_cart', 
+            'workshop_tool'
+        ]  # These are your URL names
 
     def location(self, item):
-        # Prepend the domain without https:// to avoid concatenating the protocol twice
+        # Ensure no leading slash or placeholder URL, only appending the correct domain and relative path
         return f'https://{settings.SITE_URL}{reverse(item)}'
