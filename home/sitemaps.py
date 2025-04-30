@@ -15,5 +15,6 @@ class StaticViewSitemap(Sitemap):
         ]  # These are your URL names
 
     def location(self, item):
-        # Ensure no leading slash or placeholder URL, only appending the correct domain and relative path
-        return f'https://{settings.SITE_URL}{reverse(item)}'
+        return f'{settings.SITE_URL}{reverse(item)}'
+
+
