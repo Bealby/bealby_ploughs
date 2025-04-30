@@ -631,7 +631,7 @@ li {
 
 @media (max-width: 2200px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 40rem;
+		--bs-gutter-x: 59rem;
 		margin-top: 4rem;
 	}
 }
@@ -646,7 +646,7 @@ li {
 
 @media (max-width: 1900px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 30rem;
+		--bs-gutter-x: 35rem;
 		margin-top: 4rem;
 	}
 }
@@ -661,7 +661,7 @@ li {
 
 @media (max-width: 1600px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 25rem;
+		--bs-gutter-x: 35rem;
 		margin-top: 5rem;
 	}
 }
@@ -698,7 +698,7 @@ li {
 
 @media (max-width: 1200px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 10rem;
+		--bs-gutter-x: 15rem;
 		margin-top: 3rem;
 	}
 }
@@ -713,7 +713,7 @@ li {
 
 @media (max-width: 992px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 8rem;
+		--bs-gutter-x: 10rem;
 		margin-top: 3rem;
 	}
 }
@@ -750,7 +750,7 @@ li {
 
 @media (max-width: 767px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 6rem;
+		--bs-gutter-x: 9rem;
 		margin-top: 3rem;
 	}
 }
