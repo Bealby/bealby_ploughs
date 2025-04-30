@@ -15,6 +15,7 @@ class StaticViewSitemap(Sitemap):
         ]  # These are your URL names
 
     def location(self, item):
-        return f'{settings.SITE_URL}{reverse(item)}'
+        return reverse(item)
+
 
 
