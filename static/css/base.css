@@ -113,7 +113,7 @@ body {
    }
 
 .carousel-control-next, .carousel-control-prev {
-    top: -80% !important;
+    top: -40% !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -980,7 +980,8 @@ li {
 		}
 	}
 
-@media (max-width: 991px) {
+/*--Desktop carousel. Button postion for correct height position--*/
+@media (min-width: 767px) {
 
 	.carousel-control-next, .carousel-control-prev {
 		top: 0% !important;
