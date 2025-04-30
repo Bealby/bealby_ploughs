@@ -113,7 +113,7 @@ body {
    }
 
 .carousel-control-next, .carousel-control-prev {
-    top: -80px !important;
+    top: -80% !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -977,5 +977,12 @@ li {
 	
 	.section-image-title {
 		font-size: 13px;
+		}
+	}
+
+@media (max-width: 991px) {
+
+	.carousel-control-next, .carousel-control-prev {
+		top: 0% !important;
 		}
 	}
