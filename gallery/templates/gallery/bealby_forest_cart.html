@@ -13,12 +13,15 @@
         In the 70’s I found the Cart in one of the sheds, and being concerned
         that it might deteriate, agreed with my uncle that I should look after
         it. It has two 6ft wooden spoked wheels together with the original chain
-        to haul the tree logs out of the forest.
-      </p>
-      <p>
+        to haul the tree logs out of the forest.<span id="dots-sport">...</span>
+        <span id="see-more-btn" style="color: #EF7D19; cursor: pointer;" onclick="mySportFunction()"> See more</span>
+        <span id="more-sport" style="display:none;">
+        <br><br>
         My father told me that it was made in the 1890’s by two of the workshop
         plough makers . They had a competition to see who made the best wheel! I
         was told the name of each person but have forgotten.
+        <span id="see-less-btn" style="color: #EF7D19; cursor: pointer;" onclick="mySportFunction()"> See less</span>
+      </span>
       </p>
     </div>
   </div>
@@ -78,6 +81,27 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+</script>
+
+<script>
+  
+  function mySportFunction() {
+    var dots = document.getElementById("dots-sport");
+    var moreText = document.getElementById("more-sport");
+    var seeMoreBtn = document.getElementById("see-more-btn");
+  
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";   // Show hidden text
+      dots.style.display = "none";         // Hide ...
+      seeMoreBtn.style.display = "none";   // Hide "See more"
+    } else {
+      moreText.style.display = "none";     // Hide hidden text
+      dots.style.display = "inline";       // Show ...
+      seeMoreBtn.style.display = "inline"; // Show "See more"
+    }
+  }
+  
+
 </script>
 
 {% endblock %}
