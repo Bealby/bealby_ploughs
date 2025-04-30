@@ -10,26 +10,29 @@
   <div class="row mb-5">
     <div class="col-lg-12 section-content">
       <p>
-        In the 70’s I ask my father to see if he could locate an original Bealby
+        In the 70’s I asked my father to see if he could locate an original Bealby
         plough. He contacted a gentleman called Charlie Sheldon (I believe
-        Jane’s husband was related?).
-      </p>
-      <p>
-        Charlie Shelton had two and sold one to my Dad for £30. I have two sons,
-        so a year later I asked Dad to see if he could buy the other. Charlie
-        Sheldon agreed and also to the “same price as last time”. I sent him a
-        cheque, which was duly returned as he wanted cash not a cheque!! My
-        father told me that when he was with Charlie Sheldon fixing the “deal”,
-        he phoned his son to say what he had done. I believe his son was most
-        unhappy with what had been done, but Charlie apparently said that the
-        deal had been done and that was that.
-      </p>
-      <p>
-        My father told me that his father had a number of “Match Ploughs” which
-        were used in competitions. I believe that when the brothers came home
-        during WW2 on leave, they burnt the ploughs on the fire due to wood
-        shortages.
-      </p>
+        Jane's husband was related?)<span id="dots-sport">...</span>
+        <span id="see-more-btn" style="color: #EF7D19; cursor: pointer;" onclick="mySportFunction()"> See more</span>
+        <span id="more-sport" style="display:none;">
+          <br><br>
+          Charlie Shelton had two and sold one to my Dad for £30. I have two sons,
+          so a year later I asked Dad to see if he could buy the other.
+          <br><br>
+          Charlie Sheldon agreed and also to the “same price as last time”. I sent him a
+          cheque, which was duly returned as he wanted cash not a cheque!! My
+          father told me that when he was with Charlie Sheldon fixing the “deal”,
+          he phoned his son to say what he had done. I believe his son was most
+          unhappy with what had been done, but Charlie apparently said that the
+          deal had been done and that was that.
+          <br><br>
+          My father told me that his father had a number of “Match Ploughs” which
+          were used in competitions. I believe that when the brothers came home
+          during WW2 on leave, they burnt the ploughs on the fire due to wood
+          shortages.
+          <span id="see-less-btn" style="color: #EF7D19; cursor: pointer;" onclick="mySportFunction()"> See less</span>
+        </span>
+      </p>      
     </div>
   </div>
   <div class="row">
@@ -88,6 +91,27 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+</script>
+
+<script>
+  
+  function mySportFunction() {
+    var dots = document.getElementById("dots-sport");
+    var moreText = document.getElementById("more-sport");
+    var seeMoreBtn = document.getElementById("see-more-btn");
+  
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";   // Show hidden text
+      dots.style.display = "none";         // Hide ...
+      seeMoreBtn.style.display = "none";   // Hide "See more"
+    } else {
+      moreText.style.display = "none";     // Hide hidden text
+      dots.style.display = "inline";       // Show ...
+      seeMoreBtn.style.display = "inline"; // Show "See more"
+    }
+  }
+  
+
 </script>
 
 {% endblock %}

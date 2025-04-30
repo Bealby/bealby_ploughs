@@ -209,6 +209,11 @@ body {
 	margin-bottom: 7rem;
 }
 
+/*---Text Reveal---*/
+#more-sport {
+	display: none;
+}
+
 /*---IMAGES---*/
 /*---Section Image Zoom---*/
 
@@ -247,7 +252,7 @@ body {
 }
 
 .image-shadow {
-	box-shadow: 0rem 0rem 1.5rem 0rem rgb(0, 0, 0, 1);
+	box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0, 1);
 }
 
 /*---Links---*/
@@ -303,7 +308,7 @@ body {
 }
 
 .section-header-gutter {
-	margin-bottom: 2.5rem;
+	margin-bottom: 4rem;
 }
 
 /*---Block Dividers---*/
@@ -730,7 +735,7 @@ li {
 /*---Secition header MT for better spacing in smaller devices---*/
 @media (max-width: 992px) {
 .section-header-gutter {
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 	}
 }
 
@@ -801,7 +806,7 @@ li {
 /*---MB under section for better viewinig on mobile  ---*/
 @media (max-width: 991px) {
 .section-header-gutter-about {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	}	
 }
 
@@ -838,7 +843,7 @@ li {
 /*---Reduce PL, PR, better spacing for gallery images ---*/
 @media (max-width: 767px) {
 .gallery-image {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
 	}
