@@ -777,7 +777,7 @@ li {
 @media (max-width: 576px) {
 	.section-gutter-main-header {
 		--bs-gutter-x: 5rem;
-		margin-top: 2rem;
+		margin-top: 3rem;
 	}
 }
 
