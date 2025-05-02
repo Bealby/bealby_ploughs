@@ -106,6 +106,7 @@
         src="{{ home_about.about_image_2.url }}"
         class="img-fluid"
         alt="{{ home_about.about_image_description_2 }}"
+        loading="lazy"
       />
       <p class="section-image-title mt-2">
         {{ home_about.about_image_title_2|default_if_none:"" }}
@@ -124,6 +125,7 @@
         src="{{ home_about.about_image_2.url }}"
         class="img-fluid"
         alt="{{ home_about.about_image_description_2 }}"
+        loading="lazy"
       />
       <p class="section-image-title mt-2">
         {{ home_about.about_image_title_2|default_if_none:"" }}
@@ -186,6 +188,7 @@
             src="{{ home_article.article_image_1.url }}"
             class="img-fluid carousel_image_mobile"
             alt="{{ home_article.article_image_alt_text_1 }}"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'the_thoroton_society' %}" class="text-links">
@@ -206,6 +209,7 @@
             alt="{{ home_article.article_image_alt_text_2 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'workshop_anecdote' %}" class="text-links">
@@ -226,6 +230,7 @@
             alt="{{ home_article.article_image_alt_text_3 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'family_recollection' %}" class="text-links">
@@ -270,6 +275,7 @@
             alt="{{ home_article.article_image_alt_text_1 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </div>
       </a>
@@ -292,6 +298,7 @@
             alt="{{ home_article.article_image_alt_text_2 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </div>
       </a>
@@ -314,6 +321,7 @@
             alt="{{ home_article.article_image_alt_text_3 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </div>
       </a>
@@ -355,6 +363,7 @@
             src="{{ home_research.research_image_1.url }}"
             class="img-fluid carousel_image_mobile"
             alt="{{ home_research.research_image_alt_text_1 }}"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'invoice_journal' %}" class="text-links">
@@ -375,6 +384,7 @@
             alt="{{ home_research.research_image_alt_text_2 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'brook_house' %}" class="text-links">
@@ -395,6 +405,7 @@
             alt="{{ home_research.research_image_alt_text_3 }}"
             width="600"
             height="400"
+            loading="lazy"
           />
         </a>
         <a href="{% url 'bealby_family' %}" class="text-links">
