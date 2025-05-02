@@ -311,6 +311,10 @@ body {
 	margin-bottom: 4rem;
 }
 
+.section-header-gutter-first{
+	margin-bottom: 4rem;
+}
+
 /*---Block Dividers---*/
 .block-divider {
 	height: 2px;
@@ -739,6 +743,13 @@ li {
 	}
 }
 
+/*---Secition header MT for better spacing in smaller devices---*/
+@media (max-width: 992px) {
+	.section-header-gutter-first {
+		margin-bottom: 2rem;
+		}
+	}
+
 
 /*---Section gutter decrease gutter x for better viewing 767px---*/
 @media (max-width: 767px) {
@@ -766,7 +777,7 @@ li {
 @media (max-width: 576px) {
 	.section-gutter-main-header {
 		--bs-gutter-x: 5rem;
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 }
 
@@ -985,7 +996,7 @@ li {
 		}
 	}
 
-/*--Desktop carousel. Button postion for correct height position--*/
+/*--Desktop carousel. Button postion for correct height which doesn't overlay navigation links--*/
 @media (min-width: 767px) {
 
 	.carousel-control-next, .carousel-control-prev {
