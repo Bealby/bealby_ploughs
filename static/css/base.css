@@ -781,6 +781,13 @@ li {
 	}
 }
 
+
+@media (max-width: 576px) {
+	#section-gutter-main-header-gallery {
+		margin-top: 1rem;
+	}
+}
+
 /*---Navbar margin right decrease for better viewing <992pz---*/
 @media (max-width: 992px) {
 	.navbar-desktop {
