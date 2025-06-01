@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'tinymce',
 ]
 
-
 MIDDLEWARE = [
     #'allauth.account.middleware.AccountMiddleware',
     'django.middleware.security.SecurityMiddleware',
