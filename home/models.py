@@ -9,7 +9,7 @@ class HomeAbout(models.Model):
     class Meta:
         verbose_name_plural = 'Home - About'
 
-    about_paragraph_1 = models.TextField("1. About - Paragraph", max_length=1000, null=True, blank=True)
+    about_paragraph_1 = HTMLField("1. About - Paragraph", max_length=1000, null=True, blank=True)
     about_image_1 = models.ImageField("1. About - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     about_image_title_1 = models.CharField("1. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_1 = models.CharField("1. About - Image Description", max_length=254, null=True, blank=True)
@@ -17,8 +17,8 @@ class HomeAbout(models.Model):
     about_image_title_2 = models.CharField("2. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_2 = models.CharField("2. About - Image Description", max_length=254, null=True, blank=True)
     about_paragraph_2 = HTMLField("2. About - Paragraph ", max_length=1000, null=True, blank=True)
-    about_paragraph_3 = models.TextField("3. About - Paragraph ", max_length=3000, null=True, blank=True)
-    about_paragraph_4 = models.TextField("4. About - Paragraph ", max_length=3000, null=True, blank=True)
+    about_paragraph_3 = HTMLField("3. About - Paragraph ", max_length=3000, null=True, blank=True)
+    about_paragraph_4 = HTMLField("4. About - Paragraph ", max_length=3000, null=True, blank=True)
 
     def __str__(self):
         return self.about_paragraph_1
