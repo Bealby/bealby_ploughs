@@ -9,7 +9,7 @@ class HomeAbout(models.Model):
     class Meta:
         verbose_name_plural = 'Home - About'
 
-    about_paragraph_1 = HTMLField("1. About - Paragraph", max_length=1000, null=True, blank=True)
+    about_paragraph_1 = HTMLField("1. About - Paragraph", max_length=3000, null=True, blank=True)
     about_image_1 = models.ImageField("1. About - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     about_image_title_1 = models.CharField("1. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_1 = models.CharField("1. About - Image Description", max_length=254, null=True, blank=True)
