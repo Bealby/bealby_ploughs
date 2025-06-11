@@ -26,7 +26,7 @@ class BrookHouse(models.Model):
     class Meta:
         verbose_name_plural = 'Brook House'
 
-    text = models.TextField("Text", max_length=1000, null=True, blank=True)
+    text = models.TextField("Text", max_length=5000, null=True, blank=True)
     image_1 = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     image_title_1 = models.CharField("1. Image Title", max_length=254, null=True, blank=True)
     image_description_1 = models.CharField("1. Image Description", max_length=254, null=True, blank=True)
