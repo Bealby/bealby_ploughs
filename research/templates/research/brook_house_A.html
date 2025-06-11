@@ -10,7 +10,7 @@
    {% for brook_house_A in brook_houses %}
    <div class="row">
       <div class="col-lg-12 section-content">
-         <p>{{ brook_house_A.text }}
+         <p>{{ brook_house_A.text|safe }}
          </p>
       </div>
    </div>
