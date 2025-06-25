@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 '''Pillow must be installed'''
 
 
@@ -24,6 +25,7 @@ class FamilyRecollection(models.Model):
     class Meta:
         verbose_name_plural = 'Family Recollections'
 
+    text_intro = HTMLField("Text", max_length=5000, null=True, blank=True)
     article_image = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
     article_image_description = models.CharField("Image Description", max_length=254, null=True, blank=True, help_text="'Alt' text required for image. Backend. Not seen on website")
     title = models.CharField("Title", max_length=1000, null=True, blank=True)

@@ -17,6 +17,7 @@ class WorkshopAnecdoteAdmin(admin.ModelAdmin):
 class FamilyRecollectionAdmin(admin.ModelAdmin):
 
     list_display = (
+        'text_intro',
         'title',
         'article_image',
         'article_image',
