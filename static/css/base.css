@@ -124,12 +124,12 @@ body {
 /*--Gallery MD/LG styling carousel--*/
 
 .gallery_desktop-carousel-control-prev{
-	left:-66px;
+	left:-106px;
 	top:-70px;
 }
 
 .gallery_desktop-carousel-control-next{
-	right:-66px;
+	right:-102px;
 	top:-70px;
 }
 
@@ -884,7 +884,7 @@ li {
 
 @media (max-width: 2600px) {
 	.gallery_desktop-carousel-control-prev{
-	left:92px;
+	left:-83px;
 	top:-58px;
 	}
 
