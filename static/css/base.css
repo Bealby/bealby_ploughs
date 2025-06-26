@@ -635,7 +635,7 @@ li {
 
 @media (max-width: 2200px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 59rem;
+		--bs-gutter-x: 40rem;
 		margin-top: 4rem;
 	}
 }
@@ -650,7 +650,7 @@ li {
 
 @media (max-width: 1900px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 35rem;
+		--bs-gutter-x: 30rem;
 		margin-top: 4rem;
 	}
 }
@@ -665,7 +665,7 @@ li {
 
 @media (max-width: 1600px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 35rem;
+		--bs-gutter-x: 28rem;
 		margin-top: 5rem;
 	}
 }
@@ -702,7 +702,7 @@ li {
 
 @media (max-width: 1200px) {
 	.section-gutter-main-header {
-		--bs-gutter-x: 15rem;
+		--bs-gutter-x: 10	rem;
 		margin-top: 3rem;
 	}
 }
