@@ -16,7 +16,7 @@ class HomeAbout(models.Model):
     about_image_2 = models.ImageField("2. About - Image", null=True, blank=True, help_text="Please upload images 600x400. Max 300px")
     about_image_title_2 = models.CharField("2. About - Image Title", max_length=254, null=True, blank=True)
     about_image_description_2 = models.CharField("2. About - Image Description", max_length=254, null=True, blank=True)
-    about_paragraph_2 = HTMLField("2. About - Paragraph ", max_length=1000, null=True, blank=True)
+    about_paragraph_2 = HTMLField("2. About - Paragraph ", max_length=3000, null=True, blank=True)
 
     def __str__(self):
         return self.about_paragraph_1
