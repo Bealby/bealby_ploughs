@@ -8,6 +8,43 @@
       </div>
    </div>
    <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>
+        I am the eldest son of George Bealby, who was born at Brook House in
+        1907. I visited Brook House in the early 1950s in the summer holidays
+        when my Grandmother (Alice) and my Uncle Frank lived there.<span
+          id="dots-sport"
+          >...</span
+        >
+        <span
+          id="see-more-btn"
+          style="color: #ef7d19; cursor: pointer"
+          onclick="mySportFunction()"
+        >
+          See more</span
+        >
+        <span id="more-sport" style="display: none">
+          <br /><br />
+          I have always wondered what the wealth of the Plough Business was over
+          the years. I know that latterly the family was very poor. My father
+          talked about sleeping between straw palliasses as a boy , and that
+          they were always in debt to the village shop.
+          <br /><br />
+          The following articles relate to observations and snippets of
+          information that family and fiends have experienced and remmembered.
+          <br />
+          <span
+            id="see-less-btn"
+            style="color: #ef7d19; cursor: pointer"
+            onclick="mySportFunction()"
+          >
+            See less</span
+          >
+        </span>
+      </p>
+    </div>
+  </div>
+   <div class="row">
       {% for workshop_anecdote in workshop_anecdotes %}
       <h4 class="d-lg-none text-center">{{ workshop_anecdote.title }}</h4>
       <div class="col-sm-12 col-lg-4">
@@ -73,6 +110,24 @@
         document.documentElement.scrollTop = 0;
     }
 
+</script>
+
+<script>
+  function mySportFunction() {
+    var dots = document.getElementById("dots-sport");
+    var moreText = document.getElementById("more-sport");
+    var seeMoreBtn = document.getElementById("see-more-btn");
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline"; // Show hidden text
+      dots.style.display = "none"; // Hide ...
+      seeMoreBtn.style.display = "none"; // Hide "See more"
+    } else {
+      moreText.style.display = "none"; // Hide hidden text
+      dots.style.display = "inline"; // Show ...
+      seeMoreBtn.style.display = "inline"; // Show "See more"
+    }
+  }
 </script>
 
 {% endblock %}
