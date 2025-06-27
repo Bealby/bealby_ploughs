@@ -22,7 +22,10 @@
       />
       <div class="carousel-caption d-none d-md-block">
         <h5>Brook House</h5>
-        <p>Walter Bealby with a work mate and the two elder sons: Jim and Frank, circa 1910</p>
+        <p>
+          Walter Bealby with a work mate and the two elder sons: Jim and Frank,
+          circa 1910
+        </p>
       </div>
     </div>
     <div
@@ -139,7 +142,10 @@
 </div>
 
 <!--Articles-->
-<div class="container-fluid section-gutter-main-header" id="section-gutter-main-header-gallery">
+<div
+  class="container-fluid section-gutter-main-header"
+  id="section-gutter-main-header-gallery"
+>
   <div class="row section-header-gutter">
     <div class="col">
       <h4 class="decorated page-header">
@@ -149,18 +155,25 @@
   </div>
   <div class="row">
     <div class="col-lg-12 section-content">
-      <p>I am the eldest son of George Bealby, who was born at Brook House in
+      <p>
+        I am the eldest son of George Bealby, who was born at Brook House in
         1907. I visited Brook House in the early 1950s in the summer holidays
-        when my Grandmother (Alice) and my Uncle Frank lived there.</p>
-        <p>I have always wondered what the wealth of the Plough Business was over
-          the years. I know that latterly the family was very poor. My father
-          talked about sleeping between straw palliasses as a boy, and that
-          they were always in debt to the village shop.</p>
-          <p>As well as an article from the The Thoroton Society, there are also observations and snippets of
-          information that family and fiends have experienced and remembered.</p>
+        when my Grandmother (Alice) and my Uncle Frank lived there.
+      </p>
+      <p>
+        I have always wondered what the wealth of the Plough Business was over
+        the years. I know that latterly the family was very poor. My father
+        talked about sleeping between straw palliasses as a boy, and that they
+        were always in debt to the village shop.
+      </p>
+      <p>
+        As well as an article from the The Thoroton Society, there are also
+        observations and snippets of information that family and fiends have
+        experienced and remembered.
+      </p>
     </div>
   </div>
-  
+
   <!--Articles - Mobile - Carousel-->
   {% for home_article in home_articles %}
   <div
@@ -179,7 +192,7 @@
           />
         </a>
         <a href="{% url 'the_thoroton_society' %}" class="text-links">
-          <p class="section-title mt-3 ">
+          <p class="section-title mt-3">
             {{ home_article.article_title_1|default_if_none:"" }}
           </p>
           <p class="section-title-sub">
@@ -327,7 +340,10 @@
 </div>
 
 <!--Research-->
-<div class="container-fluid section-gutter-main-header" id="section-gutter-main-header-gallery">
+<div
+  class="container-fluid section-gutter-main-header"
+  id="section-gutter-main-header-gallery"
+>
   <div class="row section-header-gutter">
     <div class="col">
       <h4 class="decorated page-header">
@@ -501,7 +517,10 @@
 </div>
 
 <!--Gallery-->
-<div class="container-fluid section-gutter-main-header page-bottom-margin-2" id="section-gutter-main-header-gallery">
+<div
+  class="container-fluid section-gutter-main-header page-bottom-margin-2"
+  id="section-gutter-main-header-gallery"
+>
   <div class="row section-header-gutter">
     <div class="col">
       <h4 class="decorated page-header">
@@ -532,9 +551,11 @@
                   height="400"
                 />
                 <span>
-                <a href="{% url 'bealby_family' %}" class="text-links">
-                  <p class="section-title-gallery mt-2">Bealby Family&emsp;<i class="fa-solid fa-arrow-right"></i></p>
-                </a>
+                  <a href="{% url 'bealby_family' %}" class="text-links">
+                    <p class="section-title-gallery mt-2">
+                      Bealby Family&emsp;<i class="fa-solid fa-arrow-right"></i>
+                    </p>
+                  </a>
                 </span>
               </div>
             </a>
@@ -553,7 +574,9 @@
               </div>
             </a>
             <a href="{% url 'brook_house' %}" class="text-links">
-              <p class="section-title-gallery mt-2">Brook House&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+              <p class="section-title-gallery mt-2">
+                Brook House&emsp;<i class="fa-solid fa-arrow-right"></i>
+              </p>
             </a>
           </div>
           <!--The Bealby Workshop-->
@@ -570,7 +593,9 @@
               </div>
             </a>
             <a href="{% url 'bealby_workshop' %}" class="text-links">
-              <p class="section-title-gallery mt-2">The Bealby Workshop&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+              <p class="section-title-gallery mt-2">
+                The Bealby Workshop&emsp;<i class="fa-solid fa-arrow-right"></i>
+              </p>
             </a>
           </div>
         </div>
@@ -591,7 +616,9 @@
               </div>
             </a>
             <a href="{% url 'bealby_plough' %}" class="text-links">
-              <p class="section-title-gallery mt-2">Bealby Ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+              <p class="section-title-gallery mt-2">
+                Bealby Ploughs&emsp;<i class="fa-solid fa-arrow-right"></i>
+              </p>
             </a>
           </div>
           <!--Bealby Forest Cart-->
@@ -608,7 +635,9 @@
               </div>
             </a>
             <a href="{% url 'bealby_forest_cart' %}" class="text-links">
-              <p class="section-title-gallery mt-2">Bealby Forest Cart&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+              <p class="section-title-gallery mt-2">
+                Bealby Forest Cart&emsp;<i class="fa-solid fa-arrow-right"></i>
+              </p>
             </a>
           </div>
           <!--Workshop Tools-->
@@ -625,7 +654,9 @@
               </div>
             </a>
             <a href="{% url 'workshop_tool' %}" class="text-links">
-              <p class="section-title-gallery mt-2">Workshop Tools&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+              <p class="section-title-gallery mt-2">
+                Workshop Tools&emsp;<i class="fa-solid fa-arrow-right"></i>
+              </p>
             </a>
           </div>
         </div>
@@ -674,7 +705,9 @@
           </div>
         </a>
         <a href="{% url 'bealby_family' %}" class="text-links">
-          <p class="section-title mt-3">Bealby Family&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="section-title mt-3">
+            Bealby Family&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <div class="carousel-item">
@@ -691,7 +724,9 @@
           </div>
         </a>
         <a href="{% url 'brook_house' %}" class="text-links">
-          <p class="section-title mt-3">Brook House&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="section-title mt-3">
+            Brook House&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <div class="carousel-item">
@@ -708,7 +743,9 @@
           </div>
         </a>
         <a href="{% url 'bealby_workshop' %}" class="text-links">
-          <p class="section-title mt-3">The Bealby Workshop&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="section-title mt-3">
+            The Bealby Workshop&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <div class="carousel-item">
@@ -725,7 +762,9 @@
           </div>
         </a>
         <a href="{% url 'bealby_plough' %}" class="text-links">
-          <p class="section-title mt-3">Bealby Ploughs&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="section-title mt-3">
+            Bealby Ploughs&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <div class="carousel-item">
@@ -742,7 +781,9 @@
           </div>
         </a>
         <a href="{% url 'bealby_plough' %}" class="text-links">
-          <p class="section-title mt-3">Bealby Forest Car&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="section-title mt-3">
+            Bealby Forest Car&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <div class="carousel-item">
@@ -759,7 +800,9 @@
           </div>
         </a>
         <a href="{% url 'workshop_tool' %}" class="text-links">
-          <p class="3">Workshop Tools&emsp;<i class="fa-solid fa-arrow-right"></i></p>
+          <p class="3">
+            Workshop Tools&emsp;<i class="fa-solid fa-arrow-right"></i>
+          </p>
         </a>
       </div>
       <button

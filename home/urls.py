@@ -16,16 +16,3 @@ urlpatterns = [
     path("sitemap.xml", sitemap, {'sitemaps': sitemaps}, name='sitemap'),  # This registers the sitemap route
 ]
 
-# Function for serving robots.txt
-def robots_txt(request):
-    lines = [
-        "User-Agent: *",
-        "Disallow:",
-        "Sitemap: https://www.bealbyploughs.com/sitemap.xml"
-    ]
-    return HttpResponse("\n".join(lines), content_type="text/plain")
-
-# Adding the robots.txt path
-urlpatterns += [
-    path("robots.txt", robots_txt),
-]
