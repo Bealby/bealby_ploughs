@@ -455,8 +455,9 @@ li {
 	margin: 0 auto;
 	width: min-content;
 	--bs-accordion-body-padding-y: 0.5rem;
-    --bs-accordion-btn-padding-x: 3rem;
-	--bs-accordion-body-padding-x: 2.25rem;
+    --bs-accordion-btn-padding-x: 4rem;
+	--bs-accordion-body-padding-x: 3.7rem;
+	--bs-accordion-btn-icon-width: 2.25rem;
 }
 
 .accordion-button {
