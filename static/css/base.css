@@ -202,6 +202,10 @@ body {
 	font-style: italic;
 }
 
+.reveal-content{
+	margin-bottom: 3rem;
+}
+
 /*---Page Margin/ Padding---*/
 .page-bottom-margin {
 	margin-bottom: 5rem;
@@ -1019,5 +1023,13 @@ li {
 	.page-header{
 		font-weight: bold !important;
 		font-size: 1.6rem !important;
+		}
+	}
+
+/*--reveal content. MB for betteer positioning on mobile--*/
+@media (min-width: 560px) {
+
+	.reveal-content{
+		margin-bottom: 1.5rem;
 		}
 	}
