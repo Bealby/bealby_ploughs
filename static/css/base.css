@@ -174,7 +174,7 @@ body {
 }
 
 .section-image-title {
-	font-size: 18px;
+	font-size: 16px;
 	text-align: left !important;
 	font-weight: bold;
 	margin-bottom: 2px;
@@ -196,7 +196,7 @@ body {
 	}
 
 .section-image-title-sub {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	text-align: left !important;
 	font-style: italic;
@@ -1004,7 +1004,7 @@ li {
 @media (max-width: 560px) {
 	
 	.section-image-title {
-		font-size: 13px;
+		font-size: 16px;
 		}
 	}
 
