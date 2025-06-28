@@ -174,7 +174,7 @@ body {
 }
 
 .section-image-title {
-	font-size: 15px;
+	font-size: 18px;
 	text-align: left !important;
 	font-weight: bold;
 	margin-bottom: 2px;
@@ -196,7 +196,7 @@ body {
 	}
 
 .section-image-title-sub {
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 400;
 	text-align: left !important;
 	font-style: italic;
@@ -443,7 +443,7 @@ li {
 }
 
 .menu-link-home {
-	margin-right: 4.5rem;
+	margin-right: 6rem;
 }
 
 .menu-link-contact {
@@ -455,7 +455,7 @@ li {
 	margin: 0 auto;
 	width: min-content;
 	--bs-accordion-body-padding-y: 0.5rem;
-    --bs-accordion-btn-padding-x: 4rem;
+    --bs-accordion-btn-padding-x: 3.9rem;
 	--bs-accordion-body-padding-x: 3.7rem;
 	--bs-accordion-btn-icon-width: 2.25rem;
 }
