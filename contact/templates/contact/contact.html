@@ -1,35 +1,80 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
-{% block content %}
-
-<!---Stories--->
-<div class="container-fluid section-gutter-2">
-    <div class="row mb-4">
-        <div class="col">
-            <h4 class="decorated"><span>Stories</span></h4>
-        </div>
+<!--Brook House-->
+<div class="container-fluid section-gutter-main-header page-bottom-margin">
+  <div class="row section-header-gutter-contact-first">
+    <div class="col">
+      <h4 class="decorated page-header"><span>Contact</span></h4>
     </div>
-    <div class="row mb-5">
-        <div class="col-lg-4 text-center">
-            <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
-             </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">The Thoroton Society&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
-        </div>
-        <div class="col-lg-4 text-center">
-            <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
-            </div></a>
-        <a href="" class="text-links"><p class="section-title mt-2">Workshop Anecdotes&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
-        </div>
-        <div class="col-lg-4 text-center">
-            <a href=""><div class="zoom">
-            <img src="{% static 'images/stories/bealby_sibling.jpg' %}" class="img-fluid story-image" alt="" width="600" height="400">
-             </div></a>
-            <a href="" class="text-links"><p class="section-title mt-2">Family Recollections&emsp;<i class="fa-solid fa-arrow-right"></i></p></a>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 my-auto">
+      <img
+        src="{% static 'images/logo/logo_grey.png' %}"
+        class="img-fluid mx-auto contact-logo d-none d-lg-block"
+        alt="Bealby Plough Logo"
+      />
     </div>
+    <div class="col-sm-12 section-content">
+      <p>
+        This website endeavors to pull together the Bealby Ploughs business
+        which thrived in North Collingham. It is not only about the Bealby
+        family, but the many people in North Collingham village and surrounds
+        who knew and worked with the family.
+      </p>
+      <p>
+        With the passing of time, the website is a framework with many
+        omissions. There are even perhaps some errors which need to be
+        corrected.
+      </p>
+      <p>
+        With all this in mind we would love to have input and feedback to build
+        up the Website.
+      </p>
+      <p>
+        If you have any stories, anecdotes, photos, personalities, or facts,
+        past and present, we would love to hear from you
+      </p>
+      <div class="email-contact">
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=bealbyploughs@gmail.com"
+          target="_blank"
+        >
+          <p>
+            <i class="fa-solid fa-envelope"></i>&nbsp;bealbyploughs@gmail.com
+        </a>
+    </div>
+    </div>
+  </div>
 </div>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+{% endblock %} {% block postloadjs %} {{ block.super }}
+
+<!--Scroll to top feature-->
+<script>
+  //Scroll to Top
+  function scrollFunction() {
+    var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+    if (window.pageYOffset > 700) {
+      myScrollToTopBtn.style.display = "block";
+      myScrollToTopBtn.style.visibility = "visible";
+    } else {
+      myScrollToTopBtn.style.display = "none";
+      myScrollToTopBtn.style.visibility = "hidden";
+    }
+  }
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
 {% endblock %}

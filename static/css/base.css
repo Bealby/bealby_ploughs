@@ -257,6 +257,10 @@ body {
 	box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0, 1);
 }
 
+.contact-logo{
+	max-width: 35%
+}
+
 /*---Links---*/
 .text-links {
 	text-decoration: none !important;
@@ -315,6 +319,10 @@ body {
 
 .section-header-gutter-first{
 	margin-bottom: 3.5rem;
+}
+
+.section-header-gutter-contact-first{
+	margin-bottom: 1rem;
 }
 
 /*---Block Dividers---*/
@@ -574,6 +582,11 @@ li {
 #footer-contact a{
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.email-contact a{
+	text-decoration: none !important;
+	color: rgba(33, 37, 41, 1) !important;
 }
 
 /*---NAVBAR MEDIA QUERIES---*/
