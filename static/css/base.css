@@ -443,7 +443,11 @@ li {
 }
 
 .menu-link-home {
-	margin-right: 6rem;
+	margin-right: 5.5rem;
+}
+
+.menu-mb-link-contact {
+	margin-right: 4.2rem;
 }
 
 .menu-link-contact {
