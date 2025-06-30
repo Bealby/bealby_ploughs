@@ -257,10 +257,6 @@ body {
 	box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0, 1);
 }
 
-.contact-logo{
-	max-width: 35%
-}
-
 /*---Links---*/
 .text-links {
 	text-decoration: none !important;
@@ -322,7 +318,7 @@ body {
 }
 
 .section-header-gutter-contact-first{
-	margin-bottom: 1rem;
+	margin-bottom: 2.5rem;
 }
 
 /*---Block Dividers---*/
@@ -589,6 +585,11 @@ li {
 	color: rgba(33, 37, 41, 1) !important;
 }
 
+.email-contact{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
 /*---NAVBAR MEDIA QUERIES---*/
 /*---Nav text/ logo smaller for better viewing at 1700---*/
 @media (max-width: 1700px) {
@@ -769,6 +770,14 @@ li {
 @media (max-width: 992px) {
 	.section-header-gutter-first {
 		margin-bottom: 1rem;
+		}
+	}
+
+
+/*---Secition header MT for better spacing in smaller devices form contact page---*/
+@media (max-width: 992px) {
+	.section-header-gutter-contact-first {
+		margin-bottom: 2rem;
 		}
 	}
 
