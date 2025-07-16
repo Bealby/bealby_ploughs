@@ -79,17 +79,20 @@
     }
 
 </script>
-<!-- Panzoom library from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+
+<!--Panzoom CDN -->
+<script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+
+<!-- JS usage -->
 <script>
-    const elem = document.getElementById('zoom-container');
-    const panzoom = Panzoom(elem.querySelector('img'), {
+    const image = document.querySelector('#zoom-image');
+    const panzoom = window.Panzoom(image, {
         maxScale: 5,
         minScale: 1,
         contain: 'outside'
     });
 
-    elem.addEventListener('wheel', panzoom.zoomWithWheel);
+    image.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
 
 {% endblock %}

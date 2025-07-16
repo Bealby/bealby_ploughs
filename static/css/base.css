@@ -257,19 +257,18 @@ body {
 	box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0, 1);
 }
 
-.zoom-container {
+#zoom-container {
 	width: 100%;
 	height: 90vh;
 	overflow: hidden;
 	border: 1px solid #ccc;
-	touch-action: none; /* prevent scrolling while pinch-zooming */
+	touch-action: none;
 }
 
 #zoom-image {
 	width: 100%;
 	height: auto;
 	max-width: none;
-	max-height: none;
 }
 
 /*---Links---*/
