@@ -7,12 +7,20 @@
             <h4 class="decorated page-header"><span>Bealby Family</span></h4>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="zoom-container">
+                <img id="zoom-image" src="{% static 'images/family_tree/family_tree.jpeg' %}" alt="Bealby Family Tree">
+            </div>
+        </div>
+    </div>
     {% for bealby_family_A in bealby_families %}
-   <div class="row">
-    <div class="col-lg-12">
-       <h3><i>{{ bealby_family_A.main_header }}</i></h3>
-       <h4><i>{{ bealby_family_A.authur }}</i></h4>
-       <h4>{{ bealby_family_A.sub_header_1 }}</h4>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3><i>{{ bealby_family_A.main_header }}</i></h3>
+            <h4><i>{{ bealby_family_A.authur }}</i></h4>
+            <h4>{{ bealby_family_A.sub_header_1 }}</h4>
+        </div>
     </div>
     <div class="row">
         <div class="col-lg-12">
@@ -70,6 +78,18 @@
         document.documentElement.scrollTop = 0;
     }
 
+</script>
+<!-- Panzoom library from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+<script>
+    const elem = document.getElementById('zoom-container');
+    const panzoom = Panzoom(elem.querySelector('img'), {
+        maxScale: 5,
+        minScale: 1,
+        contain: 'outside'
+    });
+
+    elem.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
 
 {% endblock %}
