@@ -87,6 +87,12 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const image = document.querySelector('#zoom-image');
+
+        if (typeof Panzoom === 'undefined') {
+            console.error("Panzoom is not defined");
+            return;
+        }
+
         const panzoom = Panzoom(image, {
             maxScale: 5,
             minScale: 1,
