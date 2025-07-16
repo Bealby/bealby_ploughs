@@ -2,95 +2,120 @@
 
 <!--Family Bealby-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
-    <div class="row section-header-gutter-first">
-        <div class="col">
-            <h4 class="decorated page-header"><span>Bealby Family</span></h4>
-        </div>
+  <div class="row section-header-gutter-first">
+    <div class="col">
+      <h4 class="decorated page-header"><span>Bealby Family</span></h4>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="zoom-container">
-                <img id="zoom-image" src="{% static 'images/family_tree/family_tree.jpeg' %}" alt="Bealby Family Tree">
-            </div>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div
+        id="zoom-container"
+        style="
+          border: 1px solid #ccc;
+          width: 100%;
+          height: 80vh;
+          overflow: hidden;
+        "
+      >
+        <img
+          id="zoom-image"
+          src=""
+          alt="Test Family Tree"
+          style="width: 100%; height: auto; max-width: none"
+        />
+      </div>
     </div>
-    {% for bealby_family_A in bealby_families %}
-    <div class="row">
-        <div class="col-lg-12">
-            <h3><i>{{ bealby_family_A.main_header }}</i></h3>
-            <h4><i>{{ bealby_family_A.authur }}</i></h4>
-            <h4>{{ bealby_family_A.sub_header_1 }}</h4>
-        </div>
+  </div>
+  {% for bealby_family_A in bealby_families %}
+  <div class="row">
+    <div class="col-lg-12">
+      <h3><i>{{ bealby_family_A.main_header }}</i></h3>
+      <h4><i>{{ bealby_family_A.authur }}</i></h4>
+      <h4>{{ bealby_family_A.sub_header_1 }}</h4>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>{{ bealby_family_A.paragraph_1|linebreaksbr }}</p>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>{{ bealby_family_A.paragraph_1|linebreaksbr }}</p>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h4>{{ bealby_family_A.sub_header_2 }}</h4>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>{{ bealby_family_A.sub_header_2 }}</h4>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>{{ bealby_family_A.paragraph_2|linebreaksbr }}</p>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>{{ bealby_family_A.paragraph_2|linebreaksbr }}</p>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h4>{{ bealby_family_A.sub_header_3 }}</h4>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>{{ bealby_family_A.sub_header_3 }}</h4>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>{{ bealby_family_A.paragraph_3|linebreaksbr }}</p>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>{{ bealby_family_A.paragraph_3|linebreaksbr }}</p>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
-<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
+{% endblock %} {% block postloadjs %} {{ block.super }}
 
 <!--Scroll to top feature-->
 <script>
-
-    //Scroll to Top
-    function scrollFunction() {
-        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
-        if (window.pageYOffset > 700) {
-            myScrollToTopBtn.style.display = "block";
-            myScrollToTopBtn.style.visibility = "visible";
-        } else {
-            myScrollToTopBtn.style.display = "none";
-            myScrollToTopBtn.style.visibility = "hidden";
-        }
+  //Scroll to Top
+  function scrollFunction() {
+    var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+    if (window.pageYOffset > 700) {
+      myScrollToTopBtn.style.display = "block";
+      myScrollToTopBtn.style.visibility = "visible";
+    } else {
+      myScrollToTopBtn.style.display = "none";
+      myScrollToTopBtn.style.visibility = "hidden";
     }
+  }
 
-    window.onscroll = function () { scrollFunction() };
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
 
-<!-- Medium Zoom Library (CDN) -->
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script src="https://unpkg.com/panzoom@9.4.3/dist/panzoom.min.js"></script>
 
-<!-- Activate Medium Zoom on Image -->
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        mediumZoom('#zoom-image', {
-            margin: 24,
-            background: '#000'  // can be 'rgba(0,0,0,0.8)' for softer overlay
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    const image = document.getElementById('zoom-image');
+
+    // Fix for non-global Panzoom
+    const PanzoomConstructor = window.Panzoom || window['@panzoom/panzoom'];
+
+    if (typeof PanzoomConstructor !== 'function') {
+      console.error('❌ Panzoom is not defined — even after fallback');
+      return;
+    }
+
+    console.log('✅ Panzoom loaded:', PanzoomConstructor);
+
+    const panzoom = PanzoomConstructor(image, {
+      maxScale: 5,
+      minScale: 1,
+      contain: 'outside'
     });
+
+    image.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+  });
 </script>
 
 {% endblock %}
