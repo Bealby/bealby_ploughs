@@ -9,21 +9,19 @@
   </div>
   <div class="row">
     <div class="col-lg-12">
-      <div
-        id="zoom-container"
-        style="
-          border: 1px solid #ccc;
-          width: 100%;
-          height: 80vh;
-          overflow: hidden;
-        "
-      >
-        <img
-          id="zoom-image"
-          src=""
-          alt="Test Family Tree"
-          style="width: 100%; height: auto; max-width: none"
-        />
+      <div class="zoom-container" id="zoomContainer">
+        <div class="zoom-controls">
+          <button onclick="panzoom.zoomIn()"><i class="fa-solid fa-plus"></i></button>
+          <button onclick="panzoom.zoomOut()"><i class="fa-solid fa-minus"></i></button>
+          <button onclick="resetZoom()"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div id="zoomTarget">
+          <img
+            id="familyTreeImage"
+            src="{% static 'images/family_tree/family_tree.jpeg' %}"
+            alt="Family Tree"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -92,30 +90,68 @@
   }
 </script>
 
-<script src="https://unpkg.com/panzoom@9.4.3/dist/panzoom.min.js"></script>
-
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const image = document.getElementById('zoom-image');
+  const zoomTarget = document.getElementById('zoomTarget');
+  const zoomContainer = document.getElementById('zoomContainer');
+  const image = document.getElementById('familyTreeImage');
 
-    // Fix for non-global Panzoom
-    const PanzoomConstructor = window.Panzoom || window['@panzoom/panzoom'];
-
-    if (typeof PanzoomConstructor !== 'function') {
-      console.error('❌ Panzoom is not defined — even after fallback');
-      return;
-    }
-
-    console.log('✅ Panzoom loaded:', PanzoomConstructor);
-
-    const panzoom = PanzoomConstructor(image, {
-      maxScale: 5,
-      minScale: 1,
-      contain: 'outside'
-    });
-
-    image.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+  const panzoom = Panzoom(zoomTarget, {
+    maxScale: 5,
+    minScale: 0.2,
+    contain: 'outside',
+    startScale: 1,
+    animate: true
   });
+
+  // Enable scroll-wheel zoom
+  zoomContainer.addEventListener('wheel', panzoom.zoomWithWheel, { passive: false });
+
+  // Enable pinch-zoom on mobile
+  zoomContainer.addEventListener('touchstart', function (e) {
+    if (e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+
+  // Reset zoom to fit & center
+  function resetZoom() {
+    const containerRect = zoomContainer.getBoundingClientRect();
+    const imgWidth = image.naturalWidth;
+    const imgHeight = image.naturalHeight;
+
+    const scaleX = containerRect.width / imgWidth;
+    const scaleY = containerRect.height / imgHeight;
+    const scale = Math.min(scaleX, scaleY);
+
+    panzoom.zoom(scale, { animate: true });
+
+    const panX = (containerRect.width - imgWidth * scale) / 2;
+    const panY = (containerRect.height - imgHeight * scale) / 2;
+    panzoom.pan(panX, panY);
+
+    localStorage.removeItem('treeZoom');
+    localStorage.removeItem('treePan');
+  }
+
+  // Auto-fit on image load
+  image.addEventListener('load', resetZoom);
+
+  // Load state if it exists
+  const savedZoom = localStorage.getItem('treeZoom');
+  const savedPan = localStorage.getItem('treePan');
+
+  if (savedZoom && savedPan) {
+    panzoom.zoom(parseFloat(savedZoom), { animate: false });
+    const [x, y] = savedPan.split(',').map(Number);
+    panzoom.pan(x, y, { animate: false });
+  }
+
+  // Save state before unload
+  window.addEventListener('beforeunload', () => {
+    const currentZoom = panzoom.getScale();
+    const [x, y] = panzoom.getPan();
+    localStorage.setItem('treeZoom', currentZoom);
+    localStorage.setItem('treePan', `${x},${y}`);
+  });
+
 </script>
 
 {% endblock %}
