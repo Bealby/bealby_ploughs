@@ -629,6 +629,11 @@ li {
 	color: rgba(33, 37, 41, 1) !important;
 }
 
+.web-link a{
+	text-decoration: none !important;
+	color: rgba(33, 37, 41, 1) !important;
+}
+
 .email-contact{
 	margin-bottom: 2rem;
 	margin-top: 2rem;
