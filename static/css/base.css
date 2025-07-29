@@ -631,7 +631,7 @@ li {
 
 .web-link a{
 	text-decoration: none !important;
-	color: rgba(33, 37, 41, 1) !important;
+	color: rgba(33, 37, 41, 0.75) !important;
 }
 
 .email-contact{
