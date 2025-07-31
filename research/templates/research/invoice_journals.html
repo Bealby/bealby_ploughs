@@ -10,7 +10,7 @@
   {% for invoice_journal in invoice_journals %}
   <div class="row mb-3">
     <div class="col-lg-12 section-content">
-      <p>{{ invoice_journal.text|linebreaksbr }}</p>
+      <p>{{ invoice_journal.text|safe }}</p>
     </div>
   </div>
   <div class="row">
@@ -67,17 +67,17 @@
   </div>
   <div class="row">
     <div class="col-lg-12 section-content mt-1">
-      <p>{{ invoice_journal.text_2|linebreaksbr }}</p>
+      <p>{{ invoice_journal.text_2|safe }}</p>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 section-content">
-      <p>{{ invoice_journal.text_3|linebreaksbr }}</p>
+      <p>{{ invoice_journal.text_3|safe }}</p>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 section-content">
-      <p><a href="{% static 'documents/dr_mills_article.pdf' %}" target="_blank">Dr Mills academic paper - Bealby Ploughs</a></p>
+      <p>The Dr Mills study can be downloaded here<a href="{% static 'documents/dr_mills_article.pdf' %}" target="_blank">&nbsp&nbsp<i class="fa-solid fa-download"></i></a></p>
     </div>
   </div>
   {% endfor %}
