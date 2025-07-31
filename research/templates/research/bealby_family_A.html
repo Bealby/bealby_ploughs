@@ -11,9 +11,15 @@
     <div class="col-lg-12 mb-5">
       <div class="zoom-container" id="zoomContainer">
         <div class="zoom-controls">
-          <button onclick="panzoom.zoomIn()"><i class="fa-solid fa-plus"></i></button>
-          <button onclick="panzoom.zoomOut()"><i class="fa-solid fa-minus"></i></button>
-          <button onclick="resetZoom()"><i class="fa-solid fa-rotate-right"></i></button>
+          <button onclick="panzoom.zoomIn()">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button onclick="panzoom.zoomOut()">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button onclick="resetZoom()">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
         </div>
         <div id="zoomTarget" class="mb-5">
           <img
@@ -22,8 +28,8 @@
             alt="Family Tree"
           />
         </div>
-        <div><i>Created by Jane Bealby</i></div>
       </div>
+      <div><i>Created by Jane Bealby</i></div>
     </div>
   </div>
   {% for bealby_family_A in bealby_families %}
@@ -92,25 +98,31 @@
 </script>
 
 <script>
-  const zoomTarget = document.getElementById('zoomTarget');
-  const zoomContainer = document.getElementById('zoomContainer');
-  const image = document.getElementById('familyTreeImage');
+  const zoomTarget = document.getElementById("zoomTarget");
+  const zoomContainer = document.getElementById("zoomContainer");
+  const image = document.getElementById("familyTreeImage");
 
   const panzoom = Panzoom(zoomTarget, {
     maxScale: 5,
     minScale: 0.2,
-    contain: 'outside',
+    contain: "outside",
     startScale: 1,
-    animate: true
+    animate: true,
   });
 
   // Enable scroll-wheel zoom
-  zoomContainer.addEventListener('wheel', panzoom.zoomWithWheel, { passive: false });
+  zoomContainer.addEventListener("wheel", panzoom.zoomWithWheel, {
+    passive: false,
+  });
 
   // Enable pinch-zoom on mobile
-  zoomContainer.addEventListener('touchstart', function (e) {
-    if (e.touches.length > 1) e.preventDefault();
-  }, { passive: false });
+  zoomContainer.addEventListener(
+    "touchstart",
+    function (e) {
+      if (e.touches.length > 1) e.preventDefault();
+    },
+    { passive: false }
+  );
 
   // Reset zoom to fit & center
   function resetZoom() {
@@ -128,31 +140,30 @@
     const panY = (containerRect.height - imgHeight * scale) / 2;
     panzoom.pan(panX, panY);
 
-    localStorage.removeItem('treeZoom');
-    localStorage.removeItem('treePan');
+    localStorage.removeItem("treeZoom");
+    localStorage.removeItem("treePan");
   }
 
   // Auto-fit on image load
-  image.addEventListener('load', resetZoom);
+  image.addEventListener("load", resetZoom);
 
   // Load state if it exists
-  const savedZoom = localStorage.getItem('treeZoom');
-  const savedPan = localStorage.getItem('treePan');
+  const savedZoom = localStorage.getItem("treeZoom");
+  const savedPan = localStorage.getItem("treePan");
 
   if (savedZoom && savedPan) {
     panzoom.zoom(parseFloat(savedZoom), { animate: false });
-    const [x, y] = savedPan.split(',').map(Number);
+    const [x, y] = savedPan.split(",").map(Number);
     panzoom.pan(x, y, { animate: false });
   }
 
   // Save state before unload
-  window.addEventListener('beforeunload', () => {
+  window.addEventListener("beforeunload", () => {
     const currentZoom = panzoom.getScale();
     const [x, y] = panzoom.getPan();
-    localStorage.setItem('treeZoom', currentZoom);
-    localStorage.setItem('treePan', `${x},${y}`);
+    localStorage.setItem("treeZoom", currentZoom);
+    localStorage.setItem("treePan", `${x},${y}`);
   });
-
 </script>
 
 {% endblock %}
