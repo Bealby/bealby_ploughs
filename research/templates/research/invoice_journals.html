@@ -2,106 +2,109 @@
 
 <!--Invoice Journals-->
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
-   <div class="row section-header-gutter-first">
-      <div class="col">
-         <h4 class="decorated page-header"><span>Invoice Journals</span></h4>
-      </div>
-   </div>
-   {% for invoice_journal in invoice_journals %}
-   <div class="row">
-      <div class="col-lg-12 section-content">
-         <p>{{ invoice_journal.text|linebreaksbr }}
-         </p>
-      </div>
-   </div>
-   <div class="row">
-      <div class="col-lg-6 col-md-6 pt-4">
-         {% if invoice_journal.image_1 %}
-         <img
-            loading="lazy"
-            src="{{ invoice_journal.image_1.url }}"
-            srcset="{{ invoice_journal.image_1.url }}"
-            class="img-fluid"
-            alt="{{ invoice_journal.image_description_1 }}"
-            width="600"
-            height="400"
-            />
-         {% else %}
-         <img
-            src="{{ MEDIA_URL }}"
-            class="img-fluid mt-5"
-            alt="{{ invoice_journal.image_description_1 }}"
-            />
-         {% endif %}
-         <p class="section-title mt-2">
-            {{ invoice_journal.image_title_1|default_if_none:"" }}
-         </p>
-         <p class="section-title-sub">
-            {{ invoice_journal.image_description_1|default_if_none:"" }}
-         </p>
-      </div>
-      <div class="col-lg-6 col-md-6 pt-4">
-         {% if invoice_journal.image_2 %}
-         <img
-            loading="lazy"
-            src="{{ invoice_journal.image_2.url }}"
-            srcset="{{ invoice_journal.image_2.url }}"
-            class="img-fluid"
-            alt="{{ invoice_journal.image_description_2 }}"
-            width="600"
-            height="400"
-            />
-         {% else %}
-         {% endif %}
-         {% if invoice_journal.image_title_2 %}
-         <p class="section-title mt-2">
-            {{ invoice_journal.image_title_2|default_if_none:"" }}
-         </p>
-         {% else %}
-         <p class="section-title mt-2">
-         </p>
-         {% endif %}
-         {% if invoice_journal.image_description_2 %}
-         <p class="section-title-sub">
-            {{ invoice_journal.image_description_2|default_if_none:"" }}
-         </p>
-         {% else %}
-         <p class="section-title mt-2">
-         </p>
-         {% endif %}
-      </div>
-      {% endfor %}
-   </div>
+  <div class="row section-header-gutter-first">
+    <div class="col">
+      <h4 class="decorated page-header"><span>Invoice Journals</span></h4>
+    </div>
+  </div>
+  {% for invoice_journal in invoice_journals %}
+  <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>{{ invoice_journal.text|linebreaksbr }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 pt-4">
+      {% if invoice_journal.image_1 %}
+      <img
+        loading="lazy"
+        src="{{ invoice_journal.image_1.url }}"
+        srcset="{{ invoice_journal.image_1.url }}"
+        class="img-fluid"
+        alt="{{ invoice_journal.image_description_1 }}"
+        width="600"
+        height="400"
+      />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ invoice_journal.image_description_1 }}"
+      />
+      {% endif %}
+      <p class="section-title mt-2">
+        {{ invoice_journal.image_title_1|default_if_none:"" }}
+      </p>
+      <p class="section-title-sub">
+        {{ invoice_journal.image_description_1|default_if_none:"" }}
+      </p>
+    </div>
+    <div class="col-lg-6 col-md-6 pt-4">
+      {% if invoice_journal.image_2 %}
+      <img
+        loading="lazy"
+        src="{{ invoice_journal.image_2.url }}"
+        srcset="{{ invoice_journal.image_2.url }}"
+        class="img-fluid"
+        alt="{{ invoice_journal.image_description_2 }}"
+        width="600"
+        height="400"
+      />
+      {% else %} {% endif %} {% if invoice_journal.image_title_2 %}
+      <p class="section-title mt-2">
+        {{ invoice_journal.image_title_2|default_if_none:"" }}
+      </p>
+      {% else %}
+      <p class="section-title mt-2"></p>
+      {% endif %} {% if invoice_journal.image_description_2 %}
+      <p class="section-title-sub">
+        {{ invoice_journal.image_description_2|default_if_none:"" }}
+      </p>
+      {% else %}
+      <p class="section-title mt-2"></p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>{{ invoice_journal.text_2|linebreaksbr }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 section-content">
+      <p>{{ invoice_journal.text_3|linebreaksbr }}</p>
+    </div>
+  </div>
 </div>
-<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
+{% endblock %} {% block postloadjs %} {{ block.super }}
 
 <!--Scroll to top feature-->
 <script>
-
-    //Scroll to Top
-    function scrollFunction() {
-        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
-        if (window.pageYOffset > 700) {
-            myScrollToTopBtn.style.display = "block";
-            myScrollToTopBtn.style.visibility = "visible";
-        } else {
-            myScrollToTopBtn.style.display = "none";
-            myScrollToTopBtn.style.visibility = "hidden";
-        }
+  //Scroll to Top
+  function scrollFunction() {
+    var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+    if (window.pageYOffset > 700) {
+      myScrollToTopBtn.style.display = "block";
+      myScrollToTopBtn.style.visibility = "visible";
+    } else {
+      myScrollToTopBtn.style.display = "none";
+      myScrollToTopBtn.style.visibility = "hidden";
     }
+  }
 
-    window.onscroll = function () { scrollFunction() };
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
 
 {% endblock %}

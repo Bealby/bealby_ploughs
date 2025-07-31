@@ -3,6 +3,7 @@ from .models import InvoiceJournal
 from .models import BrookHouse
 from .models import BealbyFamily
 
+
 class InvoiceJournalAdmin(admin.ModelAdmin):
 
     list_display = (
@@ -13,6 +14,8 @@ class InvoiceJournalAdmin(admin.ModelAdmin):
         'image_2',
         'image_title_2',
         'image_description_2',
+        'text_2',
+        'text_3',
     )
 
 
