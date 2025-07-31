@@ -39,7 +39,7 @@
         {{ invoice_journal.image_description_1|default_if_none:"" }}
       </p>
     </div>
-    <div class="col-lg-6 col-md-6 pt-4">
+    <div class="col-lg-6 col-md-6 pt-1">
       {% if invoice_journal.image_2 %}
       <img
         loading="lazy"
@@ -51,7 +51,7 @@
         height="400"
       />
       {% else %} {% endif %} {% if invoice_journal.image_title_2 %}
-      <p class="section-title mt-2">
+      <p class="section-title mt-1">
         {{ invoice_journal.image_title_2|default_if_none:"" }}
       </p>
       {% else %}
@@ -70,12 +70,13 @@
       <p>{{ invoice_journal.text_2|safe }}</p>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-lg-12 section-content">
+      <h5 class="header-styling">A study into the sales and repairs of Bealby Ploughs between 1871 to 1882</h5>
       <p>{{ invoice_journal.text_3|safe }}</p>
     </div>
   </div>
-  <div class="row">
+  <div class="row web-link">
     <div class="col-lg-12 section-content">
       <p>The Dr Mills study can be downloaded here<a href="{% static 'documents/dr_mills_article.pdf' %}" target="_blank">&nbsp&nbsp<i class="fa-solid fa-download"></i></a></p>
     </div>

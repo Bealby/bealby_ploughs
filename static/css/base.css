@@ -141,6 +141,15 @@ body {
     color: white
 }
 
+
+/*---Headers---*/
+
+.header-styling{
+	font-weight: bold !important;
+	font-size: 1rem !important;
+	color: #000000;
+}
+
 /*---Sections ---*/
 
 .section-content {
@@ -204,11 +213,11 @@ body {
 
 /*---Page Margin/ Padding---*/
 .page-bottom-margin {
-	margin-bottom: 5rem;
+	margin-bottom: 7rem;
 }
 
 .page-bottom-margin-2 {
-	margin-bottom: 7rem;
+	margin-bottom: 9rem;
 }
 
 /*---Text Reveal---*/
@@ -797,14 +806,14 @@ li {
 /*---Page bottom margin for better spacing for smaller devices---*/
 @media (max-width: 992px) {
 	.page-bottom-margin {
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 	}
 }
 
 /*---Page bottom margin for better spacing for smaller devices---*/
 @media (max-width: 992px) {
 	.page-bottom-margin-2 {
-	margin-bottom: 6rem;
+	margin-bottom: 8rem;
 	}
 }
 
