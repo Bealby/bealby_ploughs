@@ -8,6 +8,6 @@ urlpatterns = [
     path('brook_house', views.brook_house, name='brook_house'),
     path('bealby_workshop', views.bealby_workshop, name='bealby_workshop'),
     path('bealby_plough', views.bealby_plough, name='bealby_plough'),
-        path('bealby_forest_cart', views.bealby_forest_cart, name='bealby_forest_cart'),
+    path('bealby_forest_cart', views.bealby_forest_cart, name='bealby_forest_cart'),
     path('workshop_tool', views.workshop_tool, name='workshop_tool'),
 ]

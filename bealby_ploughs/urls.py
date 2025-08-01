@@ -31,7 +31,7 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     path('research/', include('research.urls')),
     path('gallery/', include('gallery.urls')),
-    path('contact/', include('contact.urls')),
+    path('contact/', include('contact.urls')),  
     path('tinymce/', include('tinymce.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
