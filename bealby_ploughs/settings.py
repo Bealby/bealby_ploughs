@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'contact',
     'storages',
     'tinymce',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
