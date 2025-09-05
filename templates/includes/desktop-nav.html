@@ -3,12 +3,13 @@
   <div class="row">
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid navbar-desktop">
-        <a href="{% url 'home' %}" class="logo_desktop"
-          ><img
+        <a href="{% url 'home' %}" class="logo_desktop">
+          <img
             src="{% static 'images/logo/logo_white.png' %}"
             class="img-fluid"
             alt="Bealby Plough Logo"
-        /></a>
+          />
+        </a>
         <div id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item topnav">
@@ -27,14 +28,27 @@
               <ul
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
-              ><li class="topnav">
-                  <a class="dropdown-item nav-text" href="{% url 'the_thoroton_society' %}">The Thoroton Society</a>
+              >
+                <li class="topnav">
+                  <a
+                    class="dropdown-item nav-text"
+                    href="{% url 'the_thoroton_society' %}"
+                    >The Thoroton Society</a
+                  >
                 </li>
                 <li class="topnav">
-                  <a class="dropdown-item nav-text" href="{% url 'workshop_anecdote' %}">Workshop Anecdotes</a>
+                  <a
+                    class="dropdown-item nav-text"
+                    href="{% url 'workshop_anecdote' %}"
+                    >Workshop Anecdotes</a
+                  >
                 </li>
                 <li class="topnav">
-                  <a class="dropdown-item nav-text" href="{% url 'family_recollection' %}">Family Recollections</a>
+                  <a
+                    class="dropdown-item nav-text"
+                    href="{% url 'family_recollection' %}"
+                    >Family Recollections</a
+                  >
                 </li>
               </ul>
             </li>
@@ -52,9 +66,21 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li class="topnav"><a class="dropdown-item" href="{% url 'invoice_journal' %}">Invoice Journals</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'brook_house_A' %}">Brook House</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'bealby_family_A' %}">Bealby Family</a></li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'invoice_journal' %}"
+                    >Invoice Journals</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'brook_house_A' %}"
+                    >Brook House</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'bealby_family_A' %}"
+                    >Bealby Family</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown topnav">
@@ -71,16 +97,42 @@
                 class="dropdown-menu dropdown-menu-links"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li class="topnav"><a class="dropdown-item" href="{% url 'bealby_family' %}">Bealby Family</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'brook_house' %}">Brook House</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'bealby_workshop' %}">The Bealby Workshop</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'bealby_plough' %}">Bealby Ploughs</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'bealby_forest_cart' %}">Bealby Forest Cart</a></li>
-                <li class="topnav"><a class="dropdown-item" href="{% url 'workshop_tool' %}">Workshop Tools</a></li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'bealby_family' %}"
+                    >Bealby Family</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'brook_house' %}"
+                    >Brook House</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'bealby_workshop' %}"
+                    >The Bealby Workshop</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'bealby_plough' %}"
+                    >Bealby Ploughs</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'bealby_forest_cart' %}"
+                    >Bealby Forest Cart</a
+                  >
+                </li>
+                <li class="topnav">
+                  <a class="dropdown-item" href="{% url 'workshop_tool' %}"
+                    >Workshop Tools</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item topnav">
-              <a class="nav-link nav-text" href="{% url 'contact' %}">Contact</a>
+              <a class="nav-link nav-text" href="{% url 'contact' %}"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -98,7 +150,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-
   $(function () {
     $("a").each(function () {
       if ($(this).prop("href") == window.location.href) {
@@ -106,7 +157,36 @@
         $(this).parents("li").addClass("active");
       }
     });
-  }); 
-
+  });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var logoImg = document.querySelector(".logo-fallback");
+    var logoVideo = document.getElementById("logo-video");
+
+    function playLogoVideoOnce() {
+      if (!logoVideo) return;
+
+      // Show video, hide image
+      logoVideo.style.display = "block";
+      logoImg.style.display = "none";
+
+      // Play video; ignore failure if Chrome blocks it
+      logoVideo.play().catch(function () {});
+
+      // When video ends:
+      logoVideo.addEventListener(
+        "ended",
+        function () {
+          logoVideo.style.display = "none";
+          logoImg.style.display = "block";
+        },
+        { once: true }
+      );
+    }
+
+    // Trigger when loaded: you can change this conditionally
+    playLogoVideoOnce();
+  });
+</script>
