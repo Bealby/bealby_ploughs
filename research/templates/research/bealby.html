@@ -14,58 +14,6 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6 col-md-6 pt-4">
-      {% if bealby.image_1 %}
-      <img
-        loading="lazy"
-        src="{{ bealby.image_1.url }}"
-        srcset="{{ bealby.image_1.url }}"
-        class="img-fluid"
-        alt="{{ bealby.image_description_1 }}"
-        width="600"
-        height="400"
-      />
-      {% else %}
-      <img
-        src="{{ MEDIA_URL }}"
-        class="img-fluid mt-5"
-        alt="{{ bealby.image_description_1 }}"
-      />
-      {% endif %}
-      <p class="section-title mt-2">
-        {{ bealby.image_title_1|default_if_none:"" }}
-      </p>
-      <p class="section-title-sub">
-        {{ bealby.image_description_1|default_if_none:"" }}
-      </p>
-    </div>
-    <div class="col-lg-6 col-md-6 pt-1">
-      {% if bealby.image_2 %}
-      <img
-        loading="lazy"
-        src="{{ bealby.image_2.url }}"
-        srcset="{{ bealby.image_2.url }}"
-        class="img-fluid"
-        alt="{{ bealby.image_description_2 }}"
-        width="600"
-        height="400"
-      />
-      {% else %} {% endif %} {% if bealby.image_title_2 %}
-      <p class="section-title mt-1">
-        {{ bealby.image_title_2|default_if_none:"" }}
-      </p>
-      {% else %}
-      <p class="section-title mt-2"></p>
-      {% endif %} {% if bealby.image_description_2 %}
-      <p class="section-title-sub">
-        {{ bealby.image_description_2|default_if_none:"" }}
-      </p>
-      {% else %}
-      <p class="section-title mt-2"></p>
-      {% endif %}
-    </div>
-  </div>
-  <div class="row">
     <div class="col-lg-12 section-content mt-1">
       <p>{{ bealby.text_2|safe }}</p>
     </div>
