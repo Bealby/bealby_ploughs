@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import InvoiceJournal
 from .models import BrookHouse
+from .models import Bealby
 from .models import BealbyFamily
 
 
@@ -32,6 +33,21 @@ class BrookHouseAdmin(admin.ModelAdmin):
     )
 
 
+class BealbyAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'text',
+        'image_1',
+        'image_title_1',
+        'image_description_1',
+        'image_2',
+        'image_title_2',
+        'image_description_2',
+        'text_2',
+        'text_3',
+    )
+
+
 class BealbyFamilyAdmin(admin.ModelAdmin):
 
     list_display = (
@@ -49,3 +65,4 @@ class BealbyFamilyAdmin(admin.ModelAdmin):
 admin.site.register(InvoiceJournal, InvoiceJournalAdmin)
 admin.site.register(BrookHouse, BrookHouseAdmin)
 admin.site.register(BealbyFamily, BealbyFamilyAdmin)
+admin.site.register(Bealby, BealbyAdmin)

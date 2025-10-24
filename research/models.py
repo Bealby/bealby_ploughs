@@ -41,6 +41,26 @@ class BrookHouse(models.Model):
         return self.text
 
 
+class Bealby(models.Model):
+    '''Programmatic Name'''
+
+    class Meta:
+        verbose_name_plural = 'Bealby'
+
+    text = HTMLField("Text", max_length=3000, null=True, blank=True)
+    image_1 = models.ImageField("Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
+    image_title_1 = models.CharField("1. Image Title", max_length=254, null=True, blank=True)
+    image_description_1 = models.CharField("1. Image Description", max_length=254, null=True, blank=True)
+    image_2 = models.ImageField("2. Image", blank=True, null=True, help_text="Please upload images 600x400. Max 300px")
+    image_title_2 = models.CharField("2. Image Title", max_length=254, null=True, blank=True)
+    image_description_2 = models.CharField("2. Image Description", max_length=254, null=True, blank=True)
+    text_2 = HTMLField("Text", max_length=3000, null=True, blank=True)
+    text_3 = HTMLField("Text", max_length=3000, null=True, blank=True)
+
+    def __str__(self):
+        return self.text
+    
+
 class BealbyFamily(models.Model):
     '''Programmatic Name'''
 

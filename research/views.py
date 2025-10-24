@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import InvoiceJournal
 from .models import BrookHouse
 from .models import BealbyFamily
+from .models import Bealby
 
 
 # Create your views here.
@@ -28,6 +29,18 @@ def brook_house_A(request):
     }
 
     return render(request, 'research/brook_house_A.html', context)
+
+
+def bealby(request):
+    '''A view to return Invoice Journals'''
+
+    bealbys = Bealby.objects.all()
+
+    context = {
+        'bealbys': bealbys,
+    }
+
+    return render(request, 'research/bealby.html', context)
 
 
 def bealby_family_A(request):
