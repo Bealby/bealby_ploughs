@@ -4,10 +4,39 @@
 <div class="container-fluid section-gutter-main-header page-bottom-margin">
   <div class="row section-header-gutter-first">
     <div class="col">
-      <h4 class="decorated page-header"><span>Origin of the name "Bealby"</span></h4>
+      <h4 class="decorated page-header">
+        <span>Origin of the name "Bealby"</span>
+      </h4>
     </div>
   </div>
   {% for bealby in bealbys %}
+  <div class="row">
+    <div class="col-lg-6 col-md-6 pt-4">
+      {% if bealby.image_1 %}
+      <img
+        loading="lazy"
+        src="{{ bealby.image_1.url }}"
+        srcset="{{ bealby.image_1.url }}"
+        class="img-fluid"
+        alt="{{ bealby.image_description_1 }}"
+        width="600"
+        height="400"
+      />
+      {% else %}
+      <img
+        src="{{ MEDIA_URL }}"
+        class="img-fluid mt-5"
+        alt="{{ bealby.image_description_1 }}"
+      />
+      {% endif %}
+      <p class="section-title mt-2">
+        {{ bealby.image_title_1|default_if_none:"" }}
+      </p>
+      <p class="section-title-sub">
+        {{ bealby.image_description_1|default_if_none:"" }}
+      </p>
+    </div>
+  </div>
   <div class="row mb-3">
     <div class="col-lg-12 section-content">
       <p>{{ bealby.text|safe }}</p>
